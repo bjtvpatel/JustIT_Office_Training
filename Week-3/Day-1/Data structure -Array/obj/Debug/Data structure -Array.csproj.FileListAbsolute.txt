@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\bin\Debug\Data structure -Array.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\bin\Debug\Data structure -Array.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\bin\Debug\Data structure -Array.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\obj\Debug\Data structure -Array.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\obj\Debug\Data structure -Array.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Data structure -Array\obj\Debug\Data structure -Array.csprojResolveAssemblyReference.cache
