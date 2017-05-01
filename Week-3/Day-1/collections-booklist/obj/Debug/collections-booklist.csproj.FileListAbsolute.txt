@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\bin\Debug\collections-booklist.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\obj\Debug\collections-booklist.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\bin\Debug\collections-booklist.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\bin\Debug\collections-booklist.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\obj\Debug\collections-booklist.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\collections-booklist\obj\Debug\collections-booklist.pdb

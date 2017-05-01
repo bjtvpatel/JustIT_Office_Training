@@ -1,0 +1,8 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Arrays-Snowwhite\bin\Debug\Arrays-Snowwhite.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Arrays-Snowwhite\bin\Debug\Arrays-Snowwhite.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Arrays-Snowwhite\bin\Debug\Arrays-Snowwhite.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Arrays-Snowwhite\obj\Debug\Arrays-Snowwhite.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Arrays-Snowwhite\obj\Debug\Arrays-Snowwhite.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Arrays-Snowwhite\bin\Debug\Arrays-Snowwhite.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Arrays-Snowwhite\obj\Debug\Arrays-Snowwhite.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Arrays-Snowwhite\obj\Debug\Arrays-Snowwhite.pdb
