@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app>
+
+ <head>
+ <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+   
+ <!-- Bootstrap Core CSS -->
+ <link href="/css/bootstrap.min.css" rel="stylesheet">
+ 
+ </head>
+
+ <body>
+<br>
+<br>
+      
+      
+<div class="container">
+    <div class="row">      
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+         <!-- Content to go here -->  
+         <select id="Sport">
+            <option>Choose a Sport</option>
+         </select>
+         <!-- end Content --> 
+        </div>
+        <div class="col-lg-5"></div>
+
+    </div>
+ </div>
+ 
+ <script>
+
+//Declare the array
+var options = ["Football", "Cricket", "Swimming", "Cycling", "Formula 1", "Rowing", "Boxing", "Rugby", "Tennis" ,"Badminton" ,"Squash" ,"Hockey" ,"Basketball" ,"Darts" ,"Chess" ];
+
+//get HTML DOM Element as an object
+var select = document.getElementById("Sport");
+
+//Loop through array elements, create a new DOM node for each and append it to your object.
+for(var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    
+    //create a new DOM node
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    
+    //append the node to the object
+    select.appendChild(el);
+}   
+
+</script>
+  
+</body>
+
+</html>

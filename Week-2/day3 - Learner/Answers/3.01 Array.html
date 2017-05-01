@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript allocate to array</title>
+
+</head>
+<body>
+<h1>Javascript - Arrays</h1>
+<h2>Input, Create an array and display</h2>
+<input id="input1"/>
+<input id="input2"/>
+<input id="input3"/>
+<input type="button" value="Create array" onclick="myarray(input1.value, input2.value, input3.value)"/>
+<p id="arrayresult"></p><br>
+	<p id="arrayresult1"></p><br>
+	<p id="arrayresult2"></p>
+	
+<script>
+function myarray(x, y, z) {
+
+//declare and create array
+var myArray = [];
+
+myArray[0] = x;
+myArray[1] = y;
+myArray[2] = z;
+
+//display array on webpage with 2 different approaches
+document.getElementById("arrayresult").innerHTML = myArray;
+document.getElementById("arrayresult1").innerHTML = myArray.join(", ");
+    
+//display item in array with index 1   
+document.getElementById("arrayresult2").innerHTML = myArray[1];
+
+}
+</script>
+
+
+</body>
+</html>
