@@ -1,0 +1,7 @@
+C:\Users\student\Desktop\Qamar Raja\ASP.NET MVC\Baldev_ConsoleApp\Baldev_ConsoleApp\bin\Debug\Baldev_ConsoleApp.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\bin\Debug\Baldev_ConsoleApp.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\bin\Debug\Baldev_ConsoleApp.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\bin\Debug\Baldev_ConsoleApp.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\obj\Debug\Baldev_ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\obj\Debug\Baldev_ConsoleApp.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Baldev_ConsoleApp\obj\Debug\Baldev_ConsoleApp.pdb
