@@ -1,0 +1,23 @@
+        #displayAddress {
+            width: 440px;
+            height: 270px;
+            float: left;
+            border: 5px solid #cccccc;
+        } 
+         .oAddresses {
+            margin-bottom: 20px;
+            margin-right: 5.5%;    
+        }
+        .mOffice {
+            margin-bottom: 20px;
+            margin-right: 5.5%;  
+        }
+        .tCentre {
+            margin-bottom: 20px;
+        }
+        .textAddress {
+            text-align: center;
+        }
+        h5 {
+            text-transform: uppercase;
+        }

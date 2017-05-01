@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+  </head>
+      
+<body>
+    
+<!-- Contact section --------------------------------------------------->
+<section>
+  <div class="container" id="contact">
+    <h2>Contact details</h2>
+    <br/>
+    <div class="row">
+        <!-- Contact Form -->
+        <!-- Email address and subject line for the contact form set in bin/contact_me.php file. -->
+        <div class="col-md-2"></div>
+        <div id="emailForm" class="col-md-4">
+            <div class="row">
+            <div class="col-md-12">
+                <h4>Please email me ...</h4>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="5" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <div id="submitButtonDiv">
+                        <button type="submit" id="submitButton" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+                <br/>
+                <br/>
+            </div><!--col-->
+        </div><!--row-->
+    </div> <!--end email form -->
+        <div class="col-md-5 col-md-offset-1"><h4>Click the buttons to display our addresses on the map:</h4>
+            <br><button type="button" id="officeAddresses" class="btn btn-primary oAddresses">Office Addresses</button>
+            <button type="button" id="mainAddress" class="btn btn-primary mOffice">Main Office <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button><button type="button" id="otherAddress" class="btn btn-primary tCentre">Training Centre <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button>
+        <br><br>
+            
+        <div id="displayAddress" class="textAddress">
+ 
+        <h5>Just IT Training &amp; Recruitment</h5>
+        2nd Floor<br>
+        St. Clare House<br>
+        30-33 Minories<br>
+            London EC3N 1DD<br>
+  
+        <br>    
+         
+
+        <h5>Just IT Apprenticeships</h5>
+        22 Plumbers Row<br>
+        Aldgate East<br>
+        London E1 1EZ
+
+        </div>
+            
+        
+        </div>
+      </div>
+    </div>
+    </section>
+
+<!--call to Javascript file, which validates contact form and calls PHP file - should be at the bottom of the page -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+ <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmMvTmEhXb5e_0oApgFZucVz9m9KzHdRg"
+    async defer></script>
+    
+    <script src="main.js"></script>
+    
+</body>        
+</html>
