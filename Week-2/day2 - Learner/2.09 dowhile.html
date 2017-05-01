@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript do...while loop from 1 to 10</title>
+
+
+</head>
+<body>
+<h1>Javascript program flow</h1>
+<h2>Do...While loop from 1 to 10</h2>
+<input type="button" value="Display 1 to 10" onclick="lab67()"/>
+<span id="result"></span>
+
+
+<script>
+function lab67(){
+    var i = 0;
+    var result= [];
+    var j=0;
+  do{
+      j=i;
+      i++;
+      result[j]= i;
+    
+  } while(i<10)
+    
+    document.getElementById("result").innerHTML = result.join('-');
+  
+}
+</script>
+
+
+</body>
+</html>

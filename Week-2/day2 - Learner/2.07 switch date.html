@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+
+  
+  var dt; 
+  
+  dt = new Date();
+  
+  var Time = dt.toTimeString().substring(0,8);
+  
+  switch(dt.getDay()){
+  
+      case 0 :
+        dt = "Sunday"; 
+    
+      case 1 :
+        dt = "Monday"; 
+    
+      case 2 :
+        dt = "Tuesday"; 
+    
+      case 3 :
+        dt = "Wedsday"; 
+    
+      case 4 :
+        dt = "Thursday"; 
+    
+      case 5 :
+        dt = "Friday"; 
+    
+      case 6 :
+        dt = "Saturday"; 
+    }
+  
+  document.getElementById("demo").innerHTML = dt + " " + Time;
+  
+</script>
+
+</body>
+</html>
