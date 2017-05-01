@@ -1,0 +1,7 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\bin\Debug\Dictionaries-datastructure.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\bin\Debug\Dictionaries-datastructure.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\obj\Debug\Dictionaries-datastructure.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\obj\Debug\Dictionaries-datastructure.pdb
+C:\Users\M-1\Desktop\Test\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\bin\Debug\Dictionaries-datastructure.exe.config
+C:\Users\M-1\Desktop\Test\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\obj\Debug\Dictionaries-datastructure.exe
+C:\Users\M-1\Desktop\Test\Week-3\Day-1\Baldev_ConsoleApp\Dictionaries-datastructure\obj\Debug\Dictionaries-datastructure.pdb
