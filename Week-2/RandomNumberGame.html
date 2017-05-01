@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Guess a Number Game</title>
+      <style type="text/css">
+         .afterWin{
+         height: auto !important;
+         margin-bottom: 200px !important;
+         }
+         .cN1{
+         height: auto !important;
+         margin-bottom: 150px !important;
+         }
+         .tC1{
+         height: auto !important;
+         margin-bottom: 140px !important;
+         }
+         .myHeader{
+         width: 800px;
+         height: 150px;
+         border: 2px, solid, grey;
+         background-color: cadetblue;
+         text-align: center;
+         }
+         #hideN{
+         width: 800px;
+         height: 150px;
+         border: 2px, solid, grey;
+         background-color:gray;
+         text-align: center;
+         }
+         #hideW{
+         width: 800px;
+         height: 200px;
+         border: 2px, solid, grey;
+         background-color: cadetblue;
+         text-align: center;
+         }
+         #hideL{
+         width: 800px;
+         height: 50px;
+         border: 2px, solid, grey;
+         background-color: cadetblue;
+         text-align: center;
+         }
+         #hideM{
+         width: 800px;
+         height: 50px;
+         border: 2px, solid, grey;
+         background-color: green;
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+       
+      <!--      start of the game -->
+      <header class = "myHeader">
+         <h1>Welcome to Guess a Number</h1>
+         <input type="button" value="ENTER" id="startBtn">
+          <h2 id="warning"></h2>
+          <input type="button" value="RESTART" id="restartBtn">
+          
+      </header>
+      <section>
+          
+         <!--  //retrive Guess Number-->
+         <div id="hideN">
+            <h2 class="">Enter your number
+            </h2>
+            <p id="alert" class="alert"></p>
+             <input class="" type="text" id="guessN" autofocus placeholder="Enter your best guess">
+            
+             
+            <!--    Match the number-->
+            <button id="submit" class="">Try your Guess</button>
+         </div>
+          
+         <!--    Alert message -->
+         <div id="hideM">
+         </div>
+          
+         <!--    Message for winner-->
+         <div id="hideW" class="hide winner">
+            <h2 class="hide winner">Congratulations!!!! - You are the winner!!</h2>
+            <lable class="hide winner">
+               Correct Number:
+               <p id="correctN" class="correctN hide winner"></p>
+            </lable>
+            <lable class="hide winner">
+               You did try: 
+               <p id="tryCount" class="tryCount hide winner"> </p>
+               Guess. 
+            </lable>
+         </div>
+          
+         <!--    message for looser-->
+         <div id="hideL">
+            <h2 class="hide">!!!BETTER LUCK NEXT TIME!!!</h2>
+         </div>
+      </section>
+       
+      <!--    my script-->
+      <script>
+    var randomNumber;
+    var myGuess;
+    var counter = 0;
+    var showElement;
+
+    //page load function   
+    function init() {
+        hideElement();
+    }
+
+          function restartGame(){
+              location.reload();
+              hideElement();
+              enterNumber();
+              
+              
+              
+              
+          }
+    function hideElement() {
+        var hideElement = document.getElementsByClassName("hide");
+
+        for (var i = 0; i < hideElement.length; i++) {
+            hideElement[i].style.display = "none";
+        }
+    }
+
+    function showElement() {
+
+        document.getElementById("correctN").innerHTML = randomNumber;
+
+        document.getElementById("tryCount").innerHTML = counter;
+
+        var showEle = document.getElementsByClassName("winner");
+
+        console.log(showEle);
+
+        for (var i = 0; i < showEle.length; i++) {
+            showEle[i].style.display = "inline";
+        }
+
+        enterNumber();
+    }
+    //for generating a random number
+    function randomGenerator() {
+        randomNumber = Math.floor((Math.random() * 10) + 1);
+        console.log(randomNumber);
+        document.getElementById("alert").innerHTML = "Enter your Best Guess";
+        document.getElementById("guessN").focus();
+        
+    }
+    //enter the guess number
+    function enterNumber(){
+        
+            document.getElementById("guessN").value="";
+//                
+            document.getElementById("guessN").focus();
+                
+         
+    }
+          
+    //check guess number
+    function checkBestGuess() {
+        //             myGuess = parseInt(document.getElementById("guessN").value)
+
+        
+        
+        myGuess = parseInt(document.getElementById("guessN").value);
+          
+            
+        if(counter!==3 && myGuess!==""){
+            
+            console.log("counter:"+counter);
+            if (myGuess === randomNumber) {
+
+                showElement();
+                
+                
+            } else if (myGuess < 0) {
+                
+                
+                document.getElementById("alert").innerHTML = "Number" + myGuess + "is not Valid - Try another number";
+                
+                enterNumber();
+//                document.getElementById("guessN").value="";
+//                
+//                document.getElementById("guessN").focus();
+//                
+//                myGuess = parseInt(document.getElementById("guessN").value);
+//                
+                
+            } else if (myGuess > randomNumber) {
+
+                document.getElementById("alert").innerHTML = "Number" + myGuess + "is too large - Try another number";
+                counter = counter + 1;
+                enterNumber();
+//                document.getElementById("guessN").value="";
+//                document.getElementById("guessN").focus();
+//                myGuess = parseInt(document.getElementById("guessN").value);
+                
+              
+
+
+
+            } else if (myGuess < randomNumber) {
+//
+//                counter = counter + 1;
+
+                document.getElementById("alert").innerHTML = "Number" + myGuess + "is too small - Try another number";
+                counter = counter + 1;
+                enterNumber();
+//                document.getElementById("guessN").value="";
+//                document.getElementById("guessN").focus();
+//                myGuess = parseInt(document.getElementById("guessN").value);
+//                counter = counter + 1;
+            }
+
+
+            if (myGuess !== randomNumber) {
+            
+                document.getElementById("hideL").style.display = "inline";
+            }
+        }
+        else { 
+            
+            if(counter===3){
+            
+            document.getElementById("warning").innerHTML = "All attemps failed - Restart the game";
+            enterNumber();
+            
+            
+        }
+        
+            
+            document.getElementById("alert").innerHTML = "Please enter your best guess number";
+              enterNumber();
+            
+        }
+        
+
+    }
+
+
+//http://hindimoviesonlines.co/badrinath-ki-dulhania/
+
+    //start of the game
+    init();
+
+    document.getElementById("submit").addEventListener("click", checkBestGuess, false);
+
+    document.getElementById("startBtn").addEventListener("click", randomGenerator, false);
+
+    document.getElementById("restartBtn").addEventListener("click", restartGame, false);
+
+</script>
+   </body>
+</html>
