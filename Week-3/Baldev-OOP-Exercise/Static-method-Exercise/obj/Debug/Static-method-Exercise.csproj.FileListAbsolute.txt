@@ -1,0 +1,8 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\bin\Debug\Static-method-Exercise.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\bin\Debug\Static-method-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\bin\Debug\Static-method-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\bin\Debug\Baldev-OOP-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\bin\Debug\Baldev-OOP-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\obj\Debug\Static-method-Exercise.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\obj\Debug\Static-method-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Static-method-Exercise\obj\Debug\Static-method-Exercise.pdb

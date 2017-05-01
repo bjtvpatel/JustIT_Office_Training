@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\bin\Debug\Encapsulation-Exercise.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\bin\Debug\Encapsulation-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\bin\Debug\Encapsulation-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\obj\Debug\Encapsulation-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\obj\Debug\Encapsulation-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev-OOP-Exercise\Encapsulation-Exercise\obj\Debug\Encapsulation-Exercise.csprojResolveAssemblyReference.cache
