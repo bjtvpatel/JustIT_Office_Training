@@ -1,0 +1,15 @@
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.csprojResolveAssemblyReference.cache
+C:\Users\M-1\Desktop\Test\Temp\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.exe.config
+C:\Users\M-1\Desktop\Test\Temp\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.exe
+C:\Users\M-1\Desktop\Test\Temp\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.pdb
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.exe.config
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.exe
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.pdb
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.exe
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\bin\Debug\CSharp_Assessment_Louise.pdb
+C:\Users\M-1\Desktop\Test\Week-4\Baldev_Portfolio\CSharp_Assessment_Louise\obj\Debug\CSharp_Assessment_Louise.csprojResolveAssemblyReference.cache

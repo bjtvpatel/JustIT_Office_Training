@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "firstName": "Anna",
+      "lastName": "Meyers"
+    },
+    {
+      "firstName": "Betty",
+      "lastName": "Layers"
+    },
+    {
+      "firstName": "Carl",
+      "lastName": "Louis"
+    }
+  ],
+
+  "Hobby": [
+    {
+      "Sport": "Cricket",
+      "Team": "India"
+    },
+    {
+      "Sport": "Hockey",
+      "Team": "UK"
+    },
+    {
+      "Sport": "Badminton",
+      "lastName": "Aus"
+    }
+  ]
+
+}

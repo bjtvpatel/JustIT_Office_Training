@@ -1,0 +1,45 @@
+CREATE DATABASE Chocolate
+
+
+USE Chocolate
+
+create table Bar
+(id int Identity not null Primary key, Name varchar(Max) not null, Year int Not null)
+
+create table Inventor
+(id int identity not null Primary key,
+name varchar(Max) not null, BarId int null)
+
+
+Insert into Bar (Name, Year) values ('Frys Chocolate Cream Bar', 1866), ('Mars Bar', 1932), ('Flake', 1920), ('Aero', 1935)
+Insert into Bar (Name, Year, CountryOrigin) values('Hershey Bar', 1900, 'USA')
+Insert into Inventor (Name, BarId) values ('Joseph Fry', 1), ('Forest Mars',2),
+('Cadburys', 3),('Rowntrees',4),('Milton Hershey',5)
+Insert into Bar (Name, Year, CountryOrigin) values ('Milky Way', 1923, 'UK'), ('Turkish Delight', 1914, 'UK')
+Insert into Inventor (Name, BarId) values ('Forest Mars', 6), ('Mars Inc.', 8)
+
+
+select * from Bar
+select Name, Year from Bar where CountryOrigin = 'UK'
+select * from Inventor
+//Find match pairs only
+select * from Bar inner join Inventor on Bar.id = Inventor.BarId
+//find all match and unmatch from left table 
+select Bar.Name, Bar.Year, Inventor.name from Bar  left outer join Inventor on Bar.id = Inventor.BarId
+//find all match and unmatch from right table
+select Bar.Name, Bar.Year, Inventor.name from Bar  right outer join Inventor on Bar.id = Inventor.BarId
+
+
+
+alter table Bar 
+
+add CountryOrigin varchar(50) null
+
+update Bar set CountryOrigin = 'UK' where id<5
+
+
+
+
+
+
+

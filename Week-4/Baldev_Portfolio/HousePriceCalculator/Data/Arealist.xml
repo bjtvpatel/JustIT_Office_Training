@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<area_list>
+  
+  <area>
+  <id>1</id>
+  <name>Harrow</name>
+  </area>
+  
+  <area>
+    <id>2</id>
+    <name>Central London</name>
+  </area>
+  
+    <area>
+    <id>3</id>
+    <name>Ealing</name>
+  </area>
+  
+  <area>
+    <id>4</id>
+    <name>Wembley</name>
+   </area>
+  
+  <area>
+        <id>5</id>
+        <name>Eastham</name>
+  </area>
+
+</area_list>
