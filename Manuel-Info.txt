@@ -1,0 +1,77 @@
+https://www.4tests.com/users/home.asp  - bjtvlondon - Nameyea!
+
+Week-1 
+Manuel
+https://github.com/biatoSalo
+
+Icon
+Download
+http://fontawesome.io/cheatsheet/
+
+or use CDN
+https://www.bootstrapcdn.com/fontawesome/
+
+Font: google font
+
+https://justit.itslearning.com/
+baldevp
+Justit123
+
+https://code.jquery.com/
+
+http://testsize.com/ - check mobill device compatibility 
+
+http://www.freevideocompressor.com/
+https://www.movavi.com/support/how-to/video-compression.html
+
+
+https://developers.google.com/maps/documentation/javascript/examples/map-geolocation
+
+Google API Key - AIzaSyChZZtzVppYBM_boRklUfhruIIMXCQZvEc
+
+https://css-tricks.com/search-results/?q=first+child
+
+https://www.tutorialspoint.com/html5/canvas_demo.htm
+
+http://www.cssmatic.com/
+
+Week-2
+https://github.com/bjtvpatel/Week-2-Day1-JustIT.git
+
+Test Practice
+http://cubuca.com/lessonsQuiz/lessonsQuiz.html
+
+Day-3 
+JSON - you can buid a object who represents a block of data and arrays
+JSON - works with any platform
+JSON - has only one ext. json
+JSON - works with AJAX
+https://jsonformatter.curiousconcept.com/
+https://github.com/SenchaArchitect/CarListings/blob/master/CarListings/data/cars.json
+
+AJAX - Asyncromnous JavaScript and XML required web development techniques
+
+
+CANVAS: you will get all ready code - http://canvasjs.com/ 
+CHART : http://www.chartjs.org/
+http://canvasjs.com/docs/charts/chart-types/html5-area-chart/
+
+
+SQL Database link to download
+https://www.hanselman.com/blog/DownloadSQLServerExpress.aspx
+
+cmd line checks before starting the SQL server 
+1. check the version of server - sqllocaldb i
+2. check the status of the server - sqllocaldb i mssqllocaldb
+3. start the server - sqllocaldb start mssqllocaldb
+
+
+Visual Studio; filelist.ro  Suprian Mobile: 07711785267
+
+Methodology about IT Technology - Agile, Spiral and Waterfall
+Coding Standard - other people should be able to understand your code
+comments are vital - linked between design and code
+at top of the file put your name of module, description, your name and date and details of any changes
+comments all class and method and anything that is hard to understand 
+
+
