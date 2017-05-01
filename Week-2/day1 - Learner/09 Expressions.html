@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Conditional Test</p>
+<form>
+<input type="number" id="input1"/>
+
+
+</form>
+<div><button id="button1">Test !</button></div>
+<div id="demo"></div>
+
+<script>
+
+  var btn = document.getElementById("button1");
+  
+  btn.onclick = function (){
+    var x;
+    x = document.getElementById("input1").value;
+    
+    var demo1;
+    
+    demo1 =     document.getElementById("demo") ;
+    
+    if (x < 0){
+    
+      demo1.innerHTML = "Number is negative";
+      
+    } else if (x == 10) {
+      
+      demo1.innerHTML = "Number is same as 10";
+      
+    }
+      else if (x > 10) {
+      
+      demo1.innerHTML = "Number is greater than 10";
+      
+    } else {
+      
+      demo1.innerHTML = "Number is less than 10";
+        
+    }
+      
+  }
+  
+
+</script>
+
+</body>
+</html>

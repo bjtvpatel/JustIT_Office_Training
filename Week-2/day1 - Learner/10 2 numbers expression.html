@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+
+</form>
+<div><button id="button1">Number</button></div>
+<div id="demo"></div>
+
+<script>
+  var btn;
+  
+  btn = document.getElementById("button1");
+  
+  btn.onclick = function(){
+    
+    var x;
+    var y;
+     
+    x = parseInt(document.getElementById("input1").value);
+    y = parseInt(document.getElementById("input2").value);
+  
+    var demo1;
+          
+    x=(x<10)? x + " is less than 10": x + " is greater than 10";
+         
+    y = (y<10)? y + " is less than 10": y + " is greater than 10";
+    
+    document.getElementById("demo").innerHTML = x + " & " + y;
+    
+
+//    if(x!=10 && y!=10){
+//    
+//      if (x > 10 && y >10){
+//      
+//        demo1.innerHTML = "Both" + x + "and" + y + "are greater than 10";
+//      
+//      } else if(x>10 && y<10) {
+//      
+//        demo1.innerHTML = x + "is greater than 10 but " + y + "is smaller than 10"; 
+//      
+//        } else if (x<10 && y>10){
+//      
+//          demo1.innerHTML = y + "is greater than 10 but " + x + "is smaller than 10";
+//      
+//          }
+//        
+//    }
+//    else {
+//      demo1.innerHTML = "Both" + x + "and" + y + "are same as 10";
+//    }
+//  
+  }
+</script>
+
+</body>
+</html>

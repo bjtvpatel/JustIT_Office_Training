@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Enter number below</p>
+<form>
+<input type="number" id="input1"/>
+
+</form>
+<div><button id="button1">Submit</button></div>
+<div id="output1"></div>
+<div id="output2"></div>
+
+<script>
+
+function increment (x){ 
+    return  x + 1
+}
+  
+function decrement (x){
+    return  x - 1
+} 
+
+
+var btn = document.getElementById("button1");
+
+  btn.onclick = function (){
+    
+  var x = parseInt(document.getElementById("input1").value);
+  
+  document.getElementById("output1").innerHTML = increment(x);
+  
+  document.getElementById("output2").innerHTML = decrement(x);
+
+}
+</script>
+
+</body>
+</html>

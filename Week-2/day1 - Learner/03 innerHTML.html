@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="text" id="input1"/>
+</form>
+<div><button id="button1">Button</button></div>
+<div id="demo"></div>
+
+<script>
+    
+      var mybutton = document.getElementById("button1");
+      
+      mybutton.addEventListener('click', myClick, false);
+  
+      function myClick(){
+      
+        
+      var userinput =  document.getElementById("input1").value;
+        
+      document.getElementById("demo").innerHTML = userinput;     
+       
+
+     } 
+  
+  </script>
+</body>
+</html>

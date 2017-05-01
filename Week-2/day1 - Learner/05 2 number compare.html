@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+</form>
+<div><button id="button1" >Compare two numbers</button></div>
+<div id="demo"></div>
+ 
+
+<script>
+
+  
+  var myButton = document.getElementById("button1")
+  
+  myButton.addEventListener('click', myfirst, false);
+  
+  function myfirst(){
+    
+   var x = parseInt(document.getElementById("input1").value);
+   var y = parseInt(document.getElementById("input2").value);
+  
+    var demo1 = document.getElementById("demo");
+  
+    if (x === y)
+      {
+        demo1.innerHTML = "BOTH NUMBERS ARE SAME";
+      }
+      else if (x > y){
+      
+       demo1.innerHTML = x + " number is larger than " + y;
+      }
+    else {
+      demo1.innerHTML = y + " number is larger than " + x;
+    }
+  }
+  
+  
+</script>
+
+</body>
+</html>
