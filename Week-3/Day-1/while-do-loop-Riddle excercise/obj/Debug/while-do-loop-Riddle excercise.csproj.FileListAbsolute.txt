@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\bin\Debug\while-do-loop-Riddle excercise.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\bin\Debug\while-do-loop-Riddle excercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\bin\Debug\while-do-loop-Riddle excercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\obj\Debug\while-do-loop-Riddle excercise.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\obj\Debug\while-do-loop-Riddle excercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\while-do-loop-Riddle excercise\obj\Debug\while-do-loop-Riddle excercise.pdb

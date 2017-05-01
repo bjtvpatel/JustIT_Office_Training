@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\bin\Debug\Switch-Exercise.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\bin\Debug\Switch-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\bin\Debug\Switch-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\obj\Debug\Switch-Exercise.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\obj\Debug\Switch-Exercise.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Baldev_ConsoleApp\Switch-Exercise\obj\Debug\Switch-Exercise.csprojResolveAssemblyReference.cache
