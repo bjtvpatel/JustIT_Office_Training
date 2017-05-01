@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brain Test!</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Font Mfizz -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="mytestQuiz.css" type="text/css" rel="stylesheet">
+</head>
+    
+<body>
+    <header>
+        <div class="header">
+          <div>
+            <button  class="quiz_block" data-toggle="modal" data-target="#actualQuiz" name="lessonsN" value="1" id="mathBtn" class="mathBtn">MATH
+<!--
+            <div class="mathTag">          
+              </div>
+-->
+            
+            </button>
+             <button id="reset" value="reset" class="resetBtn">Reset
+              </button>
+            
+            
+          </div>
+        </div>
+        
+    </header>
+  
+  <section id="actual_quiz">  
+            
+    
+    <div class="col-xs-12 col-md-12">
+      
+      
+       <div class="modal fade bd-example-modal-lg" id="theQuiz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <span id="qAll_title"></span>
+                </h4>
+                <div class="mod_btns">
+                    <button id="start_quiz" type="button" class="btn btn-success">Start Quiz</button>
+                    
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                    
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="actual_quiz_all" class="quiz_display">
+                <div id="qAll_questions" class="hide">
+                  <button type="button" id="submit_answer" class="submit_answer btn btn-primary">Check Answers</button><span id="rightWrong"></span>
+                  </div></div></div></div></div>
+       
+         
+         
+         
+         
+<!--      My script code   -->
+         
+    <div class="modal fade bd-example-modal-lg" id="actualQuiz" class = "mainTest" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="tesTitle">
+        <button class="retestBtn">RE-Test</button>
+      </div>
+      <div class="counter"><p>Counter=Answered/No of Questions</p></div>
+      
+      <div class="quesPage">
+        
+        <div class="ques">
+          <h2 id="quesTitle"></h2>
+          <span class="quesDisplay"></span>
+        </div>
+      </div>
+       </div>
+       </div>
+    </div>
+    
+  </section>
+  
+  
+  
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="myTestQuiz.js"></script>
+</body>
+
+</html>
