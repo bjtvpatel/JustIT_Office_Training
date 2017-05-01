@@ -1,0 +1,9 @@
+C:\Users\M-1\Desktop\Test\Week-3\Week-3\Day-1\Handy_Calculator\Handy_Calculator\bin\Debug\Handy_Calculator.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\bin\Debug\Handy_Calculator.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\bin\Debug\Handy_Calculator.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\bin\Debug\Handy_Calculator.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\obj\Debug\Handy_Calculator.Handy_Calculator.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\obj\Debug\Handy_Calculator.Properties.Resources.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\obj\Debug\Handy_Calculator.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\obj\Debug\Handy_Calculator.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Handy_Calculator\obj\Debug\Handy_Calculator.pdb

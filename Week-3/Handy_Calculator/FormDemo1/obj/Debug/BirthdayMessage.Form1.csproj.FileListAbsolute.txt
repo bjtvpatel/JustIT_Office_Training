@@ -1,0 +1,9 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\bin\Debug\FormDemo1.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\bin\Debug\FormDemo1.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\bin\Debug\FormDemo1.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\BirthdayMessage.Form1.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\FormDemo1.BirthdayMessage.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\FormDemo1.Properties.Resources.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\BirthdayMessage.Form1.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\FormDemo1.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\FormDemo1\obj\Debug\FormDemo1.pdb

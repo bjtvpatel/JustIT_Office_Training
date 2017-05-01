@@ -1,0 +1,9 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\bin\Debug\WinForm-QUIZ-Demo.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\bin\Debug\WinForm-QUIZ-Demo.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\bin\Debug\WinForm-QUIZ-Demo.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm-QUIZ-Demo.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm_QUIZ_Demo.Properties.Resources.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm-QUIZ-Demo.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm-QUIZ-Demo.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm-QUIZ-Demo.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-QUIZ-Demo\obj\Debug\WinForm_QUIZ_Demo.Quiz.resources

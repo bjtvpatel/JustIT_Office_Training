@@ -1,0 +1,9 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\bin\Debug\Winform-demo3.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\bin\Debug\Winform-demo3.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\bin\Debug\Winform-demo3.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform_demo3.Properties.Resources.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform-demo3.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform-demo3.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform-demo3.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform_demo3.Demo3FormRichTextBox.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\Winform-demo3\obj\Debug\Winform_demo3.Demo3NewForm.resources

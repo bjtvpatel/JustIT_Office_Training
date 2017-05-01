@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handy_Calculator", "Handy_Calculator\Handy_Calculator.csproj", "{C5002EDD-B933-4E6C-AAA7-C3CFBFDEB249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayMessage.Form1", "FormDemo1\BirthdayMessage.Form1.csproj", "{479D2902-5B7B-45C3-B0D9-9FF77A0FB4A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm-QUIZ-Demo", "WinForm-QUIZ-Demo\WinForm-QUIZ-Demo.csproj", "{66A96B47-DCC2-4223-86F1-888F3D7EBDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winform-demo3", "Winform-demo3\Winform-demo3.csproj", "{2198D3B1-5388-4DFC-872C-2CCF6769BD4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDemo4", "WinForm-Demo4\LotteryDemo4.csproj", "{FAEF30D5-00F0-469E-A156-2732C7A4BB56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryNumberGenerator", "LotteryNumberGenerator\LotteryNumberGenerator.csproj", "{54D66E68-06BC-492F-85D8-DC4906EB86AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5002EDD-B933-4E6C-AAA7-C3CFBFDEB249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5002EDD-B933-4E6C-AAA7-C3CFBFDEB249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5002EDD-B933-4E6C-AAA7-C3CFBFDEB249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5002EDD-B933-4E6C-AAA7-C3CFBFDEB249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479D2902-5B7B-45C3-B0D9-9FF77A0FB4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479D2902-5B7B-45C3-B0D9-9FF77A0FB4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479D2902-5B7B-45C3-B0D9-9FF77A0FB4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479D2902-5B7B-45C3-B0D9-9FF77A0FB4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A96B47-DCC2-4223-86F1-888F3D7EBDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A96B47-DCC2-4223-86F1-888F3D7EBDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A96B47-DCC2-4223-86F1-888F3D7EBDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A96B47-DCC2-4223-86F1-888F3D7EBDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2198D3B1-5388-4DFC-872C-2CCF6769BD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2198D3B1-5388-4DFC-872C-2CCF6769BD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2198D3B1-5388-4DFC-872C-2CCF6769BD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2198D3B1-5388-4DFC-872C-2CCF6769BD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEF30D5-00F0-469E-A156-2732C7A4BB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEF30D5-00F0-469E-A156-2732C7A4BB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEF30D5-00F0-469E-A156-2732C7A4BB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEF30D5-00F0-469E-A156-2732C7A4BB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D66E68-06BC-492F-85D8-DC4906EB86AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D66E68-06BC-492F-85D8-DC4906EB86AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D66E68-06BC-492F-85D8-DC4906EB86AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D66E68-06BC-492F-85D8-DC4906EB86AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

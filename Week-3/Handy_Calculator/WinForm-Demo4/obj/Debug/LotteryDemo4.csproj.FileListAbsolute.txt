@@ -1,0 +1,13 @@
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\bin\Debug\WinForm-Demo4.exe.config
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\bin\Debug\WinForm-Demo4.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\bin\Debug\WinForm-Demo4.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm_Demo4.LotteryForm1.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm_Demo4.Properties.Resources.resources
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\LotteryDemo4.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm-Demo4.exe
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm-Demo4.pdb
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\LotteryDemo4.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\DisplayNumbers.g.cs
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm-Demo4_Content.g.cs
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm-Demo4_MarkupCompile.cache
+C:\Users\student\Desktop\Baldev Patel\Week-3\Day-1\Handy_Calculator\WinForm-Demo4\obj\Debug\WinForm-Demo4_MarkupCompile.lref
