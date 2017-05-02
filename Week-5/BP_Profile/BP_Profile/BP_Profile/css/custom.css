@@ -8,19 +8,102 @@
 /*.element {
   animation: pulse 15s infinite;
 }*/
+.animationfrom-left {
+    /*color: rgb(31,58,147) !important;*/
+    color: rgb(25,181,254) !important;
+    /*height:30px !important;*/
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    transition: color .5s linear;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -webkit-animation-name: pulse-left;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+}
 
-@keyframes pulse {
-  0% {
-    color: white;
-    opacity:0.5;
-  }
-  100% {
-    color: grey;
-    opacity:0.5;
-  }
+@keyframes pulse-left {
+   from{
+        margin-left:-1000px;
+        font-size:50px;
+        transition-delay:2s;
+        transition-timing-function:linear;
+   
+    }
+   
+   to {
+        margin-left: 0px;
+        font-size: 40px;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+
  
   }
 
+.animationfrom-top {
+    color: rgb(232,84,0) !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    transition: color .5s linear;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -webkit-animation-name: pulse-top;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pulse-top {
+    from {
+        margin-top: -1000px;
+        font-size: 10px;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+
+    to {
+        margin-top: 0px;
+        font-size: 20px;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+}
+
+.animationfrom-right {
+    color: rgb(249,191,59) !important;
+    /*color: rgb(25,181,254) !important;*/
+    /*height:30px !important;*/
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    transition: color .5s ease-out;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -webkit-animation-name: pulse-right;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pulse-right {
+    from {
+        margin-right: -2000px;
+        font-size: 20px;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+
+    to {
+        margin-right: 0px;
+        font-size: 30px;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+}
 
 #star-five {
    margin: 50px 0;
@@ -58,6 +141,10 @@
    -o-transform:      rotate(-35deg);
    animation-name:pulse;
    animation:5s infinite;
+  animation-direction:reverse;
+  animation-fill-mode:forwards;
+  animation-play-state:running;
+  animation-timing-function:ease-out;
 }
 #star-five:after {
    position: absolute;
@@ -78,6 +165,7 @@
    animation-name:pulse;
    animation:5s infinite;
 }
+
 
 
 .navbar-default {
@@ -105,15 +193,6 @@
 .navbar-default .navbar-nav > .active > a:hover {
     color: #fff !important;
     background-color: #555 !important;
-}
-.italicBP{
-    color:rgb(249,191,59) !important;
-    /*height:30px !important;
-    font-size:25px !important;*/
-    /*font-weight:700 !important;*/
-}
-.italicBP a:hover{
-  color: #F74D4D !important;
 }
 section-headingBP
 {
