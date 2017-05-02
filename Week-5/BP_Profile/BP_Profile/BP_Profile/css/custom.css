@@ -353,23 +353,27 @@ border-bottom: 1px solid #555;
 
 
 .portfolioBP{
-  padding: 50px 15px;
+  padding: 100px 15px;
 
 }
 .skillsBP{
-  padding: 50px 15px;
+  padding: 100px 15px;
 
 }
 
 .aboutBP{
-  padding: 50px 15px;
+  padding: 100px 15px;
   border-bottom: 1px solid #808080;
 
 }
 
+.img-responsive{
+    
+}
+
 
 .contactBP{
-   padding: 50px 0px;
+   padding: 100px 0px;
 
 
 }
@@ -477,10 +481,10 @@ top css line is for section for arrow
   .mbr-arrow a {
 
 /*    background: rgba(242, 242, 242, 0.5);*/
-	background: rgba(128, 128, 128, 0.7);
+	background: rgba(128, 128, 128, 0.3);
 
 	/*font-style chaged from 3px to 4px and color from #fff to #F74D4D*/
-	border-radius: 4px;
+	border-radius: 2px;
 	color: rgb(249,191,59) !important;
 
 	 display: inline-block;
@@ -503,7 +507,7 @@ top css line is for section for arrow
 	  content: "\203a";
 	  display: inline-block;
 	  font-family: serif;
-	  font-size: 45px;
+	  font-size: 40px;
 	  line-height: 1;
 	  font-style: normal;
 	  left: 4px;
