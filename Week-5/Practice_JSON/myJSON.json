@@ -1,0 +1,15 @@
+var person= [
+  {
+    "Firstname": "Baldev",
+    "Lastname": "Patel"
+  },
+  {
+    "Firstname": "Tirtha",
+    "Lastname": "Patel"
+  },
+  {
+    "Fistname": "Viva", "Lastname": "Patel"
+  }
+
+]; 
+
