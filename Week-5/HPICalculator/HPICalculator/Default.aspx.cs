@@ -109,14 +109,21 @@ namespace HPICalculator
                 {
                     table.Load(reader);
                     //calculate total percentage change since purchase date
-                    
-         
+
+                    int year = int.Parse(DropDownList_year.Text);
+                    int[] yearList = new int[table.Rows.Count];           
                     double[] percentage= new double[table.Rows.Count];
                     double[] estimateValue = new double[table.Rows.Count];
                     double sum=0;
                     double estimateValueYearly = purchaseprice;
                     for (int i = 0; i < table.Rows.Count; i++)
-                    { 
+                    {
+                       
+                           yearList[i] = year;
+                           year++;
+
+                 
+
                         for (int j = 0; j < table.Rows[i].ItemArray.Length; j++)
                         {
                             sum+= double.Parse(table.Rows[i].ItemArray[j].ToString());
@@ -125,7 +132,7 @@ namespace HPICalculator
                             //adding into array for use of graph
                             estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
                             estimateValue[i] = Math.Round(estimateValueYearly);
-                            excelLabel.Text += "<br>" + estimateValue[i] + "--"+ percentage[i];
+                            excelLabel.Text += "<br>" + estimateValue[i] + "--"+ percentage[i] +"--"+yearList[i];
                             excelLabel.ForeColor = System.Drawing.Color.White;
                             Label_valuation2017.Text = sum.ToString();
                             //current valuation
