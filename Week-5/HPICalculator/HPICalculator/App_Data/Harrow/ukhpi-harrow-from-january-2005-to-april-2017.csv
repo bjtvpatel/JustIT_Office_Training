@@ -1,0 +1,66 @@
+Name,Period,percentageAnnualChange
+'Harrow',2005-01,5.65
+'Harrow',2006-01,-1.28
+'Harrow',2007-01,10.51
+'Harrow',2008-01,9.03
+'Harrow',2009-01,-14.73
+'Harrow',2010-01,7.19
+'Harrow',2011-01,6.01
+'Harrow',2012-01,1.2
+'Harrow',2013-01,2.22
+'Harrow',2014-01,10.46
+'Harrow',2015-01,15.39
+'Harrow',2016-01,11.86
+'Harrow',2017-01,5.64
+'Ealing',2015-01,13.13
+'Ealing',2005-01,6.56
+'Ealing',2010-01,9.98
+'Ealing',2016-01,14.09
+'Ealing',2006-01,1.08
+'Ealing',2011-01,5.62
+'Ealing',2007-01,10.49
+'Ealing',2012-01,1.85
+'Ealing',2008-01,13.38
+'Ealing',2013-01,6.67
+'Ealing',2009-01,-16.97
+'Ealing',2014-01,12.15
+'Ealing',2017-01,2.96
+'Brent',2008-01,14.18
+'Brent',2013-01,5.24
+'Brent',2006-01,3.56
+'Brent',2009-01,-13.45
+'Brent',2014-01,12.11
+'Brent',2015-01,15.81
+'Brent',2010-01,4.91
+'Brent',2016-01,11.01
+'Brent',2011-01,7.06
+'Brent',2007-01,6.36
+'Brent',2012-01,5.83
+'Brent',2005-01,6.82
+'Brent',2017-01,0
+'City of London',2008-01,30.74
+'City of London',2013-01,-11.46
+'City of London',2009-01,-15.16
+'City of London',2014-01,34.28
+'City of London',2015-01,25.39
+'City of London',2005-01,1.06
+'City of London',2010-01,16.02
+'City of London',2016-01,-5.98
+'City of London',2006-01,-4.31
+'City of London',2011-01,-4.74
+'City of London',2007-01,14.17
+'City of London',2012-01,18.83
+'City of London',2017-01,-0.68
+'Kensington and Chelsea',2005-01,-3.62
+'Kensington and Chelsea',2006-01,18.26
+'Kensington and Chelsea',2007-01,20.68
+'Kensington and Chelsea',2008-01,18.86
+'Kensington and Chelsea',2009-01,-17.54
+'Kensington and Chelsea',2010-01,18.86
+'Kensington and Chelsea',2011-01,8.29
+'Kensington and Chelsea',2012-01,8.04
+'Kensington and Chelsea',2013-01,14.83
+'Kensington and Chelsea',2014-01,12.85
+'Kensington and Chelsea',2015-01,9.01
+'Kensington and Chelsea',2016-01,1.67
+'Kensington and Chelsea',2017-01,2.01

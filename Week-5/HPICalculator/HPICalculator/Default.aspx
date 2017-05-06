@@ -20,7 +20,8 @@
     <link href="App_CSS/hpi.css" rel="stylesheet" />
 
 </head>
-<body style="background-image: url('~/App_Image/red_bricks.jpg')">
+    <body style="background-color:#2C3E50">
+<%--<body style="background-image: url('http://localhost:65244/App_Image/reichstag.jpg')">--%>
     <form id="form1" runat="server">
       <asp:ScriptManager ID="asm" runat="server" />
         <%--bootstrap container--%>
@@ -93,19 +94,15 @@
               
                 <%--Chart section--%>
                 <div class="col-md-6">
+
                        <%--asp.net chart application--%>
-                       <%-- <asp:Chart ID="Chart1" runat="server" DataSourceID="ObjectDataSource1">
-                            <Series>
-                                <asp:Series ChartType="Line" Name="Series1">
-                                </asp:Series>
-                            </Series>
-                            <ChartAreas>
-                                <asp:ChartArea Name="ChartArea1">
-                                </asp:ChartArea>
-                            </ChartAreas>
-                        </asp:Chart>--%>
+             
                        
-                          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                          <div id="chartContainer" style="height: 300px; width: 100%;">
+
+
+
+                          </div>
                   
                     
                </div>
@@ -113,7 +110,7 @@
                 <%--bottom content section--%>
                 <div class="row" style="height: 100px">
                     <div class="col-md-6" role="button">
-                        <asp:Button ID="Button_checkhouseprice" runat="server" Text="Check House Price" BackColor="#CCFF33" BorderColor="#FF9900" BorderStyle="Ridge" BorderWidth="2px" Enabled="True" Font-Bold="True" Font-Size="Larger" Height="40px" Width="200px" />
+                        <asp:Button ID="Button_checkhouseprice" runat="server" Text="Check House Price" BackColor="#CCFF33" BorderColor="#FF9900" BorderStyle="Ridge" BorderWidth="2px" Enabled="True" Font-Bold="True" Font-Size="Larger" Height="40px" Width="200px" OnClick="Button_checkhouseprice_Click" />
                     </div>
                     <div class="col-md-6" style="color: #CCFF33; font-size: 20px; font-family: 'Century Gothic'; font-weight: bolder;">
                         <p>Developed by: Baldev Patel</p>
@@ -124,7 +121,7 @@
         </div>
         <%---------------------||example of JSONData||--------------------------%>
         <div class="JSONdata">
-            
+            <asp:Label ID="excelLabel" runat="server"></asp:Label>
         </div>
        
         <script type="text/javascript">
@@ -132,75 +129,12 @@
 
             
 
-            //        $.ajax({
-            //            type: "GET",
-            //            url: "/Data/Test.json",
-            //            //beforeSend: function () {
-
-            //            //    $.blockUI({
-            //            //        fadeIn: 0,
-            //            //        fadeOut: 0,
-            //            //        showOverlay: false
-
-            //            //    });
-            //            //},
-            //            datatype: JSON,
-
-            //            done: function (data) {
-            //                console.log(data);
-            //                $("#JSONdata").html(data);
-            //            },
-            //           fail: function (XMLHttpRequest, textStatus, errorThrown) {
-            //                alert("Request: " + XMLHttpRequest.toString() + "\n\nStatus: " + textStatus + "\n\nError: " + errorThrown);
-            //            },
-            //            //complete: function () {
-            //            //    $.unblockUI();
-            //        });
-            //    });
-            //});
-       
+           
 
         </script>
         <%--script for chart in CanvasJS--%>
         <script type="text/javascript">
-            window.onload = function () {
-            var chart = new CanvasJS.Chart("chartContainer",
-            {
-      
-                axisX: {
-                            valueFormatString: "MM-YYYY",
-                            interval:1,
-                            intervalType: "year"
-                        },
-                axisY:  {
-                            includeZero: false
-
-                        },
-                data:[  {
-                            type: "line",
-
-                            dataPoints: [
-                                        { x: new Date(2012, 00, 1), y: 450 },
-                                        { x: new Date(2012, 01, 1), y: 414},
-                                        { x: new Date(2012, 02, 1), y: 520, indexLabel:"highest",markerColor: "red", markerType: "triangle"},
-                                        { x: new Date(2012, 03, 1), y: 460 },
-                                        { x: new Date(2012, 04, 1), y: 450 },
-                                        { x: new Date(2012, 05, 1), y: 500 },
-                                        { x: new Date(2012, 06, 1), y: 480 },
-                                        { x: new Date(2012, 07, 1), y: 480 },
-                                        { x: new Date(2012, 08, 1), y: 410 , indexLabel:"lowest",markerColor: "DarkSlateGrey", markerType: "cross"},
-                                        { x: new Date(2012, 09, 1), y: 500 },
-                                        { x: new Date(2012, 10, 1), y: 480 },
-                                        { x: new Date(2012, 11, 1), y: 510 }
-                                        ]
-                        }
-                    ]
-                });
-
-            chart.render();
-            }
-
-
+            
 
   </script>
         <script type="text/javascript" src="/canvasJS/canvasjs.min.js"></script>
@@ -210,6 +144,10 @@
         <script src="Scripts/jquery-1.9.1.js"></script>
         <script src="Scripts/jquery-1.9.1.min.js"></script>
         <script src="App_Script/hpi.js"></script>
+         
+        <asp:GridView ID="GridView1" runat="server">
+            <EditRowStyle BackColor="#CCCCCC" />
+        </asp:GridView>
          
     </form>
  

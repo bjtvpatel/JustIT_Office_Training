@@ -76,8 +76,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App_Data\Test.json" />
-    <Content Include="App_Data\ukhpi-harrow-from-january-2005-to-april-2017.json" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="App_Data\monthly_ukhpiharrowfromjanuary2012tomay2017.xlsx" />
+    <Content Include="App_Data\HPI_data.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,6 +126,7 @@
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
