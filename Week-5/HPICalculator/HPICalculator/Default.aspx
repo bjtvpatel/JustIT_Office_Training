@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HPICalculator.Default" %>
 
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
+<%@ Register assembly="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -20,134 +24,156 @@
     <link href="App_CSS/hpi.css" rel="stylesheet" />
 
 </head>
-    <body style="background-color:#2C3E50">
-<%--<body style="background-image: url('http://localhost:65244/App_Image/reichstag.jpg')">--%>
+<%--    <body style="background-color:#2C3E50">--%>
+<body style="background-image: url('http://localhost:65244/App_Image/reichstag.jpg')">
     <form id="form1" runat="server">
       <asp:ScriptManager ID="asm" runat="server" />
         <%--bootstrap container--%>
         <div class="container" >
             <%--Header section--%>
-            <div class="jumbotron">
-                <h2 class="well">House Price Calculator</h2>
-                <p>Find the current estimate of house price in your local area.</p>
+            <div class="jumbotron jumbotron-header">
+                <h1 class="well well-header">House Price Calculator</h1>
+                <h2>Find the current estimate of house price in your local area.</h2>
             </div>
             <%--main content section--%>
-            <section>
+            <section class="selection-container">
                 <%--content header section--%>
                 <article>
-                    <div class="row" style="height: 60px; height: 100px; font-size: 18px; font-family: Arial, Helvetica, sans-serif; ">
+                    <%--house price selection--%>
+                   
+                            <div class="row jumbotron-selection"">
+                                <div class="col-md-8 col-sm-12 well-internal selection" style="padding-left:1px; padding-right:2px">
+                                    <div class="row well well-selection">
+                                            
+                                        <%--<p>Property Price</p>  --%>  
+                                       
+                                       <div class="col-md-10 col-sm-12 handleRail ">
 
-                    <div class="col-md-3">
-                        <asp:Label ID="Label_area" runat="server" Text="Select Area" ForeColor="White" ></asp:Label>
-                        <asp:DropDownList ID="DropDownList_area" runat="server" ></asp:DropDownList>
-                                          </div>
-                    <div class="col-md-3">
-                        <asp:Label ID="Label_year" runat="server" Text="Select Purchase year" ForeColor="White"></asp:Label>
-                        <asp:DropDownList ID="DropDownList_year" runat="server"></asp:DropDownList>
-                    </div>
-                     <div class="col-md-6">
-                    </div>
+                                           <div  class="row propertyprice">
+                                               <div class="col-md-12 col-sm-12 selection-text"><asp:Label ID="Label1" runat="server" Text="Property Price" ForeColor="White"></asp:Label></div></div> 
+                                         <div class="row slider-row">
+                                        
+                                             <div class="col-md-1 col-sm-1 triagle" ><i class="glyphicon glyphicon-triangle-left "></i></div>
+                                             <div class="col-md-10 col-sm-10 slide-input" > 
+                                                 <ajaxToolkit:SliderExtender ID="se1" runat="server" HandleCssClass="sliderhandle" HandleImageUrl="~/App_Image/marker.png" RailCssClass="sliderrail" EnableHandleAnimation="true" TargetControlID="Slider1" BoundControlID="SliderValue" Minimum="0" Maximum="1000000" />
+                                                 <asp:TextBox ID="Slider1" runat="server" AutoPostBack="false" CssClass="slide-input" Enabled="true" /></div>
+                                             <div class="col-md-1 col-sm-1 triagle"> <i class="glyphicon glyphicon-triangle-right"></i></div>
+                                         </div>
+                                            
+                                           
+                                           
 
-                    </div>
-                </article>
-                <%--selection content section--%>
-               
-                <div class="row" style="height: 300px">
-                    <div class="col-md-6">
-                            
-                            <%--house price selection--%>
-                            <div class="row" style="height: 100px; font-size: 18px; font-family: Arial, Helvetica, sans-serif; ">
-                                 
-                                <div class="col-md-3"> <asp:Label ID="Label1" runat="server" Text=" Select Price" ForeColor="White"></asp:Label>
-                                </div>
-                                <div class="col-md-4"><ajaxtoolkit:sliderextender ID="se1" runat="server" TargetControlId="Slider1" BoundControlID="SliderValue"  Minimum="0" Maximum="2000000" Length="200" />
-                                    
-                                    <asp:TextBox ID="Slider1" runat="server" AutoPostBack="true" BorderColor="#666699" Height="20px"  Wrap="False" /></div>
-                                <div class="col-md-5">
-                                    
-                                    <asp:TextBox ID="SliderValue" runat="server" AutoPostBack="true" Width="70px" BorderStyle="None" Wrap="False" /> 
-                                    
-                                    <asp:Label ID="LastUpdate" runat="server" ForeColor="White"   Font-Size="8" />  </div>
-                                                    
-                            </div>
-                                          
-                                
-                        
+                                     </div>
+                                        <%-- <i class="glyphicon glyphicon-gbp"></i>--%>
+                                        <div class="col-md-2 col-sm-12 priceLabel">
+                                            <asp:Textbox ID="SliderValue"  CssClass="btn btn-info priceText" width="110px" runat="server" /> 
+                                         
+                                             </div><div  class="maxPrice"><p >(max. £1000000)</p></div>
+                                        <%--<asp:Label ID="LastUpdate"  runat="server" ForeColor="White"   Font-Size="8" />--%>
+                                   </div>
 
+                                      <%--Location and Purchase Year selection--%>
+                                     <div class="row well well-selection">
+                                        <div class="col-md-6 col-sm-12 selection-text">
+                                            <asp:Label ID="Label_area" runat="server" Text="Local Area" ForeColor="White" ></asp:Label>
+                                            <asp:DropDownList ID="DropDownList_area" CssClass="form-control select-area" runat="server" ></asp:DropDownList>
+
+                                            <%--<asp:DropDownList ID="DropDownList1" CssClass="btn btn-default btn-sm" runat="server" ></asp:DropDownList>--%>
+                                         </div>
+                                        <div class="col-md-6 col-sm-12 selection-text">
+                                            <asp:Label ID="Label_year" runat="server" Text="Purchase year" ForeColor="White"></asp:Label>
+                                             <asp:DropDownList ID="DropDownList_year" CssClass="form-control select-year" runat="server"></asp:DropDownList>
+                                        </div>
+                                        </div>
+                               </div>
+                                    
+                                    
+                                        
                             <%--valuation 2017 and 2016 section--%>
-                             <div class =" row" style="height: 70px">
-                                 <div class="col-md-6">
-                                     <asp:Button ID="Button_valuation2017" runat="server" Text="Valuation 2017" Enabled="false" />
-                                 </div>
+                                <div class="col-md-4 col-sm-12 well-internal valuation" style="padding-left:1px; padding-right:2px">
+                                             <div class =" row well well-selection row-valuation">
+                                                <div class="col-md-6 col-sm-12 selection-text nopadding label-valution ">
+                                                   <asp:Label ID="Label_valuation2017" runat="server" CssClass="label-valution-in" Text="Valuation 2017" ForeColor="White">
+                                                    </asp:Label>
+                                                     
+                                                 </div>
                                    
-                                 <div class="col-md-6">
-                                     <asp:Label ID="Label_valuation2017" runat="server" Text="Label" ForeColor="White">
-                                         </asp:Label>
-                                 </div>
-                             </div>
+                                                <div class="col-md-6 col-sm-12 selection-text btnvaluation">
+                                                     <asp:TextBox ID="valuation2017" runat="server" CssClass="btn form-control-updated btnvaluation-in btn-info"></asp:TextBox>
+                                                    <%-- <asp:TextBox ID="Button_valuation2017" runat="server" CssClass="btn form-control-updated btnvaluation-in btn-info" />--%>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class =" row well well-selection row-valuation">
+                                                <div class="col-md-6 col-sm-12 selection-text nopadding label-valution"> 
+                                                    
+                                                    <asp:Label ID="Label_valuation2016"  CssClass="label-valution-in" runat="server" Text="Valuation 2016" ForeColor="White"></asp:Label>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 selection-text btnvaluation" > 
+                                                  <asp:Textbox ID="valuation2016" CssClass="btn form-control-updated btnvaluation-in btn-info" runat="server"  />
 
-                             <div class =" row" style="height: 70px">
-                                 <div class="col-md-6"> <asp:Button ID="Button_valuation2016" runat="server" Text="Valuation 2016" Enabled="false" /></div>
-                                   <div class="col-md-6"> <asp:Label ID="Label_valuation2016" runat="server" Text="Label" ForeColor="White"></asp:Label></div>
-                             </div>
-                   </div>
-              
-                <%--Chart section--%>
-                <div class="col-md-6">
+                                                </div>
+                                             </div>
+                                             
+                            <%-------------------||Calculate Button||---------------------------%>
+                                     <div class="row well well-selection row-calculate">
+                                         <div class="col-md-12 col-sm-12 btncalculate" role="button">
+                                         <asp:Button ID="Button_checkhouseprice" runat="server"   CssClass="btn btn-primary btncalculate-in" Text="CALCULATE" Enabled="True" OnClick="Button_checkhouseprice_Click" />
+                                     </div>
+                                    </div>
+                                  </div>
+                               </div> 
+                </article>
+
+                <%------------------------||Chart section||-------------%>
+                <div class="row">
+                <div class="col-md-12 col-sm-12">
 
                        <%--asp.net chart application--%>
              
                        
-                          <div id="chartContainer" style="height: 300px; width: 100%;">
-
-
-
+                          <div id="chartContainer" style="height: 350px; margin-left:30px; width: auto;">
+                              <asp:Chart ID="Chart1"  runat="server" BackColor="Gainsboro" BackGradientStyle="LeftRight" BackImageTransparentColor="224, 224, 224" BackSecondaryColor="192, 192, 255" BorderlineColor="Transparent" BorderlineWidth="0" Palette="Berry" TextAntiAliasingQuality="SystemDefault" Width="1100px">
+                                  <Titles>
+                                      <asp:Title Text="" Alignment="TopCenter"></asp:Title>
+                                  </Titles>
+                                  <Series>
+                                      <asp:Series Name="Series1" ChartType="Line"  Legend="legend1">
+                                      </asp:Series>
+                                  </Series>
+                                  <ChartAreas>
+                                      <asp:ChartArea Name="ChartArea1">
+                                          <AxisX Title="Year"></AxisX>
+                                          <AxisY Title="House Price"></AxisY>
+                                      </asp:ChartArea>
+                                  </ChartAreas>
+                                  <BorderSkin BackColor="Transparent" BorderColor="Transparent" BorderDashStyle="DashDotDot" />
+                              </asp:Chart>   
                           </div>
-                  
-                    
-               </div>
-          </div>
-                <%--bottom content section--%>
-                <div class="row" style="height: 100px">
-                    <div class="col-md-6" role="button">
-                        <asp:Button ID="Button_checkhouseprice" runat="server" Text="Check House Price" BackColor="#CCFF33" BorderColor="#FF9900" BorderStyle="Ridge" BorderWidth="2px" Enabled="True" Font-Bold="True" Font-Size="Larger" Height="40px" Width="200px" OnClick="Button_checkhouseprice_Click" />
+                        </div>
                     </div>
-                    <div class="col-md-6" style="color: #CCFF33; font-size: 20px; font-family: 'Century Gothic'; font-weight: bolder;">
+                <div class="row well well-header"> <div class="col-md-12" style="color:#fff; font-size: 14px; font-family: 'Century Gothic'; font-weight: bolder; text-align:center">
                         <p>Developed by: Baldev Patel</p>
                         <p>Resource: Land Registry Data</p>
-                    </div>
-                 </div>
+                    </div></div>
            </section>
+            
+        
         </div>
         <%---------------------||example of JSONData||--------------------------%>
-        <div class="JSONdata">
+        <%--<div class="JSONdata">
             <asp:Label ID="excelLabel" runat="server"></asp:Label>
         </div>
+       --%>
        
-        <script type="text/javascript">
-
-
-            
-
-           
-
-        </script>
-        <%--script for chart in CanvasJS--%>
-        <script type="text/javascript">
-            
-
-  </script>
+        <%---------------------------||script links||--------------------%>
+        
         <script type="text/javascript" src="/canvasJS/canvasjs.min.js"></script>
-       
         <script src="Scripts/bootstrap.min.js"></script>
         <script src="Scripts/bootstrap.js"></script>
         <script src="Scripts/jquery-1.9.1.js"></script>
         <script src="Scripts/jquery-1.9.1.min.js"></script>
         <script src="App_Script/hpi.js"></script>
-         
-        <asp:GridView ID="GridView1" runat="server">
-            <EditRowStyle BackColor="#CCCCCC" />
-        </asp:GridView>
          
     </form>
  

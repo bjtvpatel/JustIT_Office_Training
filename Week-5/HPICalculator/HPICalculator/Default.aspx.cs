@@ -5,6 +5,7 @@ using System.Data.OleDb;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
 
 namespace HPICalculator
@@ -38,54 +39,62 @@ namespace HPICalculator
             if (!IsPostBack)
             {
                 this.BindXml();
-                LastUpdate.Text = "(max. £2000000)";
+                //LastUpdate.Text = "(max. £2000000)";
             }
 
         }
 
         protected void Button_checkhouseprice_Click(object sender, EventArgs e)
         {
-            string queryArea = DropDownList_area.SelectedItem.Text;
-            string queryYear = DropDownList_year.SelectedItem.Text;
-           
+            string queryArea = DropDownList_area.SelectedItem.Text.ToString();
+            string queryYear = DropDownList_year.SelectedItem.Text.ToString();
 
-            string cmdText;
-                switch (queryArea)
-                {
-                    case "Harrow":
-                        cmdText = "select PercentageAnnualChange from [Harrow$] where ([Period] >= '" + queryYear + "')";
-                        estimateValue(cmdText);
-                        break;
 
-                    case "City of London":
-                        cmdText = "select PercentageAnnualChange from [London$] where ([Period] >= '" + queryYear + "')";
-                        estimateValue(cmdText);
-                    break;
+            string cmdText = "select [Period], [PercentageAnnualChange] from [Harrow$] where [Name]='" + queryArea + "'" + " AND [Period]>='" + queryYear + "'";
+            estimateValue(cmdText);
 
-                    case "Brent":
-                        cmdText = "select PercentageAnnualChange from [Brent$] where ([Period] >= '" + queryYear + "')";
-                        estimateValue(cmdText);
-                    break;
+            //switch (queryArea)
+            //{
+            //    case "Harrow":
+            //        cmdText = "select PercentageAnnualChange from [Harrow$] where ([Period] >= '" + queryYear + "')";
+            //        estimateValue(cmdText);
+            //        break;
 
-                    case "Ealing":
-                        cmdText = "select PercentageAnnualChange from [Ealing$] where ([Period] >= '" + queryYear + "')";
-                        estimateValue(cmdText);
-                    break;
+            //    case "City of London":
+            //        cmdText = "select PercentageAnnualChange from [London$] where ([Period] >= '" + queryYear + "')";
+            //        estimateValue(cmdText);
+            //    break;
 
-                    case "Kensington and Chealsea":
-                        cmdText = "select PercentageAnnualChange from [Kensington$] where ([Period] >= '" + queryYear + "')";
-                        estimateValue(cmdText);
-                    break;
-                }
-                //DataSet ds = new DataSet();
-                //OleDbDataAdapter oledbAdp = new OleDbDataAdapter(command);
-                //oledbAdp.Fill(ds);
-                //GridView1.DataSource = ds.Tables[0];
-            }
+            //    case "Brent":
+            //        cmdText = "select PercentageAnnualChange from [Brent$] where ([Period] >= '" + queryYear + "')";
+            //        estimateValue(cmdText);
+            //    break;
+
+            //    case "Ealing":
+            //        cmdText = "select PercentageAnnualChange from [Ealing$] where ([Period] >= '" + queryYear + "')";
+            //        estimateValue(cmdText);
+            //    break;
+
+            //    case "Kensington and Chealsea":
+            //        cmdText = "select PercentageAnnualChange from [Kensington$] where ([Period] >= '" + queryYear + "')";
+            //        estimateValue(cmdText);
+            //    break;
+            //}
+            //DataSet ds = new DataSet();
+            //OleDbDataAdapter oledbAdp = new OleDbDataAdapter(command);
+            //oledbAdp.Fill(ds);
+            //GridView1.DataSource = ds.Tables[0];
+
+
+        }
 
         private void estimateValue(string cmdText)
         {
             double purchaseprice;
+            double[] percentage;
+            double[] estimateValue;
+            decimal[] yearList;
+            int rowCount;
 
             purchaseprice = double.Parse(SliderValue.Text);
 
@@ -110,42 +119,66 @@ namespace HPICalculator
                     table.Load(reader);
                     //calculate total percentage change since purchase date
 
-                    int year = int.Parse(DropDownList_year.Text);
-                    int[] yearList = new int[table.Rows.Count];           
-                    double[] percentage= new double[table.Rows.Count];
-                    double[] estimateValue = new double[table.Rows.Count];
-                    double sum=0;
+                    rowCount = table.Rows.Count;
+                    //decimal year = Convert.ToDecimal(DropDownList_year.Text.ToString());
+                    yearList = new decimal[rowCount];
+                    percentage = new double[rowCount];
+                    estimateValue = new double[rowCount];
+                    //double sum=0;
                     double estimateValueYearly = purchaseprice;
-                    for (int i = 0; i < table.Rows.Count; i++)
+                    int i;
+                    for (i = 0; i < rowCount; i++)
                     {
-                       
-                           yearList[i] = year;
-                           year++;
 
-                 
 
-                        for (int j = 0; j < table.Rows[i].ItemArray.Length; j++)
-                        {
-                            sum+= double.Parse(table.Rows[i].ItemArray[j].ToString());
-                            //adding into array for use of graph
-                            percentage[i] = double.Parse(table.Rows[i].ItemArray[j].ToString());
-                            //adding into array for use of graph
-                            estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
-                            estimateValue[i] = Math.Round(estimateValueYearly);
-                            excelLabel.Text += "<br>" + estimateValue[i] + "--"+ percentage[i] +"--"+yearList[i];
-                            excelLabel.ForeColor = System.Drawing.Color.White;
-                            Label_valuation2017.Text = sum.ToString();
-                            //current valuation
-                            Label_valuation2016.Text = estimateValue[i].ToString();
+                        //yearList[i] = year;
+                        //year++;
 
-                        }
+
+
+                        //for (int j = 0; j < table.Rows[i].ItemArray.Length; j++)
+                        //{
+                        //    sum+= double.Parse(table.Rows[i].ItemArray[j].ToString());
+                        //    //adding into array for use of graph
+                        //    percentage[i] = double.Parse(table.Rows[i].ItemArray[j].ToString());
+                        //    //adding into array for use of graph
+                        //    estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
+                        //    estimateValue[i] = Math.Round(estimateValueYearly);
+                        //    excelLabel.Text += "<br>" + estimateValue[i] + "--"+ percentage[i] +"--"+yearList[i];
+                        //    excelLabel.ForeColor = System.Drawing.Color.White;
+                        //    Label_valuation2017.Text = sum.ToString();
+                        //    //current valuation
+                        //    Label_valuation2016.Text = estimateValue[i].ToString();
+
+                        //----------------||New code for alternate solution||------------------
+                        //sum += double.Parse(table.Rows[i].ItemArray[0].ToString());
+                        yearList[i] = decimal.Parse(table.Rows[i].ItemArray[0].ToString());
+
+                        percentage[i] = double.Parse(table.Rows[i].ItemArray[1].ToString());
+                        estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
+                        estimateValue[i] = Math.Round(estimateValueYearly);
+                        //excelLabel.Text += "<br>" + estimateValue[i] + "--" + percentage[i] + "--" + yearList[i];
+                        //excelLabel.ForeColor = System.Drawing.Color.White;
+                        //Label_valuation2017.Text = sum.ToString();
+                        //current valuation
+                        valuation2017.Text = estimateValue[i].ToString();
+                        
                     }
-           
                     
+                    valuation2016.Text = estimateValue[i - 2].ToString();
+
                 }
+
+
+
             }
+            for (int i = 0; i < rowCount; i++)
+            {
+                Chart1.Series["Series1"].Points.AddXY(yearList[i], estimateValue[i]);
+
+            }
+
+
         }
     }
-
-       
 }

@@ -31,42 +31,6 @@ namespace HPICalculator {
         protected global::System.Web.UI.ScriptManager asm;
         
         /// <summary>
-        /// Label_area control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_area;
-        
-        /// <summary>
-        /// DropDownList_area control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_area;
-        
-        /// <summary>
-        /// Label_year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_year;
-        
-        /// <summary>
-        /// DropDownList_year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_year;
-        
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -103,22 +67,40 @@ namespace HPICalculator {
         protected global::System.Web.UI.WebControls.TextBox SliderValue;
         
         /// <summary>
-        /// LastUpdate control.
+        /// Label_area control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LastUpdate;
+        protected global::System.Web.UI.WebControls.Label Label_area;
         
         /// <summary>
-        /// Button_valuation2017 control.
+        /// DropDownList_area control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_valuation2017;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_area;
+        
+        /// <summary>
+        /// Label_year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_year;
+        
+        /// <summary>
+        /// DropDownList_year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_year;
         
         /// <summary>
         /// Label_valuation2017 control.
@@ -130,13 +112,13 @@ namespace HPICalculator {
         protected global::System.Web.UI.WebControls.Label Label_valuation2017;
         
         /// <summary>
-        /// Button_valuation2016 control.
+        /// valuation2017 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_valuation2016;
+        protected global::System.Web.UI.WebControls.TextBox valuation2017;
         
         /// <summary>
         /// Label_valuation2016 control.
@@ -148,6 +130,15 @@ namespace HPICalculator {
         protected global::System.Web.UI.WebControls.Label Label_valuation2016;
         
         /// <summary>
+        /// valuation2016 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox valuation2016;
+        
+        /// <summary>
         /// Button_checkhouseprice control.
         /// </summary>
         /// <remarks>
@@ -157,21 +148,12 @@ namespace HPICalculator {
         protected global::System.Web.UI.WebControls.Button Button_checkhouseprice;
         
         /// <summary>
-        /// excelLabel control.
+        /// Chart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label excelLabel;
-        
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
     }
 }

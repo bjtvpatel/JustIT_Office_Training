@@ -20,3 +20,7 @@ C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalcula
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\obj\Debug\HPICalculator.pdb
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\bin\Microsoft.ScriptManager.MSAjax.dll
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\obj\Debug\HPICalculator.csprojResolveAssemblyReference.cache
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\bin\System.Web.DataVisualization.Design.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\bin\System.Web.DataVisualization.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\bin\System.Windows.Forms.DataVisualization.Design.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\HPICalculator\HPICalculator\bin\System.Windows.Forms.DataVisualization.dll
