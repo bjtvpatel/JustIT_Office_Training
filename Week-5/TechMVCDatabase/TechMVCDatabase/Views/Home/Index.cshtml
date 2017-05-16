@@ -8,14 +8,10 @@
 }
 
 <div class="jumbotron jumbotron-cs">
-    
-    @*<video controls="controls" autoplay >
-        <source src="~/App_Data/342125205.mp4"  type="video/mp4" />
-    </video>">*@
-        @*<iframe width="auto" height="215" src="https://www.youtube.com/embed/LbSy3Nn4TuE" frameborder="0"></iframe>*@
-    
-    <p class="lead"></p>
-</div>
+   </div> 
+   
+   
+  
 
 <section>
     <div class="container-fluid">
@@ -29,7 +25,7 @@
                 @using (Html.BeginForm())
             {
                     <span class="dropdown dropdown-menu-left dropdown-cs">Category:  @Html.DropDownList("techCategory", "All")</span>
-                    <span class="dropdown-cs">Brand:  @Html.DropDownList("techBrand", "All")</span>
+                    <span class="dropdown dropdown-menu-left dropdown-cs">Brand:  @Html.DropDownList("techBrand", "All")</span>
                     <span class="dropdown-cs">Model:  @Html.TextBox("searchString")</span>
                     <input type="submit" value="Filter" class="btn btn-default btn-filter" />
 
@@ -39,19 +35,7 @@
 
         <div class="row row-display">
             <div class="col-md-12">
-                @*<table class="table-responsive table table-bordered">*@
-                @*<tr>
-                            <td>@Html.DisplayNameFor(model => model.Brand)</td>
-                            <td>@Html.DisplayNameFor(model => model.ModelName)</td>
-                          <td>@Html.DisplayNameFor(model => model.Category)</td>
-                            <td>@Html.DisplayNameFor(model => model.Price) </td>
-                    <td>@Html.DisplayNameFor(model => model.Photo)
-                    </td>
-                        </tr>*@
-                @{
-                    var c = Model.Any();
-
-                }
+                
                 @foreach (var item in Model)
                 {
                     <div class="col-md-3 column-display">

@@ -30,19 +30,24 @@ textarea {
 
 .bgImage {
     background-color: white;
+    color: rgb(40, 36, 36) !important;
+    z-index: 10;
 }
 
 .navbar-inverse {
-    opacity: 0.7;
-    
+    /*opacity: 0.9;*/
+    color: white !important;
+    z-index: 11;
 }
 .navbar-cs {
     opacity: 0.7;
+    color: white !important;
+    z-index: 12;
 }
 .jumbotron-cs{
-    height: auto;
+    height: 50px;
     /*background-image: url(https://raw.githubusercontent.com/bjtvpatel/JustIT_Office_Training/master/Week-5/TechMVCDatabase/Photos/Banner/banner_1015x303.jpg);*/
-    top: -100px;
+    
     
 }
 .creatRow-cs {
