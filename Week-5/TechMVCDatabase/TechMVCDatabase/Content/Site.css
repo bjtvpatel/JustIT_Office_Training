@@ -55,7 +55,7 @@ textarea {
 .column-display {
     height: 300px;
     position: relative;
-    background-color: azure;
+    /*background-color: azure;*/
     border: 2px solid black;
     text-align: center;
     font-style: normal;
