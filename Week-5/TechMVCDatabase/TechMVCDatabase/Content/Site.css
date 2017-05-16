@@ -27,12 +27,21 @@ textarea {
 
 /*Custome style..*/
 
+
 .bgImage {
-    background-color: azure;
+    background-color: white;
 }
 
+.navbar-inverse {
+    opacity: 0.7;
+    
+}
+.navbar-cs {
+    opacity: 0.7;
+}
 .jumbotron-cs{
     height: auto;
+ 
 
 }
 .createLabel {
@@ -59,6 +68,7 @@ textarea {
 .column-display p {
 
     text-align: center;
-
+    
+    
     
 }

@@ -24,7 +24,7 @@ namespace TechMVCDatabase
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-lumen.css",
+                      "~/Content/bootstrap-sand.css",
                       "~/Content/site.css"));
         }
     }
