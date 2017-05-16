@@ -95,9 +95,6 @@ namespace TechMVCDatabase.Controllers
         [HttpPost]
         public ActionResult CreatRecord(TechDetail techDetail)
         {
-            
-
-
             //if data is valid 
             if (ModelState.IsValid)
             {

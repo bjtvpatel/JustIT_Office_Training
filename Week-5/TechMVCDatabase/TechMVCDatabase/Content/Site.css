@@ -41,34 +41,74 @@ textarea {
 }
 .jumbotron-cs{
     height: auto;
- 
-
+    /*background-image: url(https://raw.githubusercontent.com/bjtvpatel/JustIT_Office_Training/master/Week-5/TechMVCDatabase/Photos/Banner/banner_1015x303.jpg);*/
+    top: -100px;
+    
+}
+.creatRow-cs {
+    margin-left: 5px;
 }
 .createLabel {
-    padding-left: 100px;
+    padding: 5px 0px;
+    font-size: 1.1em;
+    margin-left: 0px;
+    width: 150px;
+    
+}
+.btn-filter {
+    padding: 5px 0px;
+    font-size: 1.1em;
+    margin-left: 10px;
+    width: 70px;
+}
+.dropdown-cs {
+    padding: 5px 0px;
+    font-size: 1.1em;
+    margin-left: 10px;  
 }
 .row-display {
     vertical-align: middle;
     align-content: center;
-    margin-left: 100px;
+    
 }
 .column-display {
-    height: 300px;
+    height: 490px;
+    width: 350px;
     position: relative;
     /*background-color: azure;*/
-    border: 2px solid black;
+    border: 1px solid  #e6e6e6;
     text-align: center;
     font-style: normal;
     font-family: sans-serif;
     font-size: 1.1em;
-    margin: 10px 15px;
+    margin: 10px 10px;
+    padding: 0px;
     
 }
 
 .column-display p {
-
+    margin-top: 5px; 
     text-align: center;
+     
+}
+.imgGallary-cs {
+    height: 375px;
+    width: 275px;
+    display: inline-block;
+    border: 0px;
     
+}
+
+.rowLabel-cs
+{
+
+    margin-left: 45px;
+      
+}
+.columnlable-cs
+{
+    padding: 0px 20px;
     
-    
+     
+    margin-left: 0px;
 }
