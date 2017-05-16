@@ -19,3 +19,109 @@
     </compilers>
   </system.codedom>
 </configuration>
+
+
+//date 08-may-2017 program which was working ok and now working on to improve the behaviour
+ protected void Button_checkhouseprice_Click(object sender, EventArgs e)
+        {
+            string queryArea = DropDownList_area.SelectedItem.Text.ToString();
+            string queryYear = DropDownList_year.SelectedItem.Text.ToString();
+
+            //data query to retrieve data 
+            string cmdText = "select [Period], [PercentageAnnualChange] from [Harrow$] where [Name]='" + queryArea + "'" + " AND [Period]>='" + queryYear + "'";
+            estimateValue(cmdText);
+            
+        }
+
+        private void estimateValue(string cmdText)
+        {
+            double purchaseprice;
+            double[] percentage;
+            double[] estimateValue;
+            decimal[] yearList;
+            int rowCount;
+
+            purchaseprice = double.Parse(SliderValue.Text);
+
+
+            string path = Server.MapPath("~/App_Data/HPI_data.xlsx");
+
+            //string connectionStr = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source=" + path + "; Extended Properties=\"Excel 12.0 Xml; HDR=YES;IMEX = 1; ImportMixedTypes=Text;\";";
+            string connectionStr = "Provider = Microsoft.ACE.OLEDB.12.0;Data Source=" + path + "; Extended Properties=\"Excel 12.0 Xml; HDR=YES;IMEX = 1; ImportMixedTypes=Text;\";";
+            Console.WriteLine(connectionStr);
+
+
+            using (var connection = new OleDbConnection(connectionStr))
+            using (var command = connection.CreateCommand())
+            {
+                connection.Open();
+                //retrieve data since purchase date
+                command.CommandText = cmdText;
+                //  command.CommandText = "select PercentageAnnualChange from [Sheet1$] where ([Name] = '" + queryArea + "') && ([Period] >= '" + queryYear+"')";
+                var table = new DataTable();
+                using (var reader = command.ExecuteReader())
+                {
+                    table.Load(reader);
+                    //calculate total percentage change since purchase date
+
+                    rowCount = table.Rows.Count;
+                    //decimal year = Convert.ToDecimal(DropDownList_year.Text.ToString());
+                    yearList = new decimal[rowCount];
+                    percentage = new double[rowCount];
+                    estimateValue = new double[rowCount];
+                    //double sum=0;
+                    double estimateValueYearly = purchaseprice;
+                    int i;
+                    for (i = 0; i < rowCount; i++)
+                    {
+
+
+                        //yearList[i] = year;
+                        //year++;
+
+
+
+                        //for (int j = 0; j < table.Rows[i].ItemArray.Length; j++)
+                        //{
+                        //    sum+= double.Parse(table.Rows[i].ItemArray[j].ToString());
+                        //    //adding into array for use of graph
+                        //    percentage[i] = double.Parse(table.Rows[i].ItemArray[j].ToString());
+                        //    //adding into array for use of graph
+                        //    estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
+                        //    estimateValue[i] = Math.Round(estimateValueYearly);
+                        //    excelLabel.Text += "<br>" + estimateValue[i] + "--"+ percentage[i] +"--"+yearList[i];
+                        //    excelLabel.ForeColor = System.Drawing.Color.White;
+                        //    Label_valuation2017.Text = sum.ToString();
+                        //    //current valuation
+                        //    Label_valuation2016.Text = estimateValue[i].ToString();
+
+                        //----------------||New code for alternate solution||------------------
+                        //sum += double.Parse(table.Rows[i].ItemArray[0].ToString());
+                        yearList[i] = decimal.Parse(table.Rows[i].ItemArray[0].ToString());
+
+                        percentage[i] = double.Parse(table.Rows[i].ItemArray[1].ToString());
+                        estimateValueYearly = (estimateValueYearly + (estimateValueYearly * percentage[i]) / 100);
+                        estimateValue[i] = Math.Round(estimateValueYearly);
+                        //excelLabel.Text += "<br>" + estimateValue[i] + "--" + percentage[i] + "--" + yearList[i];
+                        //excelLabel.ForeColor = System.Drawing.Color.White;
+                        //Label_valuation2017.Text = sum.ToString();
+                        //current valuation
+                        valuation2017.Text = estimateValue[i].ToString();
+                        
+                    }
+                    
+                    valuation2016.Text = estimateValue[i - 2].ToString();
+
+                }
+
+
+
+            }
+            for (int i = 0; i < rowCount; i++)
+            {
+                Chart1.Series["Series1"].Points.AddXY(yearList[i], estimateValue[i]);
+
+            }
+
+
+        }

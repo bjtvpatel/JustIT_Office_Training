@@ -75,3 +75,24 @@ at top of the file put your name of module, description, your name and date and 
 comments all class and method and anything that is hard to understand 
 
 http://www.flatuicolorpicker.com/
+
+
+https://member3-2.smarterasp.net/account/account_screen
+Step -1 
+Hosting Account ID:	bjtvlondon-001
+      First Website Root Folder Name:	baldev
+      First Website Type:	ASP.NET
+      Hosting Plan Name:	W60-EU
+      	
+      	Please Record The Following FTP Infomation:
+      FTP Address :	FTP-EU.SMARTERASP.NET
+      FTP Username :	bjtvlondon-001
+      FTP Password :	(same as your control panel password)
+      FTP Directory	
+      	
+Domain Name Added. Please point your domain's DNS server to NS1.SITE4NOW.NET & NS2.SITE4NOW.NET & NS3.SITE4NOW.NET
+
+
+-------------------------
+custom bootstrap theme
+https://bootswatch.com/

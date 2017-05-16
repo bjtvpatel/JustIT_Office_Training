@@ -6,12 +6,15 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MVCMovies21042017.Controllers
 {
     public class HomeController : Controller
     {
 
-        private Movies210417BPEntities db = new Movies210417BPEntities();
+        private Movies210417BPEntities3 db = new Movies210417BPEntities3();
+
+        //private Movies210417BPEntities db = new Movies210417BPEntities();
         // GET: Home
         //public ActionResult Index()
         //{
@@ -61,7 +64,7 @@ namespace MVCMovies21042017.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
             }
-            Movie movie = db.Movies.Find(id);
+            Movy movie = db.Movies.Find(id);
             if (movie == null)
             {
                 return HttpNotFound();
@@ -77,7 +80,7 @@ namespace MVCMovies21042017.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Movie movie)
+        public ActionResult Create(Movy movie)
         {
            
 
@@ -101,7 +104,7 @@ namespace MVCMovies21042017.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
             }
-            Movie movie = db.Movies.Find(id);
+            Movy movie = db.Movies.Find(id);
             if (movie == null)
             {
                 return HttpNotFound();
@@ -111,7 +114,7 @@ namespace MVCMovies21042017.Controllers
 
         }
         [HttpPost]
-        public ActionResult Edit(Movie movie)
+        public ActionResult Edit(Movy movie)
         {
 
 
@@ -138,7 +141,7 @@ namespace MVCMovies21042017.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
             }
-            Movie movie = db.Movies.Find(id);
+            Movy movie = db.Movies.Find(id);
             if (movie == null)
             {
                 return HttpNotFound();
@@ -151,7 +154,7 @@ namespace MVCMovies21042017.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
            
-            Movie movie = db.Movies.Find(id);
+            Movy movie = db.Movies.Find(id);
             db.Movies.Remove(movie);
             db.SaveChanges();
 

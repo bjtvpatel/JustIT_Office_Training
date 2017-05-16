@@ -1,4 +1,110 @@
-﻿//var btnclick = document.getElementById("Button_checkhouseprice");
+﻿
+drawChart = function(count, yearList, estimateValue) {
+
+    var year = [];
+    var value = [];
+
+
+    year = yearList;
+    value = estimateValue;
+
+    Console.log("success");
+    window.alert("Calling drawChart");
+
+    var chart = new CanvasJS.Chart("divChart",
+        {
+            title:
+            {
+                text: "House Price Index"
+            },
+            animatedEnabled: true,
+            axisX: {
+                valueFormatString: "MM-YYYY",
+                interval: 1,
+                intervalType: "year"
+            },
+            axisY: {
+                includeZero: false
+            },
+
+            data: [
+                {
+                    type: "line",
+
+                    dataPoints: [
+                        { x: yearList[count], y: estimateValue[count] }
+                    ]
+                }
+            ]
+
+        });
+
+    chart.render();
+};
+
+//$(function () {
+    
+//    document.getElementById("Button_checkhouseprice").onclick(function () {
+//        var datapts = [];
+        
+        
+//        $.ajax({
+//            cache: false,
+//            async: true,
+//            type: "GET",
+//            datatype: "Json",
+//            contentType: "application/json; charset=utf-8",
+//            url: "Default.aspx/GetChartData",
+//            data: {},
+//            sucess: function (data) {
+
+//                var len = data.d.length;
+
+//                for (var i = 0; i < len; i++) {
+//                    datapts.push({
+//                        x: parseDecimal(data.d[i].year),
+//                        y: parseDecimal(data.d[i].valuation2017)
+//                    });
+//                }
+
+//                var chart = new canvasJS.Chart("#divChart", {
+//                    title:
+//                        {
+//                            text: "House Price Index"
+//                },
+//                data:[{type:"line", dataPoints: datapts}]
+            
+//            });
+//            chart.render();
+//            },
+//        error: function(result) {
+//            alert(result);
+//        }
+//        });
+//    });
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//var btnclick = document.getElementById("Button_checkhouseprice");
 //btnclick.addEventListener("click", loadJsondata(), true);
 
 //function loadJsondata() {
@@ -85,3 +191,5 @@
 //        });
 //    });
 //});
+
+

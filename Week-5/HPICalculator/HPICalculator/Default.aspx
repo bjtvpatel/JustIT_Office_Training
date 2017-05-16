@@ -55,7 +55,7 @@
                                         
                                              <div class="col-md-1 col-sm-1 triagle" ><i class="glyphicon glyphicon-triangle-left "></i></div>
                                              <div class="col-md-10 col-sm-10 slide-input" > 
-                                                 <ajaxToolkit:SliderExtender ID="se1" runat="server" HandleCssClass="sliderhandle" HandleImageUrl="~/App_Image/marker.png" RailCssClass="sliderrail" EnableHandleAnimation="true" TargetControlID="Slider1" BoundControlID="SliderValue" Minimum="0" Maximum="1000000" />
+                                                 <ajaxToolkit:SliderExtender ID="se1" runat="server" HandleCssClass="sliderhandle"  HandleImageUrl="~/App_Image/marker.png" RailCssClass="sliderrail" EnableHandleAnimation="true" TargetControlID="Slider1" BoundControlID="SliderValue" Minimum="0" Maximum="1000000" />
                                                  <asp:TextBox ID="Slider1" runat="server" AutoPostBack="false" CssClass="slide-input" Enabled="true" /></div>
                                              <div class="col-md-1 col-sm-1 triagle"> <i class="glyphicon glyphicon-triangle-right"></i></div>
                                          </div>
@@ -66,7 +66,7 @@
                                      </div>
                                         <%-- <i class="glyphicon glyphicon-gbp"></i>--%>
                                         <div class="col-md-2 col-sm-12 priceLabel">
-                                            <asp:Textbox ID="SliderValue"  CssClass="btn btn-info priceText" width="110px" runat="server" /> 
+                                            <asp:Textbox ID="SliderValue"  AutoPostBack="false" CssClass="btn btn-info priceText" width="110px" runat="server" /> 
                                          
                                              </div><div  class="maxPrice"><p >(max. £1000000)</p></div>
                                         <%--<asp:Label ID="LastUpdate"  runat="server" ForeColor="White"   Font-Size="8" />--%>
@@ -130,21 +130,29 @@
                 <div class="col-md-12 col-sm-12">
 
                        <%--asp.net chart application--%>
-             
-                       
-                          <div id="chartContainer" style="height: 350px; margin-left:30px; width: auto;">
-                              <asp:Chart ID="Chart1"  runat="server" BackColor="Gainsboro" BackGradientStyle="LeftRight" BackImageTransparentColor="224, 224, 224" BackSecondaryColor="192, 192, 255" BorderlineColor="Transparent" BorderlineWidth="0" Palette="Berry" TextAntiAliasingQuality="SystemDefault" Width="1100px">
+                                    
+                          <div id="chartContainer">
+                              <asp:Chart ID="Chart1"   runat="server"  AntiAliasing="all"  BackGradientStyle="TopBottom" BackImageTransparentColor="91, 192, 222" BackSecondaryColor="192, 192, 255" BorderlineColor="Transparent" BorderlineWidth="0" Palette="Berry" TextAntiAliasingQuality="SystemDefault" Width="1100px">
                                   <Titles>
-                                      <asp:Title Text="" Alignment="TopCenter"></asp:Title>
+                                      <asp:Title Text="House Price Growth"  Alignment="TopCenter">
+                                          
+                                      </asp:Title>
                                   </Titles>
                                   <Series>
                                       <asp:Series Name="Series1" ChartType="Line"  Legend="legend1">
                                       </asp:Series>
                                   </Series>
                                   <ChartAreas>
-                                      <asp:ChartArea Name="ChartArea1">
-                                          <AxisX Title="Year"></AxisX>
-                                          <AxisY Title="House Price"></AxisY>
+                                      <asp:ChartArea  Name="ChartArea1" >
+                                          <AxisX  Title="Year" TitleForeColor="Black" >
+                                              <LabelStyle Font="Trebuchet MS, 20pt" />
+                                              <MajorGrid LineColor="64, 64, 64, 64" />
+                                          </AxisX>
+                                          <AxisY Title="House Price" TitleForeColor="Black">
+                                              <LabelStyle Font="Trebuchet MS, 20pt" />
+                                              <MajorGrid  LineColor="64, 64, 64, 64" />
+                                              
+                                          </AxisY>
                                       </asp:ChartArea>
                                   </ChartAreas>
                                   <BorderSkin BackColor="Transparent" BorderColor="Transparent" BorderDashStyle="DashDotDot" />
@@ -152,7 +160,7 @@
                           </div>
                         </div>
                     </div>
-                <div class="row well well-header"> <div class="col-md-12" style="color:#fff; font-size: 14px; font-family: 'Century Gothic'; font-weight: bolder; text-align:center">
+                <div class="row well well-header"> <div class="col-md-12 col-sm-12" style="color:#fff; font-size: 14px; font-family: 'Century Gothic'; font-weight: bolder; text-align:center">
                         <p>Developed by: Baldev Patel</p>
                         <p>Resource: Land Registry Data</p>
                     </div></div>
@@ -161,18 +169,19 @@
         
         </div>
         <%---------------------||example of JSONData||--------------------------%>
-        <%--<div class="JSONdata">
-            <asp:Label ID="excelLabel" runat="server"></asp:Label>
+        <div id="divChart" class="JSONdata">
+            <%--<asp:Label ID="excelLabel" Text="JSON_Data_Chart" runat="server"></asp:Label>--%>
         </div>
-       --%>
+
        
         <%---------------------------||script links||--------------------%>
         
-        <script type="text/javascript" src="/canvasJS/canvasjs.min.js"></script>
+       
         <script src="Scripts/bootstrap.min.js"></script>
         <script src="Scripts/bootstrap.js"></script>
         <script src="Scripts/jquery-1.9.1.js"></script>
         <script src="Scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/canvasJS/canvasjs.min.js"></script>
         <script src="App_Script/hpi.js"></script>
          
     </form>

@@ -1,0 +1,71 @@
+﻿@using System.ServiceModel.Channels
+@using Microsoft.Ajax.Utilities
+@using TechMVCDatabase.Models
+
+@model IEnumerable<TechMVCDatabase.Models.TechDetail>
+@{
+    ViewBag.Title = "Gadget HUB";
+}
+
+    <div class="jumbotron jumbotron-cs">
+        <h2>Gadget-Hub</h2>
+        <p class="lead">Add, Edit, Delete, Search, Filter, Compare, Share</p>
+        
+    </div>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 btn createLabel">
+                <p>
+                    @Html.ActionLink("Create Record", "CreatRecord")
+                </p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                @using (Html.BeginForm())
+            {
+                <p class="dropdown">
+                    Category:@Html.DropDownList("techCategory", "All")
+                    Brand:@Html.DropDownList("techBrand", "All")
+                    Model: @Html.TextBox("searchString") <input type="submit" value="Filter"/>
+                </p>
+                }
+            </div>
+        </div>
+
+        <div class="row row-display">
+            <div class="col-md-12">
+                @*<table class="table-responsive table table-bordered">*@
+                @*<tr>
+                            <td>@Html.DisplayNameFor(model => model.Brand)</td>
+                            <td>@Html.DisplayNameFor(model => model.ModelName)</td>
+                          <td>@Html.DisplayNameFor(model => model.Category)</td>
+                            <td>@Html.DisplayNameFor(model => model.Price) </td>
+                    <td>@Html.DisplayNameFor(model => model.Photo)
+                    </td>
+                        </tr>*@
+                @{
+                    var c = Model.Any();
+
+                }
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 column-display">
+                      <p>@Html.DisplayFor(t => item.Brand) - @Html.DisplayFor(t => item.ModelName)</p>
+                        <div class="img-responsive">
+                            <a href="@Url.Action("DetailRecord", new {id=item.Id})"><img src="@Url.Content(@item.Photo)" alt="item.AlternateText" class="img-thumbnail img-responsive" /></a>
+                        </div>
+                        <p>£@Html.DisplayFor(t => item.Price)</p>
+                        <div class="row">
+                            <div class="col-md-4"><span>@Html.ActionLink("Detail", "DetailRecord", new { id = item.Id })</span></div>
+                            <div class="col-md-4"><span>@Html.ActionLink("Edit", "EditRecord", new { id = item.Id })</span></div>
+                            <div class="col-md-4"><span>@Html.ActionLink("Delete", "DeleteRecord", new { id = item.Id })</span></div>
+                            
+                            @*<span>@Html.ActionLink("Compare", "CreatRecord")</span>*@
+                        </div>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+    </section>

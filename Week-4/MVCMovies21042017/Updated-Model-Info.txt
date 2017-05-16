@@ -1,0 +1,8 @@
+metadata=res://*/Models.Model2.csdl|res://*/Models.Model2.ssdl|res://*/Models.Model2.msl;provider=System.Data.SqlClient;provider connection string="data source=M-1-PC;initial catalog=Movies210417BP;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
+
+Movies210417BPEntities3
+
+Movies210417BPModel1
+
+
+
