@@ -5,77 +5,91 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>DeleteRecord</h2>
+<h2></h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>TechDetail</h4>
+<div class="wrapper-cs">
+    <h3>Are you sure you want to delete this?</h3>
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Brand)
-        </dt>
+    <div class="row">
+        <div class="col-md-7">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Brand)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Brand)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Brand)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ModelName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ModelName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ModelName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.ModelName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Category)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Category)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Image)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Photo)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AlternateText)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.AlternateText)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AlternateText)
-        </dt>
+            </dl>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+                <dd>
+                    <img src="@Url.Content(@Model.Photo)" alt="@Model.AlternateText" class="imgGallary-cs img-responsive" />
+                    @*@Html.DisplayFor(model => model.Image)*@
+                </dd>
+            </dl>
+        </div>
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.AlternateText)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+        <div class="row">
+            @*<div class="col-md-5 goback-cs">
+                @Html.ActionLink("Back to List", "Index")
+            </div>*@
+            <div class="col-md-7 col-md-offset-5">
+                <input type="submit" value="Delete" class="btn btn-default" />
+            </div>
+
         </div>
     }
+    <p>@Html.ActionLink("Back to List", "Index")</p>
 </div>

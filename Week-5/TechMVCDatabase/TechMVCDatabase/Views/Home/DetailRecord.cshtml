@@ -5,71 +5,79 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>DetailRecord</h2>
+<h2></h2>
 
-<div>
-    <h4>TechDetail</h4>
+<div class="form-horizontal wrapper-cs">
+    <h3>Tech Gadget Detail</h3>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Brand)
-        </dt>
+    <div class="row">
+        <div class="col-md-7">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Brand)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Brand)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Brand)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ModelName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ModelName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ModelName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.ModelName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Category)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Category)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Image)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Photo)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AlternateText)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.AlternateText)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AlternateText)
-        </dt>
+            </dl>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+                <dd>
+                    <img src="@Url.Content(@Model.Photo)" alt="@Model.AlternateText" class="imgGallary-cs img-responsive" />
+                    @*@Html.DisplayFor(model => model.Image)*@
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "EditRecord", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.AlternateText)
-        </dd>
-
-    </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "EditRecord", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

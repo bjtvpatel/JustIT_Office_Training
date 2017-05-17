@@ -5,84 +5,80 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>CreatRecord</h2>
+<div class="wrapper-cs">
 
-@Html.ActionLink("Go Back", "Index")
-@using (Html.BeginForm())
-{
-    <div class="form-horizontal">
-        <h4>Enter New Record Detail</h4>
+    @using (Html.BeginForm())
+    {
+        <div class="form-horizontal ">
+            <h3>Add New Record</h3>
+            <h4></h4>
 
-        <div class="row">
-            <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
 
-                <div class="form-group">
-                    @Html.LabelFor(t => t.Brand, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(t => t.Brand, new { htmlAttributes = new { @class = "form-control" } })
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.Brand, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(t => t.Brand, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    @Html.LabelFor(t => t.ModelName, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(t => t.ModelName, new { htmlAttributes = new { @class = "form-control" } })
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.ModelName, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(t => t.ModelName, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="form-group">
-                    @Html.LabelFor(t => t.Category, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        
-                        @*@using (Html.BeginForm())
-                        {
-                            <p class="dropdown">@Html.DropDownListFor(t=>t.Category, new SelectList(ViewBag.ToString(), "Category","Select Category"))</p>
-                        }*@
-                        @Html.EditorFor(t => t.Category, new { htmlAttributes = new { @class = "form-control" } })
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.Category, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+
+                            @*@using (Html.BeginForm())
+                                {
+                                    <p class="dropdown">@Html.DropDownListFor(t=>t.Category, new SelectList(ViewBag.ToString(), "Category","Select Category"))</p>
+                                }*@
+                            @Html.EditorFor(t => t.Category, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="form-group">
-                    @Html.LabelFor(t => t.Price, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(t => t.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(t => t.Price, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="form-group">
-                    @Html.LabelFor(t => t.Photo, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(t => t.Photo, new { htmlAttributes = new { @class = "form-control" } })
+
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.Photo, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(t => t.Photo, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Create Record" class="btn btn-default" />
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-                <div class="form-group">
-
-                    <div class="row">
-                        @using (Html.BeginForm("FileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                        {
-                            <input name="uploadFile" type="file" />
-                            <input type="submit" value="Upload Image" />
-                        }
-                        @*@if (!string.IsNullOrEmpty(Model))
+                    <div class="form-group">
+                        @Html.LabelFor(t => t.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @using (Html.BeginForm("FileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
                             {
-                                <img src="@Url.Content(Model)" alt=""/>
-                            }*@
-                    </div>
-                    <div class="row">
-                        <img alt="new record Image" src="" />
+                                <p><input name="uploadFile" type="file" /></p>
 
+                                <p><input type="submit" value="Upload Image" /></p>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="form-group">
+                        <div class="row imgGallary-cs">
+                        
+                            <img alt="new record Image" src="" />
+                        </div>
                         <div class="form-group">
                             @*@Html.LabelFor(t => t.Photo, htmlAttributes: new { @class = "control-label col-md-2" })*@
                             <div class="col-md-10">
@@ -93,7 +89,24 @@
                     </div>
                 </div>
             </div>
+         
+        </div>
 
+
+    }
+    
+    <div class="row">
+        @*<div class="col-md-2 btn btn-link goback-cs">
+            <i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>
+            @Html.ActionLink("Back to List", "Index")
+        </div>*@
+        <div class="col-md-7 col-md-offset-5">
+            <input type="submit" value="Create Record" class="btn btn-default"/>
         </div>
     </div>
-}
+    <p>
+    @*<i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>*@
+    @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</div>

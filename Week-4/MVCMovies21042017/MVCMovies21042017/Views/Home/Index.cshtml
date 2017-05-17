@@ -36,7 +36,8 @@
         <td>@Html.DisplayFor(m => item.Genre)</td>
         <td>@Html.DisplayFor(m => item.Price)</td>
         <td>
-        @Html.ActionLink("Edit Record", "Edit", new { id = item.Id })
+        @Html.ActionLink("Edit Record", "Edit",
+             new { id = item.Id })
         @Html.ActionLink("Details Record", "Details", new { id = item.Id })
         @Html.ActionLink("Delete Record", "Delete", new { id = item.Id })
         </td>

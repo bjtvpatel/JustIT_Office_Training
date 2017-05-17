@@ -1,4 +1,9 @@
-﻿@using System.ServiceModel.Channels
+﻿@*@model PagedList.IPagedList< TechMVCDatabase.Models.TechDetail>*@
+@using System.Data.SqlClient
+@*@using PagedList.Mvc;*@
+@*<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css"/>*@
+
+@using System.ServiceModel.Channels
 @using Microsoft.Ajax.Utilities
 @using TechMVCDatabase.Models
 
@@ -22,12 +27,14 @@
 
             </div>
             <div class="col-md-7 col-md-offset-3">
+                @*@using (Html.BeginForm("Index", "TechDetail", FormMethod.Get))*@
                 @using (Html.BeginForm())
-            {
-                    <span class="dropdown dropdown-menu-left dropdown-cs">Category:  @Html.DropDownList("techCategory", "All")</span>
-                    <span class="dropdown dropdown-menu-left dropdown-cs">Brand:  @Html.DropDownList("techBrand", "All")</span>
-                    <span class="dropdown-cs">Model:  @Html.TextBox("searchString")</span>
-                    <input type="submit" value="Filter" class="btn btn-default btn-filter" />
+                {
+                    <span class="dropdown dropdown-menu-left dropdown-cs">Category: @Html.DropDownList("techCategory", "All")</span>
+                    <span class="dropdown dropdown-menu-left dropdown-cs">Brand: @Html.DropDownList("techBrand", "All")</span>
+                    <span class="dropdown-cs">Model: @Html.TextBox("searchString")</span>
+                @*<span class="dropdown-cs">Model:  @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>*@
+                    <input type="submit" value="Filter" class="btn btn-default btn-filter"/>
 
                 }
             </div>
@@ -35,7 +42,7 @@
 
         <div class="row row-display">
             <div class="col-md-12">
-                
+
                 @foreach (var item in Model)
                 {
                     <div class="col-md-3 column-display">
@@ -52,8 +59,13 @@
                             @*<span>@Html.ActionLink("Compare", "CreatRecord")</span>*@
                         </div>
                     </div>
+
                 }
             </div>
         </div>
+        <br />
+        @*Page@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            @Html.PagedListPager(Model,page=>Url.Action("Index", new {page, currentFilter=ViewBag.CurrentFilter}))*@
     </div>
 </section>
+

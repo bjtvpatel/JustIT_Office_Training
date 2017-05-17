@@ -44,12 +44,20 @@ textarea {
     color: white !important;
     z-index: 12;
 }
+
+h3 {
+    text-align: center;
+}
+
+/*----------------|Header Section|--------------------*/
 .jumbotron-cs{
     height: 50px;
     /*background-image: url(https://raw.githubusercontent.com/bjtvpatel/JustIT_Office_Training/master/Week-5/TechMVCDatabase/Photos/Banner/banner_1015x303.jpg);*/
     
     
 }
+
+/*----------------|Index Page Section|--------------------*/
 .creatRow-cs {
     margin-left: 5px;
 }
@@ -116,4 +124,18 @@ textarea {
     
      
     margin-left: 0px;
+}
+
+/*----------------|Common Page controls|--------------------*/
+.goback-cs {
+    font-size: 1.1em;
+    padding-top: 0px;
+}
+
+.wrapper-cs {
+    width: 100% !important;
+    height: auto;
+    border: 1px solid grey !important;
+    margin: 20px 10px 0px 10px !important;
+    padding: 10px 10px !important;   
 }

@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.Owin.Security;
 using TechMVCDatabase.Models;
 using System.Net;
+using PagedList;
 
 namespace TechMVCDatabase.Controllers
 {
@@ -23,21 +24,31 @@ namespace TechMVCDatabase.Controllers
         //    return View(techdata);
         //}
 
-        public ActionResult Index(string techCategory, string techBrand, string searchString)
+        public ActionResult Index(string techCategory, string techBrand, string searchString, string currentFilter, int? page)
         {
+            //if (searchString != null)
+            //{
+            //    page = 1;
+            //}
+            //else
+            //{
+            //    searchString = currentFilter;
+            //}
+            //ViewBag.CurrentFilter = searchString;
+
             //brand
             var brandList = new  List<string>();
             var brandQuery = from b in db.TechDetails orderby b.Brand select b.Brand;
 
             brandList.AddRange(brandQuery.Distinct());
             ViewBag.techBrand = new SelectList(brandList);
-
+            
             //category
             var categoryList = new List<string>();
             var categoryQuery = from c in db.TechDetails orderby c.Category select c.Category;
 
             categoryList.AddRange(categoryQuery.Distinct());
-            ViewBag.techCategory = new SelectList(categoryList);
+            ViewBag.techCategory = new SelectList(categoryList,techCategory);
 
             //get all techdetail
             var techdata = from t in db.TechDetails
@@ -47,7 +58,9 @@ namespace TechMVCDatabase.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 techdata = techdata.Where(s => s.ModelName.Contains(searchString));
+               
             }
+
 
             //model searcgh -2 get all models of choosen model from db
             if (!String.IsNullOrEmpty(techBrand))
@@ -63,6 +76,9 @@ namespace TechMVCDatabase.Controllers
             }
 
             return View(techdata);
+            //int pageSize = 6;
+            //int pageNumber = (page ?? 1);
+            //return View(techdata.OrderBy(x=>x.Id).ToPagedList(pageNumber, pageSize));
         }
 
 

@@ -67,3 +67,7 @@ C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCD
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\obj\Debug\TechMVCDatabase.dll
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\obj\Debug\TechMVCDatabase.pdb
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\obj\Debug\TechMVCDatabase.csprojResolveAssemblyReference.cache
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\bin\PagedList.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\bin\PagedList.Mvc.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\bin\PagedList.xml
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\TechMVCDatabase\TechMVCDatabase\bin\PagedList.Mvc.xml
