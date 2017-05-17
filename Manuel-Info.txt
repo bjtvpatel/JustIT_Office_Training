@@ -92,6 +92,43 @@ Hosting Account ID:	bjtvlondon-001
       	
 Domain Name Added. Please point your domain's DNS server to NS1.SITE4NOW.NET & NS2.SITE4NOW.NET & NS3.SITE4NOW.NET
 
+..............	UK WEBHOSTING.............
+http://213.175.212.6:8880/login_up.php3
+Username: unitechc
+password: hatchend123
+
+
+//creating a database in webhosting 
+Add a Database
+General
+
+Database name *
+
+techMvc
+Database server 
+
+Related site 
+
+Users
+
+Create a default database user. Plesk will access the database on behalf of this user. If no database users are assigned to the database, it is not accessible.
+
+
+Create a database user 
+Database user name *
+
+bjtvlondon
+New password *
+
+•••••••••••
+Strong(?)
+Generate
+  Show
+Confirm password *
+
+•••••••••••
+ 
+User has access to all databases within the selected subscription 
 
 -------------------------
 custom bootstrap theme
