@@ -6,8 +6,8 @@
   animation: pulse 15s infinite;
 }*/
 .animationfrom-left {
-/*	color:#48f9ca !important;*/
-	color: rgb(25,181,254) !important;
+	color:#fff !important;
+	/*color: rgb(25,181,254) !important;*/
 	/*height:30px !important;*/
 	font-size: 50px !important;
 	font-weight: 700 !important;
@@ -38,7 +38,8 @@
   }
 
 .animationfrom-top {
-	color: rgb(232,84,0) !important;
+    color: #F74D4D !important;
+    /*color: rgb(232,84,0) !important;*/
 	font-size: 10px !important;
 	font-weight: 700 !important;
 	transition: color .5s linear;
@@ -68,7 +69,8 @@
 }
 
 .animationfrom-right {
-	color: rgb(249,191,59) !important;
+    color: #F74D4D !important;
+    /*color: #fff !important;*/
 	/*color: rgb(25,181,254) !important;*/
 	/*height:30px !important;*/
 	font-size: 20px !important;
@@ -78,7 +80,7 @@
 	-moz-transition: color .5s linear;
 	-webkit-animation-name: pulse-right;
 	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 3s;
+	-webkit-animation-iteration-count: 3;
 	-webkit-animation-direction: normal;
 	-webkit-animation-fill-mode: forwards;
 }
@@ -171,7 +173,8 @@ ul.social-buttonsBP {
 ul.social-buttonsBP li a {
   align-content: center;
   display: block;
-	 background-color:rgb(249,191,59);
+    background-color:#fff;
+  /*background-color:rgb(249,191,59);*/
 /*  background-color: #222222;*/
   height: 50px;
   width: 50px;
@@ -192,8 +195,8 @@ ul.social-buttonsBP li a:hover,
 ul.social-buttonsBP li a:focus,
 ul.social-buttonsBP li a:active {
 
-	background-color:#fff;
-/*	background-color: #F74D4D;*/
+	/*background-color:#fff;*/
+	background-color: #F74D4D;
 	/*yello color
 		background-color: #fed136;*/
 /*  color: #222222;*/
@@ -204,8 +207,8 @@ ul.social-buttonsBP li a:active {
 ul.social-buttonsBP  li.social-buttonsBP1  a:hover,
 ul.social-buttonsBP1 li.social-buttonsBP1  a:focus,
 ul.social-buttonsBP1 li.social-buttonsBP1  a:active {
-  background-color:#fff;
-
+  /*background-color:#fff;*/
+    background-color: #F74D4D;
 /*	background-color: #F74D4D;*/
   /*yello color
 		background-color: #fed136;*/
@@ -256,7 +259,9 @@ border-bottom: 1px solid #555;
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  color: rgb(249,191,59) !important;
+    
+  color: #F74D4D !important;
+    /*color: rgb(249,191,59) !important;*/
 }
 .navbar-default .navbar-nav > li > a {
 	color: #fff;
@@ -266,7 +271,9 @@ border-bottom: 1px solid #555;
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 /*    color: #000000;*/
-	color: rgb(249,191,59) !important;
+    
+    color: #F74D4D !important;
+	/*color: rgb(249,191,59) !important;*/
 	background-color: transparent;
 	-webkit-transition: all 2s ease-out;
 	-moz-transition: all 2s ease-out;
@@ -275,7 +282,8 @@ border-bottom: 1px solid #555;
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: rgb(25,181,254) !important;
+    color: #F74D4D !important;
+  /*color: rgb(25,181,254) !important;*/
 }
 /*
 .nav-tabs > li.active > a,
@@ -291,7 +299,9 @@ border-bottom: 1px solid #555;
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 /*  color: #000000;*/
-	color: rgb(249,191,59) !important;
+    	
+    /*color: rgb(249,191,59) !important;*/
+color:#F74D4D !important;
   background-color: transparent;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
@@ -316,14 +326,23 @@ border-bottom: 1px solid #555;
 }
 
 .imgBP{
- width: 50px;
-  height: 50px;
+    border: 1px solid gray !important;
+    height: 600px;
 
 }
 
 .img-responsive {
   margin: 0 auto;
 
+}
+.imgPortfolio {
+    height: 500px;
+    width: 500px;   
+}
+.textareaBP {
+    border: 1px solid gray;
+    height: 500px;
+    width: 500px;   
 }
 .portfolioTextBP{
   font-size: 15px;
@@ -336,12 +355,15 @@ border-bottom: 1px solid #555;
 
 
 }
+.demolink {
+    
+}
 
 .portfolioTextBP:hover
 {
  text-decoration: none !important;
-	color: rgb(249,191,59) !important;
-/*  color: #F74D4D !important;*/
+	/*color: rgb(249,191,59) !important;*/
+  color: #F74D4D !important;
   /*background-color: #444444 !important;*/
 
 }
@@ -485,8 +507,9 @@ top css line is for section for arrow
 
 	/*font-style chaged from 3px to 4px and color from #fff to #F74D4D*/
 	border-radius: 2px;
-	color: rgb(249,191,59) !important;
 
+	/*color: rgb(249,191,59) !important;*/
+      color: #F74D4D !important;
 	 display: inline-block;
 	height: 46px;
 	outline-style: none !important;
