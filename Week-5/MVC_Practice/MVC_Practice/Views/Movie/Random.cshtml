@@ -1,0 +1,19 @@
+﻿@using MVC_Practice.Models
+@model MVC_Practice.Models.Movie
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+
+    var type1 = typeof(Movie);
+}
+
+@{
+    var value = new Movie();
+}
+<h2>@Model.Name</h2>
+
+<h4>@type1</h4>
+
