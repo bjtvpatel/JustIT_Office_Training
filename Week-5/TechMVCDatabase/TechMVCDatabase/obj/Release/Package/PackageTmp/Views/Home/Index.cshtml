@@ -1,13 +1,18 @@
-﻿@*@model PagedList.IPagedList< TechMVCDatabase.Models.TechDetail>*@
-@using System.Data.SqlClient
-@*@using PagedList.Mvc;*@
-@*<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css"/>*@
+﻿@*//PAGING CODE STARTS*@
+@model PagedList.IPagedList<TechMVCDatabase.Models.TechDetail>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css"/>
+@*//PAGING CODE ENDS*@
+
 
 @using System.ServiceModel.Channels
 @using Microsoft.Ajax.Utilities
 @using TechMVCDatabase.Models
+@using System.Data.SqlClient
 
-@model IEnumerable<TechMVCDatabase.Models.TechDetail>
+@*//WITHOUT PAGING*@
+@*@model IEnumerable<TechMVCDatabase.Models.TechDetail>*@
+
 @{
     ViewBag.Title = "Gadget HUB";
 }
@@ -32,9 +37,11 @@
                 {
                     <span class="dropdown dropdown-menu-left dropdown-cs">Category: @Html.DropDownList("techCategory", "All")</span>
                     <span class="dropdown dropdown-menu-left dropdown-cs">Brand: @Html.DropDownList("techBrand", "All")</span>
-                    <span class="dropdown-cs">Model: @Html.TextBox("searchString")</span>
-                @*<span class="dropdown-cs">Model:  @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>*@
-                    <input type="submit" value="Filter" class="btn btn-default btn-filter"/>
+                    ////WITHOUT PAGING CODE
+                    @*<span class="dropdown-cs">Model: @Html.TextBox("searchString")</span>*@
+                    ////PAGING CODE
+                    <span class="dropdown-cs">Model:  @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>
+                    <input type="submit" value="Filter" class="btn btn-default btn-filter" />
 
                 }
             </div>
@@ -64,8 +71,12 @@
             </div>
         </div>
         <br />
-        @*Page@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
-            @Html.PagedListPager(Model,page=>Url.Action("Index", new {page, currentFilter=ViewBag.CurrentFilter}))*@
+        @*//PAGING CONTROL STARTS*@
+        Page@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            @Html.PagedListPager(Model,page=>Url.Action("Index", new {page, currentFilter=ViewBag.CurrentFilter}))
+        @*//PAGING CONTROL ENDS*@
     </div>
 </section>
+
+
 

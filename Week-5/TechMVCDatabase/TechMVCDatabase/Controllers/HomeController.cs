@@ -8,6 +8,7 @@ using TechMVCDatabase.Models;
 using System.Net;
 using PagedList;
 
+
 namespace TechMVCDatabase.Controllers
 {
     public class HomeController : Controller
@@ -26,15 +27,17 @@ namespace TechMVCDatabase.Controllers
 
         public ActionResult Index(string techCategory, string techBrand, string searchString, string currentFilter, int? page)
         {
-            //if (searchString != null)
-            //{
-            //    page = 1;
-            //}
-            //else
-            //{
-            //    searchString = currentFilter;
-            //}
-            //ViewBag.CurrentFilter = searchString;
+            //pagging code starts
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
+            //pagging code ends
 
             //brand
             var brandList = new  List<string>();
@@ -55,30 +58,34 @@ namespace TechMVCDatabase.Controllers
                 select t;
            
             //brand search
-            if (!String.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
-                techdata = techdata.Where(s => s.ModelName.Contains(searchString));
+                techdata = techdata.Where(s => s.ModelName.Contains(searchString)).OrderBy(s=>s.ModelName);
                
             }
 
 
             //model searcgh -2 get all models of choosen model from db
-            if (!String.IsNullOrEmpty(techBrand))
+            if (!string.IsNullOrEmpty(techBrand))
             {
-                techdata = techdata.Where(x => x.Brand == techBrand);
+                techdata = techdata.Where(x => x.Brand == techBrand).OrderBy(x=>x.Brand);
          
             }
 
             //category serach
-            if (!String.IsNullOrEmpty(techCategory))
+            if (!string.IsNullOrEmpty(techCategory))
             {
-                techdata = techdata.Where(x => x.Category == techCategory);
+                techdata = techdata.Where(x => x.Category == techCategory).OrderBy(x=>x.Category);
             }
 
-            return View(techdata);
-            //int pageSize = 6;
-            //int pageNumber = (page ?? 1);
-            //return View(techdata.OrderBy(x=>x.Id).ToPagedList(pageNumber, pageSize));
+            //without Paging
+            //return View(techdata);
+            //pagging code starts
+            //with paging 
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
+            return View(techdata.OrderByDescending(x => x.Price).ToPagedList(pageNumber, pageSize));
+            //pagging code ENDS
         }
 
 
@@ -96,33 +103,39 @@ namespace TechMVCDatabase.Controllers
             return View();
         }
 
-        public ActionResult CreatRecord(string techCategory)
+        public ActionResult CreatRecord()
         {
-            
-            //category list
-            var categoryList = new List<string>();
-            var categoryQuery = from c in db.TechDetails orderby c.Category select c.Category;
-
-            categoryList.AddRange(categoryQuery.Distinct());
-            ViewBag.techCategory = new SelectList(categoryList);
-
             return View();
         }
+
+        //public ActionResult CreatRecord(string techCategory)
+        //{
+
+        //    //category list
+        //    var categoryList = new List<string>();
+        //    var categoryQuery = from c in db.TechDetails orderby c.Category select c.Category;
+
+        //    categoryList.AddRange(categoryQuery.Distinct());
+        //    ViewBag.techCategory = new SelectList(categoryList);
+
+        //    return View();
+        //}
         [HttpPost]
         public ActionResult CreatRecord(TechDetail techDetail)
         {
-            //if data is valid 
-            if (ModelState.IsValid)
-            {
-                db.TechDetails.Add(techDetail);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
             //if model state is not valid then retur to creat so use can fix it
 
-            return View(techDetail);
+            if (!ModelState.IsValid)
+            {
+                return View(techDetail);
+            }
+           
+            //if data is valid
+            db.TechDetails.Add(techDetail);
+            db.SaveChanges();
+            return RedirectToAction("Index");
 
+           
         }
 
         public ActionResult EditRecord(int? id)
@@ -141,6 +154,8 @@ namespace TechMVCDatabase.Controllers
             return View(techDetail);
 
         }
+
+
         [HttpPost]
         public ActionResult EditRecord(TechDetail techDetail)
         {
@@ -156,6 +171,8 @@ namespace TechMVCDatabase.Controllers
             return View(techDetail);
 
         }
+
+
 
         public ActionResult DetailRecord(int? id)
         {
@@ -191,6 +208,15 @@ namespace TechMVCDatabase.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult DeleteRecord(int id)
+        {
+            TechDetail techDetail = db.TechDetails.Find(id);
+            db.TechDetails.Remove(techDetail);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
 
     }
 }
