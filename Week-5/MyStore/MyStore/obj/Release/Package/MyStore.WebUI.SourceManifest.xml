@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

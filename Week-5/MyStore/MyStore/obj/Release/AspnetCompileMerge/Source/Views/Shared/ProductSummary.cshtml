@@ -1,0 +1,50 @@
+﻿@model MyStore.domainDB.Entities.Product
+
+
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/themes/base/all.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+
+<script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+<div class="row well well-top-cs">
+    <div class="col-md-12 productName"><strong>@Model.ProductName</strong></div>
+    <div class="col-md-offset-7 col-md-5 priceTag-cs ">
+        <span class="pull-right priceTag label label-primary">@Model.Price.ToString("c")</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        @*<a class="lnkEdit" href="javascript:void(0)"><img class="img-responsive img-thumbnail pull-right" src="@Url.Content(@Model.Image)" alt="" /></a>*@
+        <a class="" href="@Url.Action("ProductDetail","Product", new {id=Model.ProductId})"><img class="img-responsive img-thumbnail pull-right" src="@Url.Content(@Model.Image)" alt="" /></a>
+
+    </div>
+</div>
+<div class="row well well-bottom-cs">
+    <div class="col-md-12 productInfo-cs">
+
+        Author: @Model.Author
+        @*<tr><td>Publisher: @Model.Publisher</td></tr>
+            <tr><td>ISBN: @Model.ISBN</td></tr>*@
+
+    </div>
+    <div class="col-md-offset-8 col-md-4 col-atc-cs">
+        @using (Html.BeginForm("AddToCart", "Cart"))
+        {
+            <div class="pull-right">
+                @Html.HiddenFor(x => x.ProductId)
+                @if (Request.Url != null)
+                {
+                    @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                }
+                <input type="submit" class="btn btn-success pull-right addtocart-cs" value="Add to Cart" />
+            </div>
+        }
+    </div>
+</div>
+@*<div class="row">
+        <span class="lead">@Model.ProductDescription</span>
+    </div>*@

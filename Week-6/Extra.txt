@@ -1,0 +1,209 @@
+﻿
+/*.element {
+  animation: pulse 15s infinite;
+}*/
+
+
+.animationfrom-left {
+    color: #ffffff !important;
+   
+    z-index: 100 !important;
+    /*color: rgb(25,181,254) !important;*/
+    /*height:30px !important;*/
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    
+    -webkit-animation-name: pulse-left;
+    animation-name: pulse-left;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pulse-left {
+    from {
+       
+        z-index: 100 !important;
+        margin-left: -1000px;
+        font-size: 50px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+    to {
+       
+        z-index: 100 !important;
+        margin-left: 0px;
+        font-size: 40px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        -ms-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+}
+
+@keyframes pulse-left {
+    from {
+       
+        z-index: 100 !important;
+        margin-left: -1000px;
+        font-size: 50px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+    to {
+       
+        z-index: 100 !important;
+        margin-left: 0px;
+        font-size: 40px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        -ms-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+}
+
+.animationfrom-top {
+    color: #F74D4D !important;
+    /*color: rgb(232,84,0) !important;*/
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -webkit-animation-name: pulse-top;
+    animation-name: pulse-top;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse-top {
+    from {
+        margin-top: -1000px;
+        font-size: 10px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+    to {
+        margin-top: 0px;
+        font-size: 20px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        -ms-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+}
+
+.animationfrom-right {
+    color: #F74D4D !important;
+    /*color: #fff !important;*/
+    /*color: rgb(25,181,254) !important;*/
+    /*height:30px !important;*/
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    -o-transition: color .5s ease-out;
+    -ms-transition: color .5s ease-out;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    transition: color .5s ease-out;
+    -webkit-animation-name: pulse-right;
+    animation-name: pulse-right;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 3s;
+    animation-iteration-count: 3s;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse-right {
+    from {
+        margin-right: -2000px;
+        font-size: 20px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+    to {
+        margin-right: 0px;
+        font-size: 30px;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+}
+

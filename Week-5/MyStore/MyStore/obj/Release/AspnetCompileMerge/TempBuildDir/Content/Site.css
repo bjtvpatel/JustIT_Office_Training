@@ -1,0 +1,102 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.banner-cs {
+  background-image: url()  
+}
+
+.productdetail-cs dt {
+    text-align: left !important;
+}
+.modal-cs {
+
+}
+
+.checkoutField-cs {
+    width: 800px !important;   
+}
+
+.summary-cs {
+    padding: 0 10px!important;   
+}
+.col-atc-cs {
+    padding: 0 0 !important;
+}
+
+.addtocart-cs {
+    padding: 2px 5px !important;
+    font-size: 0.9em !important;
+    line-height: 1.1em !important;
+
+
+}
+.productInfo-cs {
+    font-size: 0.7em !important;
+    padding: 0 2px !important;
+    -ms-text-justify: auto;
+    text-justify: auto;
+}
+
+.productName {
+    font-size: 0.9em !important;
+    -ms-text-justify: auto;
+    text-justify: auto;
+    height: 35px;
+    padding: 2px 2px !important;
+   
+}
+
+.product-cs {
+    margin: 0 2px 40px 2px !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+}
+.priceTag-cs {
+    padding: 0 !important;    
+}
+
+.priceTag {
+    font-size: 1.1em !important;
+    line-height: 1.1em !important;
+    
+}
+.content-cs {
+   margin-top: 50px !important;
+
+}
+.well-top-cs {
+    padding: 0 0 !important;
+    height: 65px !important;
+    margin: 0 0 10px 0 !important;
+    
+}
+.well-bottom-cs {
+    padding: 0 0 !important;
+    height: 50px !important;
+    margin: 0 0 10px 0 !important;
+    
+}
+.list-cs {
+    padding: 10px 10px !important;
+    width: 140%;
+    
+}

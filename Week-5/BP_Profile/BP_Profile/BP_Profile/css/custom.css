@@ -6,7 +6,7 @@
 }*/
 .animationfrom-left {
     color: #fff !important;
-    opacity: 1 !important;
+   
     z-index: 100 !important;
     /*color: rgb(25,181,254) !important;*/
     /*height:30px !important;*/
@@ -31,7 +31,7 @@
 
 @keyframes pulse-left {
     from {
-        opacity: 1 !important;
+       
         z-index: 100 !important;
         margin-left: -1000px;
         font-size: 50px;
@@ -46,7 +46,7 @@
     }
 
     to {
-        opacity: 1 !important;
+       
         z-index: 100 !important;
         margin-left: 0px;
         font-size: 40px;
@@ -123,6 +123,7 @@
     font-size: 20px !important;
     font-weight: 700 !important;
     -o-transition: color .5s ease-out;
+    -ms-transition: color .5s ease-out;
     transition: color .5s ease-out;
     -webkit-transition: color .5s linear;
     -moz-transition: color .5s linear;
@@ -170,101 +171,7 @@
     }
 }
 
-/*-----------------||STAR ANIMATION ON INTRO PAGE||----------------*/
 
-#star-five {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: red;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    -moz-transform: rotate(35deg);
-    -webkit-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    -o-transform: rotate(35deg);
-    transform: rotate(35deg);
-    -moz-animation-name: pulse;
-    -o-animation-name: pulse;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -moz-animation: 5s infinite;
-    -o-animation: 5s infinite;
-    -webkit-animation: 5s infinite;
-    animation: 5s infinite;
-}
-
-    #star-five:before {
-        border-bottom: 80px solid red;
-        border-left: 30px solid transparent;
-        border-right: 30px solid transparent;
-        position: absolute;
-        height: 0;
-        width: 0;
-        top: -45px;
-        left: -65px;
-        display: block;
-        content: '';
-        -webkit-transform: rotate(-35deg);
-        -moz-transform: rotate(-35deg);
-        -ms-transform: rotate(-35deg);
-        -o-transform: rotate(-35deg);
-        transform: rotate(-35deg);
-        -moz-animation-name: pulse;
-        -o-animation-name: pulse;
-        -webkit-animation-name: pulse;
-        animation-name: pulse;
-        -moz-animation: 5s infinite;
-        -o-animation: 5s infinite;
-        -webkit-animation: 5s infinite;
-        animation: 5s infinite;
-        -moz-animation-direction: reverse;
-        -o-animation-direction: reverse;
-        -webkit-animation-direction: reverse;
-        animation-direction: reverse;
-        -moz-animation-fill-mode: forwards;
-        -o-animation-fill-mode: forwards;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -moz-animation-play-state: running;
-        -o-animation-play-state: running;
-        -webkit-animation-play-state: running;
-        animation-play-state: running;
-        -moz-animation-timing-function: ease-out;
-        -o-animation-timing-function: ease-out;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    #star-five:after {
-        position: absolute;
-        display: block;
-        color: red;
-        top: 3px;
-        left: -105px;
-        width: 0px;
-        height: 0px;
-        border-right: 100px solid transparent;
-        border-bottom: 70px solid red;
-        border-left: 100px solid transparent;
-        -webkit-transform: rotate(-70deg);
-        -moz-transform: rotate(-70deg);
-        -ms-transform: rotate(-70deg);
-        -o-transform: rotate(-70deg);
-        transform: rotate(-70deg);
-        content: '';
-        -moz-animation-name: pulse;
-        -o-animation-name: pulse;
-        -webkit-animation-name: pulse;
-        animation-name: pulse;
-        -moz-animation: 5s infinite;
-        -o-animation: 5s infinite;
-        -webkit-animation: 5s infinite;
-        animation: 5s infinite;
-    }
 
 /*-----------------||LINKEDIN AND GITHUB ICON ON INTRO PAGE||----------------*/
 

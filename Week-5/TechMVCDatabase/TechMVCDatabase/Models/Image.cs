@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace TechMVCDatabase.Models
+﻿namespace TechMVCDatabase.Models
 {
     public class Image
     {

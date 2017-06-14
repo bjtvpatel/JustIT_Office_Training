@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-theme="a" data-role="header" data-position="fixed">
+            <h3>KidsLearning Store</h3>
+            @Html.Action("Menu", "Nav")
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-dividertheme="b" data-inset="false">@RenderBody()</ul>
+        </div>
+        
+    </div>
+           <div class="navbar navbar-inverse navbar-fixed-top banner-cs">
+            <div class="container">
+                <div class="navbar-header" style="width:100%;">
+                    <a class="navbar-brand" href="#">
+                        <span class="hidden-xs">Kids Store</span>
+                        <div class="visible-xs">Kids</div> <div class="visible-xs">Store</div>
+                    </a>
+                    @Html.Action("Summary", "Cart")</div>
+                </div>
+            </div>
+ 
+
+    <div class="container body-content ">
+        @*<div class="breadcrumb">
+            <b>You are here:</b>
+        </div>*@
+        <div class="row panel content-cs">
+            <div id="category" class="col-sm-3 col-md-2 hidden-xs">
+                @Html.Action("Menu", "Nav")
+            </div>
+
+            <div class="col-md-10 col-sm-8 col-xs-12">
+                <div class="row well">
+                    <div class="visible-xs col-xs-12">
+                        @Html.Action("Menu", "Nav", new { horizontalLayout = true })
+                    </div> 
+                    </div>
+                <div class="row">
+                    @RenderBody()
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <hr />
+        @*<footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>*@
+    </div>
+
+</body>
+</html>

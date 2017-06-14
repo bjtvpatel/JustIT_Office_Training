@@ -1,0 +1,89 @@
+﻿@model MyStore.domainDB.Entities.Product
+
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <div class="row well">
+            <h3>
+                <span class="pull-left productName">
+                    <strong>@Html.DisplayFor(model => model.ProductName)</strong>
+                </span>
+                <span class="pull-right priceTag label label-primary">@Model.Price.ToString("c")</span>
+            </h3>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <img src="@Url.Content(Model.Image)" alt="" />
+            </div>
+            <div class="col-md-7 pull-left">
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="dl-horizontal productdetail-cs">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Category)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.Category)
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Author)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.Author)</dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Publisher)
+                            </dt>
+                            <dd>@Html.DisplayFor(model => model.Publisher)</dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ISBN)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.ISBN)
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ProductDescription)
+                            </dt>
+                            <dd>
+                                @Html.DisplayFor(model => model.ProductDescription)
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        @{
+                            var id1 = @Model.ProductId;
+                        }
+                        @using (Html.BeginForm("AddToCart", "Cart", new { id = id1 }))
+                        {
+                            <div class="pull-right">
+                                @Html.HiddenFor(x => x.ProductId)
+                                @if (Request.Url != null)
+                                {
+                                    @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                                }
+                                <input type="submit" class="btn btn-success pull-right addtocart-cs" value="Add to Cart" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<hr />
+<div class="row">
+    <p>
+
+        @Html.ActionLink("Back to List", "List")
+    </p>
+
+</div>

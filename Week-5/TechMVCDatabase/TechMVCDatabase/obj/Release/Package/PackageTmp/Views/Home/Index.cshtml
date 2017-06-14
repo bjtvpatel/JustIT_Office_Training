@@ -1,14 +1,9 @@
 ﻿@*//PAGING CODE STARTS*@
 @model PagedList.IPagedList<TechMVCDatabase.Models.TechDetail>
 @using PagedList.Mvc;
+<style type="text/css"></style>
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css"/>
 @*//PAGING CODE ENDS*@
-
-
-@using System.ServiceModel.Channels
-@using Microsoft.Ajax.Utilities
-@using TechMVCDatabase.Models
-@using System.Data.SqlClient
 
 @*//WITHOUT PAGING*@
 @*@model IEnumerable<TechMVCDatabase.Models.TechDetail>*@
@@ -17,13 +12,16 @@
     ViewBag.Title = "Gadget HUB";
 }
 
-<div class="jumbotron jumbotron-cs">
-   </div> 
+@*<div class="jumbotron-cs">
+    <img src="~/Image/banner_1015x303-1.jpg" class="banner-cs"/>
+
+</div>*@ 
    
    
   
 
 <section>
+    
     <div class="container-fluid">
         <div class="row creatRow-cs ">
             <div class="col-md-2 btn btn-default createLabel">
@@ -31,7 +29,7 @@
                 @Html.ActionLink("Create Record", "CreatRecord")
 
             </div>
-            <div class="col-md-8 col-md-offset-2 dropform-cs">
+            <div class="col-md-8 col-md-offset-2">
                 @*@using (Html.BeginForm("Index", "TechDetail", FormMethod.Get))*@
                 @using (Html.BeginForm())
                 {
@@ -40,8 +38,8 @@
                     ////WITHOUT PAGING CODE
                     @*<span class="dropdown-cs">Model: @Html.TextBox("searchString")</span>*@
                     ////PAGING CODE
-                    <span class="dropdown-cs">Model:  @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>
-                    <input type="submit" value="Filter" class="btn btn-default btn-filter" />
+                    <span class="dropdown-cs">Model: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>
+                    <input type="submit" value="Filter" class="btn btn-default btn-filter"/>
 
                 }
             </div>
@@ -55,13 +53,16 @@
                     <div class="col-md-3 column-display">
                         <p>@Html.DisplayFor(t => item.Brand) - @Html.DisplayFor(t => item.ModelName)</p>
 
-                        <a href="@Url.Action("DetailRecord", new {id=item.Id})"><img src="@Url.Content(@item.Photo)" alt="item.AlternateText" class="imgGallary-cs img-responsive" /></a>
+                        <a href="@Url.Action("DetailRecord", new {id = item.Id})"><img src="@Url.Content(@item.Photo)" alt="item.AlternateText" class="imgGallary-cs img-responsive"/></a>
 
                         <p>£@Html.DisplayFor(t => item.Price)</p>
                         <div class="row rowLabel-cs">
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Detail", "DetailRecord", new { id = item.Id })</span></div>
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Edit", "EditRecord", new { id = item.Id })</span></div>
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Delete", "DeleteRecord", new { id = item.Id })</span></div>
+                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Detail", "DetailRecord", new {id = item.Id})</span>
+                            </div>
+                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Edit", "EditRecord", new {id = item.Id})</span>
+                            </div>
+                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Delete", "DeleteRecord", new {id = item.Id})</span>
+                            </div>
 
                             @*<span>@Html.ActionLink("Compare", "CreatRecord")</span>*@
                         </div>
@@ -70,10 +71,10 @@
                 }
             </div>
         </div>
-        <br />
+        <br/>
         @*//PAGING CONTROL STARTS*@
         Page@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
-            @Html.PagedListPager(Model,page=>Url.Action("Index", new {page, currentFilter=ViewBag.CurrentFilter}))
+        @Html.PagedListPager(Model, page => Url.Action("Index", new {page, currentFilter = ViewBag.CurrentFilter}))
         @*//PAGING CONTROL ENDS*@
     </div>
 </section>

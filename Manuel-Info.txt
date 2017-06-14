@@ -97,6 +97,9 @@ http://213.175.212.6:8880/login_up.php3
 Username: unitechc
 password: hatchend123
 
+https://billing.webhosting.uk.com/accountdetails.php
+ballupatel@gmail.com
+F!67_*k@
 
 //creating a database in webhosting 
 Add a Database
@@ -133,3 +136,16 @@ User has access to all databases within the selected subscription
 -------------------------
 custom bootstrap theme
 https://bootswatch.com/
+
+
+------------------------------------------------------------------------
+   Hosting Account ID:	patel2012uk-001
+      First Website Root Folder Name:	mystore
+      First Website Type:	ASP.NET
+      Hosting Plan Name:	W60-EU
+      	
+      	Please Record The Following FTP Infomation:
+      FTP Address :	FTP-EU.SMARTERASP.NET
+      FTP Username :	patel2012uk-001
+      FTP Password :	(same as your control panel password)
+      FTP Directory	\

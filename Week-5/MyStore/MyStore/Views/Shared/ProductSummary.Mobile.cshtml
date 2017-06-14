@@ -1,0 +1,33 @@
+﻿@model MyStore.domainDB.Entities.Product
+
+
+<div data-role="collapsible" data-collapsed="false" data-content-theme="C">
+    <h2>
+        <strong>@Model.ProductName</strong>
+    </h2>
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            @Model.Price.ToString("c")
+        </div>
+        <div class="ui-block-b">
+            <a class="" href="@Url.Action("ProductDetail","Product", new {id=Model.ProductId})"><img class="img-responsive img-thumbnail pull-right" src="@Url.Content(@Model.Image)" alt="" /></a>
+
+        </div>
+        <div class="ui-block-c">
+            @using (Html.BeginForm("AddToCart", "Cart"))
+            {
+                
+                    @Html.HiddenFor(x => x.ProductId)
+                    @if (Request.Url != null)
+                {
+                        @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                    }
+                    <input type="submit" data-inline="true" data-mini="true" value="Add to Cart" />
+              
+            }
+        </div>
+    </div>
+
+    </div>
+
+   

@@ -1,0 +1,23 @@
+﻿@model MyStore.Models.ProductListViewModel
+
+
+@using MyStore.HtmlHelpers
+
+@{
+    ViewBag.Title = "Products";
+}
+<div class="row list-cs">
+    @foreach (var p in Model.Products)
+    {
+
+        <div class="col-md-3 form-group product-cs">
+            @Html.Partial("ProductSummary", p)
+        </div>
+   
+    }
+</div>
+        <div class="btn-group pull-right">
+            @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
+        </div>
+
+

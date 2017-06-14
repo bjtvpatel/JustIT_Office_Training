@@ -9,6 +9,7 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 50px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -40,9 +41,11 @@ textarea {
     z-index: 11;
 }
 .navbar-cs {
+    -ms-opacity: 0.7;
     opacity: 0.7;
     color: white !important;
     z-index: 12;
+    
 }
 
 h3 {
@@ -50,11 +53,28 @@ h3 {
 }
 
 /*----------------|Header Section|--------------------*/
-.jumbotron-cs{
-    height: 50px;
-    /*background-image: url(https://raw.githubusercontent.com/bjtvpatel/JustIT_Office_Training/master/Week-5/TechMVCDatabase/Photos/Banner/banner_1015x303.jpg);*/
+.jumbotron-cs {
+    height: 175px !important;
+    width: 100%;
+
+   
+    /*background-image: url(~/Image/banner_1015x303-1.jpg) !important;*/
+    -ms-background-size: cover;
+    background-size: cover;
     
     
+    -ms-background-position: center;
+    background-position: center;
+}
+
+.banner-cs {
+    height: 100px;
+    width: 100%;
+    margin-top: -50px;
+    -ms-background-size: cover;
+    background-size: cover;
+    -ms-background-repeat:no-repeat;
+    background-repeat:no-repeat;
 }
 
 /*----------------|Index Page Section|--------------------*/
@@ -63,23 +83,21 @@ h3 {
     margin-right: 10px;
 }
 .createLabel {
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 1.1em;
-    margin-left: 0px;
+    margin-left: 0;
     width: 150px;
     
 }
-.dropform-cs {
-    
-}
+
 .btn-filter {
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 1.1em;
     margin-left: 10px;
     width: 70px;
 }
 .dropdown-cs {
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 1.1em;
     margin-left: 10px;  
 }
@@ -87,9 +105,12 @@ h3 {
 
 .row-display {
     vertical-align: middle;
+    -moz-align-content: center;
+    -o-align-content: center;
+    -webkit-align-content: center;
     align-content: center;
-    
 }
+
 .column-display {
     height: 490px;
     width: 350px;
@@ -101,7 +122,7 @@ h3 {
     font-family: sans-serif;
     font-size: 1.1em;
     margin: 10px 10px;
-    padding: 0px;
+    padding: 0;
     
 }
 
@@ -114,7 +135,7 @@ h3 {
     height: 375px;
     width: 275px;
     display: inline-block;
-    border: 0px;
+    border: 0;
     
 }
 
@@ -126,22 +147,22 @@ h3 {
 }
 .columnlable-cs
 {
-    padding: 0px 20px;
+    padding: 0 20px;
     
      
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 /*----------------|Common Page controls|--------------------*/
 .goback-cs {
     font-size: 1.1em;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .wrapper-cs {
     width: 100% !important;
     height: auto;
     border: 1px solid grey !important;
-    margin: 20px 10px 0px 10px !important;
+    margin: 20px 10px 0 10px !important;
     padding: 10px 10px !important;   
 }

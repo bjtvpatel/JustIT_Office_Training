@@ -1,0 +1,92 @@
+﻿@model MyStore.domainDB.Entities.Product
+
+@{
+    ViewBag.Title = "Edit - Product";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    HtmlHelper.ClientValidationEnabled = false;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+
+}
+
+<h2 class="text-center panel panel-heading">Edit a Product detail</h2>
+
+
+<div class="panel panel-body">
+   <div class="col-md-offset-1 col-md-4">
+    @using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.HiddenFor(m => m.ProductId)
+        foreach (var property in ViewData.ModelMetadata.Properties)
+        {
+            //if (property.PropertyName != "ProductId")
+            switch (property.PropertyName)
+            {
+                case "ProductId":
+                case "ImageData":
+                case "ImageMimeType":
+                    break;
+
+                default:
+
+                    <div class="form-group">
+                        <label>@(property.DisplayName ?? property.PropertyName)</label>
+                        @if (property.PropertyName == "Description")
+                        {
+                            @Html.TextArea(property.PropertyName, null, new { @class = "form-control", rows = 5 })
+                        }
+                        else if (property.PropertyName == "Price")
+                        {
+                            @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+                        }
+                        else
+                        {
+                            @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+                        }
+                        @Html.ValidationMessage(property.PropertyName)
+                    </div>
+
+                    break;
+            }
+        }
+
+        <div class="form-group">
+            <div style="position:relative">
+                <label>Upload Image</label>
+                <a class="btn" href="javascript:">
+                    Choose File...
+                    <input type="file" name="Image" size="40"
+                           style="position:absolute; z-index:2; top:0; left:0; filter:alpha(opacity=0); opacity:0; background-color:transparent;
+                                            color:transparent;" onchange='$("#upload-file-info").html($(this).val());' />
+                </a>
+                <span class="label label-info" id="upload-file-info"></span>
+            </div>
+        </div>
+
+             <div class="form-group">
+                 <p>Image Uploaded</p>
+                @if (Model.ImageData != null)
+                {
+                    <img class="img-thumbnail img-responsive" width="200" height="300" src="@Url.Action("GetImage", "Product", new { Model.ProductId })" />
+
+                }
+                else
+                {
+                    <div class="form-control-static">NO Uploaded Image</div>
+
+
+                }
+                
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Save" class="btn btn-success" />
+                @Html.ActionLink("Cancel and Return to Product List", "Index", new { @class = "btn btn-default" })
+            </div>
+    }
+    </div>
+</div>
+    @*<div class="row well">
+    <p>Image URL</p>
+    <img src="@Url.Content(Model.Image)" width="200" height="300" class="img-responsive img-thumbnail" alt="" />
+</div>*@
+

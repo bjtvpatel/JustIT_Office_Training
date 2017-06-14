@@ -1,0 +1,106 @@
+﻿@*@model IEnumerable<MyStore.domainDB.Entities.Product>*@
+@model MyStore.domainDB.Entities.Product
+
+@{
+    ViewBag.Title = "ProductDetail";
+}
+
+
+<div>
+
+    @foreach (var m in Model)
+    {
+        <div class="row well">
+            <h3>
+                <span class="pull-left productName">
+                    <strong>@m.ProductName</strong>
+                </span>
+                <span class="pull-right priceTag label label-primary">@m.Price.ToString("c")</span>
+            </h3>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <img src="@Url.Content(m.Image)" alt="" />
+            </div>
+            <div class="col-md-7 pull-left">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+
+                        <dl class="dl-horizontal productdetail-cs">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Category)
+                            </dt>
+                            <dd>
+                                @m.Category
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Author)
+                            </dt>
+                            <dd>@m.Author</dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Publisher)
+                            </dt>
+                            <dd>@m.Publisher</dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ISBN)
+                            </dt>
+                            <dd>
+                                @m.ISBN
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ProductDescription)
+                            </dt>
+                            <dd>
+                                @m.ProductDescription
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        @{
+                            var id1 = @m.ProductId;
+                        }
+                        @using (Html.BeginForm("AddToCart", "Cart", new {id = id1}))
+                        {
+                            <div class="pull-right">
+
+                                @if (Request.Url != null)
+                                {
+                                    @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                                }
+                                <input type="submit" class="btn btn-success pull-right addtocart-cs" value="Add to Cart"/>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    }
+
+
+</div>
+<hr />
+<div class="row">
+    <p>
+
+        @"~/Views/Shared/_Layout.cshtml"
+    </p>
+
+</div>
