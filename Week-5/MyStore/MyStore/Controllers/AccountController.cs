@@ -10,8 +10,10 @@ namespace MyStore.Controllers
 {
     public class AccountController : Controller
     {
+
         IAuthProvider _authProvider;
 
+        //constructor for dependency resolver 
         public AccountController(IAuthProvider auth)
         {
             _authProvider = auth;
@@ -22,6 +24,7 @@ namespace MyStore.Controllers
             return View();
         }
 
+        //login POST method
         [HttpPost]
         public ActionResult Login(LoginViewModel model, string returnUrl)
         {

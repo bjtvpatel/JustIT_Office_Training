@@ -11,8 +11,10 @@ namespace MyStore.Infrastructure.Binders
 {
     public class CartModelBinders: IModelBinder
     {
+        //set a cart as key 
         private const string sessionKey = "Cart";
 
+        //binding for dependency resolver
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             //get the cart from session

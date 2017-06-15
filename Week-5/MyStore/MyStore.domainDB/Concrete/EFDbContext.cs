@@ -7,6 +7,7 @@ using MyStore.domainDB.Entities;
 
 namespace MyStore.domainDB.Concrete
 {
+    //db setup
     public class EFDbContext : DbContext 
     {
         public DbSet<Product> Products { get; set; }

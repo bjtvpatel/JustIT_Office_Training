@@ -10,6 +10,7 @@ namespace MyStore.domainDB.Entities
     {
         private List<CartLine> lineCollection = new List<CartLine>();
 
+        //add item in cart
         public void AddItem(Product product, int quantity)
         {
             CartLine line = lineCollection
@@ -40,10 +41,12 @@ namespace MyStore.domainDB.Entities
         }
 
 
+        //clear the cart
         public void Clear()
         {
             lineCollection.Clear();
         }
+
 
 
         public IEnumerable<CartLine> Lines

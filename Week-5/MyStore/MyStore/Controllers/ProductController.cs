@@ -13,9 +13,11 @@ namespace MyStore.Controllers
 {
     public class ProductController : Controller
     {
+        //repository declaration
         private IProductRepository _repository;
         public int PageSize = 6;
 
+        //constructor for dependency resolver
         public ProductController(IProductRepository productRepository)
         {
             this._repository = productRepository;
@@ -27,6 +29,7 @@ namespace MyStore.Controllers
         //    return View(_repository.Products);
         //}
 
+            //GET products from db to list
         public ViewResult List(string category, int page = 1)
         {
             ProductListViewModel model = new ProductListViewModel
@@ -51,6 +54,7 @@ namespace MyStore.Controllers
 
         }
 
+        //Get product details for detail view
         public ActionResult ProductDetail(int id)
         {
             // IEnumerable<Product> productD =_repository.Products.Where(p => p.ProductId == id);
@@ -60,7 +64,7 @@ namespace MyStore.Controllers
             return View(productD);
         }
 
-
+        //retrieve image from db
         public FileContentResult GetImage(int productId)
         {
             Product prod = _repository.Products.FirstOrDefault(p => p.ProductId == productId);

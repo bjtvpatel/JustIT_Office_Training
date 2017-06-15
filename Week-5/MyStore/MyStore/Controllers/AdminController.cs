@@ -11,21 +11,23 @@ namespace MyStore.Controllers
     [Authorize]
     public class AdminController : Controller
     {
-
+        //repository declaration
         private IProductRepository _repository;
 
+        //contructor for dependency resolver
         public AdminController(IProductRepository repo)
         {
             _repository = repo;
 
         }
        
-
+        //GET all product list
         public ViewResult Index()
         {
             return View(_repository.Products);
         }
 
+        //EDIT the product from list
         public ViewResult Edit(int productId)
         {
             Product products = _repository.Products
@@ -35,6 +37,7 @@ namespace MyStore.Controllers
 
         }
 
+        //UPDATE product and also use this for creating a new product
         [HttpPost]
         public ActionResult Edit(Product product, HttpPostedFileBase image = null)
         {
@@ -60,6 +63,7 @@ namespace MyStore.Controllers
 
         }
 
+        //GET empty from for new product
         public ViewResult Create()
         {
                        
@@ -67,6 +71,7 @@ namespace MyStore.Controllers
 
         }
 
+        //DELETE method
         public ActionResult Delete(int productId)
         {
             Product deleteProduct = _repository.DeleteProduct(productId);

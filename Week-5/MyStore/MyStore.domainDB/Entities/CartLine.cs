@@ -5,6 +5,7 @@ using System.Web;
 
 namespace MyStore.domainDB.Entities
 {
+    
     public class CartLine
     {
        

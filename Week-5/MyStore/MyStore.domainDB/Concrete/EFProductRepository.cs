@@ -9,13 +9,17 @@ namespace MyStore.domainDB.Concrete
 {
     public class EFProductRepository:IProductRepository
     {
+        //repository setup
+        //db instance
         private EFDbContext _context1 = new EFDbContext();
+
 
         public IEnumerable<Product> Products
         {
             get { return _context1.Products; }
         }
 
+        //saving a product to db
         public void SaveProduct(Product product)
         {
             if(product.ProductId == 0)
@@ -44,7 +48,7 @@ namespace MyStore.domainDB.Concrete
             _context1.SaveChanges();
         }
 
-
+        //delete record from db
         public Product DeleteProduct(int productId)
         {
             Product dbEntry = _context1.Products.Find(productId);

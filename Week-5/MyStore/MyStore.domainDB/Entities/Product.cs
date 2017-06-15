@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MyStore.domainDB.Entities
 {
+    //product class
     public class Product
     {
        [System.Web.Mvc.HiddenInput(DisplayValue =false)]

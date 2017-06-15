@@ -11,15 +11,18 @@ namespace MyStore.Controllers
 {
     public class CartController : Controller
     {
+        //repository declaration
         private IProductRepository _repository;
         private IOrderProcessor orderProcessor;
 
+        //constructor for dependency resolver
         public CartController(IProductRepository repo, IOrderProcessor proc)
         {
             _repository = repo;
             orderProcessor = proc;
         }
 
+        //add to cart each item
         public RedirectToRouteResult AddToCart(Cart cart, int productId, string returnUrl)
         {
             Product product = _repository.Products.FirstOrDefault(p => p.ProductId == productId);
@@ -33,6 +36,7 @@ namespace MyStore.Controllers
 
         }
 
+        //remove item from current cart
         public RedirectToRouteResult RemoveFromCart(Cart cart,int productId, string returnUrl)
         {
             Product product = _repository.Products.FirstOrDefault(p => p.ProductId == productId);
@@ -71,15 +75,19 @@ namespace MyStore.Controllers
             });
         }
 
+        //cart summary
         public PartialViewResult Summary(Cart cart)
         {
             return PartialView(cart);
         }
 
+        //display shipping detail page
         public ViewResult Checkout()
         {
             return View(new ShippingDetails());
         }
+
+        //submit order
         [HttpPost]
         public ViewResult Checkout(Cart cart, ShippingDetails shippingDetails)
         {

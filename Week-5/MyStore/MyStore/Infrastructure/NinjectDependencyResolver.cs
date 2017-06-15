@@ -15,8 +15,10 @@ namespace MyStore.Infrastructure
 {
     public class NinjectDependencyResolver:IDependencyResolver
     {
+        //depenency resolver 
         private IKernel _kernel;
 
+       // constructior
         public NinjectDependencyResolver(IKernel kernalParam)
         {
             _kernel = kernalParam;
@@ -24,6 +26,7 @@ namespace MyStore.Infrastructure
 
         }
 
+        //
         public object GetService(Type serviceType)
         {
             return _kernel.TryGet(serviceType);
@@ -34,6 +37,7 @@ namespace MyStore.Infrastructure
             return _kernel.GetAll(serviceType);
         }
 
+        //binding
         private void AddBindings()
         {
             _kernel.Bind<IProductRepository>().To<EFProductRepository>();

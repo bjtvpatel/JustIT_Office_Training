@@ -6,6 +6,7 @@ using System.Web;
 
 namespace MyStore.domainDB.Entities
 {
+    //shipping detail
     public class ShippingDetails
     {
         [Required(ErrorMessage = "Please enter a name")]

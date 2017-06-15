@@ -14,11 +14,13 @@ namespace MyStore.domainDB.Concrete
     {
         private EmailSettings _emailSettings;
 
+        //constructor for dependency resolver
         public EmailOrderProcessor(EmailSettings settings)
         {
             _emailSettings = settings;
         }
 
+        //order processing method
         public void ProcessOrder(Cart cart, ShippingDetails shippingDetails)
         {
             using (var smtpClient = new SmtpClient())
@@ -81,7 +83,7 @@ namespace MyStore.domainDB.Concrete
         }
     }
 
-
+    //email settings
     public class EmailSettings
     {
         public string MailToAddress = "order@baldevpatel.co.uk";
