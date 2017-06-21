@@ -1,5 +1,8 @@
 ﻿@model MyStore.domainDB.Entities.Cart
 
+<link href="~/Content/bootstrap-flaty.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
 <div class="hidden-xs navbar-right checkout-btn">
     @Html.ActionLink("Checkout", "Index", "Cart",
     new { returnUrl = Request.Url.PathAndQuery },
@@ -22,3 +25,4 @@
 </div>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
