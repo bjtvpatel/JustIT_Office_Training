@@ -3,35 +3,104 @@
     Layout = null;
 }
 
+@using System.Web.Optimization;
+
 <!DOCTYPE html>
 
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
-    <title>Kids Store</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css"/>
-    <link href="~/Content/ErrorStyles.css" rel="stylesheet"/>
-    <link href="~/Content/bootstrap-flaty.css" rel="stylesheet"/>
-    <link href="~/Content/bootstrap-flaty.min.css" rel="stylesheet"/>
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
-    
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 />
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+
+    <!--Customised bootstraptheme-->
+    <link href="~/Content/bootstrap-flaty.css" rel="stylesheet" />
+    <!--Font Awesom link for icons-->
+    <script src="https://use.fontawesome.com/31424c71d6.js"></script>
+    @*-------------------------||custome stylying||-------------------------*@
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/ErrorStyles.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 100px;
+        }
+    </style>
+   
+    <title>KidsLearning Store</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top banner-cs">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <span class="hidden-xs">KidsLearning Store</span>
-                    <div class="visible-xs">KidsLearning</div> <div class="visible-xs">Store</div>
-                </a>
+    <!--top bar section for icons and login-->
+    <div class="container navbar-fixed-top top_bar " style="background-color:#FDFDFD;">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="" class="social_icon"><i class="fa fa-facebook-official icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-twitter icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-youtube-play icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-google-plus icon_css" style="font-size:1.1em; color:#18bc9c;"></i></a>
             </div>
-            <div class="nav navbar-nav pull-right">@Html.Action("Summary", "Cart")</div>
+            <div class="col-xs-8">
+                <div class="pull-right visible-xs">
+                    @Html.Action("Summary", "Cart")
+                </div>
+                <ul class="top_bar_control">
+                    <li><a href="@Url.Action("Login","Account")">Login</a></li>
+                    @*<li class="hidden-xs"><a href="@Url.Action("Login","Account")">Register</a></li>
+                    <li><a href="@Url.Action("Login","Account")">Admin</a></li>*@
+                </ul>
+            </div>
         </div>
     </div>
+    <!--logo and navigation -->
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin-top:22px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    @*<div class="navbar-header">*@
+                    <a class="navbar-brand" href="#">
+                        <span class="hidden-xs">KidsLearning Store</span>
+                        <div class="visible-xs">Kids</div>
+                        @*<div class="visible-xs">Store</div>*@
+                    </a>
+                    @*</div>*@
+                </div>
+                <div class="col-xs-10 mynavbar" style="">
+                    <div class="">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--cart summary for top_fixed nav-->
+                    <div class="pull-right hidden-xs">
+                        @Html.Action("Summary", "Cart")
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="@Url.Action("Index","Startup")">Home</a></li>
+                            <li><a href="@Url.Action("Contact","Startup")">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Corousel area-->
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -40,39 +109,22 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-
-            <!-- Wrapper for slides -->
-            @*<div class="carousel-inner text-center">
-                <div class="item active">
-                    <img src="~/Img/concentration-16032_1920.jpg" alt="Los Angeles" style="width:100%; height:400px;">
-                </div>
-
-                <div class="item">
-                    <img src="~/Img/cube-620636_1920.jpg" alt="Chicago" style="width:100%; height:400px;">
-                </div>
-
-                <div class="item">
-                    <img src="http://www.freeimageslive.com/galleries/workplace/education/preview/mathematics.jpg" title="Maths" alt="Maths" style="width:100%; height:400px;">
-                </div>
-            </div>*@
-
             <div class="carousel-inner text-center">
                 <div class="item active">
-                    
-                    <img src="~/Img/p1.jpg" alt="" style="width:100%; height:300px;">
+
+                    <img src="~/Img/Banner/p13.jpg" class="img-responsive" alt="Leaning">
                 </div>
 
                 <div class="item">
-                    
-                    <img src="~/Img/p2.jpg" alt="" style="width:100%; height:300px;">
+
+                    <img src="~/Img/Banner/p12.jpg" class="img-responsive" alt="Learning">
                 </div>
 
                 <div class="item">
-                    
-                    <img src="~/Img/p3.jpg" title="Maths" alt="Maths" style="width:100%; height:300px;">
-                    
+
+                    <img src="~/Img/Banner/p11.jpg" class="img-responsive" alt="Learning">
                 </div>
-                
+
             </div>
 
             <!-- Left and right controls -->
@@ -86,21 +138,53 @@
             </a>
         </div>
     </div>
-    <div class="container"><br />
-        <div class="row well well-bottom-cs text-center"><p>Shop  by Category</p></div>
+
+    <!--title to choose category-->
+    <div class="container">
+
+        <div class="row text-center category_title"><h3>Shop  by Category</h3></div>
         <div class="row">
-            <div class="col-md-3">
-                <a href="@Url.Action("List", "Product", new { category = "Maths" })">
-                   <p>Maths</p><img src="http://www.freeimageslive.com/galleries/workplace/education/preview/maths_school.jpg" class="img-responsive image-cs" style="width:250px; height:150px;" />
-                </a>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <a href="@Url.Action("List", "Product" , new { category="Maths" })">
+                            <h4>Maths</h4>
+                            <img src="~/Img/Category/c5.jpg" class="img-responsive img-thumbnail category-Img" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3"><a href="@Url.Action("List", "Product", new { category = "English" })"><p>English</p><img src="http://www.freeimageslive.com/galleries/workplace/education/preview/handwriting.jpg" style="width:250px; height:150px;" /></a></div>
-            <div class="col-md-3"><a href="@Url.Action("List", "Product", new { category = "Maths" })"><p>Science</p><img src="~/Img/education-548105_640.jpg" style="width:250px; height:150px;" /></a></div>
-            <div class="col-md-3"><a href="@Url.Action("List", "Product", new { category = "English" })"><p>Coding and Computing</p><img src="http://www.freeimageslive.com/galleries/workplace/education/preview/electronic_learning.jpg" style="width:250px; height:150px;" /></a></div>
-
-
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <a href="@Url.Action("List", "Product" , new { category="English" })">
+                            <h4>English</h4><img src="~/Img/Category/c6.jpg" class="img-responsive img-thumbnail category-Img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <a href="@Url.Action("List", "Product" , new { category="Science" })">
+                            <h4>Science</h4><img src="~/Img/Category/c7.jpg" class="img-responsive img-thumbnail category-Img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <a href="@Url.Action("List", "Product" , new { category="Computing" })">
+                            <h4>Computing</h4>
+                            <img src="~/Img/Category/c8.jpg" class="img-responsive img-thumbnail category-Img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <hr />
+    <footer><p class="text-center">By Baldev Patel</p></footer>
 </body>
 </html>

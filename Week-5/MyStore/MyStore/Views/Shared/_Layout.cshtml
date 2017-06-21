@@ -1,55 +1,115 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/ErrorStyles.css" rel="stylesheet" />
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!--Customised bootstraptheme-->
     <link href="~/Content/bootstrap-flaty.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-flaty.min.css" rel="stylesheet" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <!--Font Awesom link for icons-->
+    <script src="https://use.fontawesome.com/31424c71d6.js"></script>
+    @*-------------------------||custome stylying||-------------------------*@
 
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/ErrorStyles.css" rel="stylesheet" />
+
+    <style>
+        body {
+            padding-top: 80px;
+        }
+    </style>
+
+   
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top banner-cs">
-        <div class="container">
-            <div class="navbar-header" style="width:100%;">
-                <a class="navbar-brand" href="@Url.Action("Index","Startup")">
-                    <span class="hidden-xs">KidsLearning Store</span>
-                    <div class="visible-xs">KidsLearning</div> <div class="visible-xs">Store</div>
-                </a>
-                @Html.Action("Summary", "Cart")
+
+    <!--top bar section for icons and login-->
+    <div class="container navbar-fixed-top top_bar" style="background-color:#FDFDFD;">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="" class="social_icon"><i class="fa fa-facebook-official icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-twitter icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-youtube-play icon_css"></i></a>
+                <a href="" class="social_icon"><i class="fa fa-google-plus icon_css" style="font-size:1.1em; color:#18bc9c;"></i></a>
+            </div>
+
+            <div class="col-xs-8">
+                <div class="pull-right visible-xs">
+                    @Html.Action("Summary", "Cart")
+                </div>
+                <ul class="top_bar_control">
+                    <li><a href="@Url.Action("Login","Account", "")">Login</a></li>
+                    @*<li class="hidden-xs"><a href="@Url.Action("Login","Account", "")">Register</a></li>*@
+                    @*<li><a href="@Url.Action("Login","Account", "")">Admin</a></li>*@
+                </ul>
+
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="padding:0 0">
-        <img src="~/Img/b6.jpg" alt="" style="width:100%; height:200px;" />
-    </div>
-
-    <div class="container body-content ">
-        @*<div class="breadcrumb">
-                <b>You are here:</b>
-            </div>*@
-        <div class="row panel content-cs">
-            <div id="category" class="col-sm-3 col-md-2 hidden-xs">
-                @Html.Action("Menu", "Nav")
-            </div>
-            <div class="col-md-10 col-sm-8 col-xs-12">
-                <div class="row well visible-xs">
-                    <div class="col-xs-12">
-                        @Html.Action("Menu", "Nav", new { horizontalLayout = true })
+    <!--logo and navigation -->
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin-top:22px; margin-bottom:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="@Url.Action("Index","Startup")">
+                            <span class="hidden-xs">KidsLearning Store</span>
+                            <div class="visible-xs">Kids</div>
+                            @*<div class="visible-xs">Store</div>*@
+                        </a>
                     </div>
                 </div>
-                <div class="row">
-                    @RenderBody()
+                <div class="col-xs-10" style="">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--cart summary for top_fixed nav-->
+                    <div class="pull-right hidden-xs">@Html.Action("Summary", "Cart")</div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="@Url.Action("Index","Startup")">Home</a></li>
+                            <li><a href="@Url.Action("Contact","Startup")">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div><!--Navigation ends-->
+    <!--Banner section-->
+    <div class="container-fluid banner_cs hidden-xs">
+    </div><!--Ends banner-->
+    <!--Category and content section-->
+    <div class="container" style="margin-top:30px;">
+        <div class="row panel content-cs">
+            <!--category vertical standard-->
+            <div id="category" class="col-sm-2 hidden-xs">
+                @*<div id="category" class="col-sm-3 col-md-2 col-xs-3 hidden-xs">*@
+                @Html.Action("Menu", "Nav")
+            </div>
+            <!--category horizontal for small devices-->
+            <div class="col-xs-12 visible-xs navbar-fixed-top horizontan_menu">
+                @Html.Action("Menu", "Nav", new { horizontalLayout = true })
+            </div>
+            <!--Content section-->
+            <div class="col-sm-10 col-xs-12 body-content">
+                @RenderBody()
             </div>
         </div>
         <hr />
         @*<footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>*@
     </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>

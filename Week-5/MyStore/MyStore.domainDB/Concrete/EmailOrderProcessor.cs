@@ -28,9 +28,10 @@ namespace MyStore.domainDB.Concrete
                 smtpClient.EnableSsl = _emailSettings.UseSsl;
                 smtpClient.Host = _emailSettings.ServerName;
                 smtpClient.Port = _emailSettings.ServerPort;
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = new NetworkCredential(_emailSettings.Username, _emailSettings.Password);
-
+                
                 if (_emailSettings.WriteAsFile)
                 {
                     smtpClient.DeliveryMethod = SmtpDeliveryMethod.SpecifiedPickupDirectory;
@@ -73,7 +74,15 @@ namespace MyStore.domainDB.Concrete
                     {
                         mailMessage.BodyEncoding = Encoding.ASCII;
                     }
-                    smtpClient.Send(mailMessage);
+                    try
+                    {
+                        smtpClient.Send(mailMessage);
+                    }
+                    catch (Exception ex)
+                    {
+                        
+                    }
+
                 }
                 
 
@@ -86,14 +95,16 @@ namespace MyStore.domainDB.Concrete
     //email settings
     public class EmailSettings
     {
-        public string MailToAddress = "order@baldevpatel.co.uk";
+        public string MailToAddress = "mail@baldevpatel.co.uk";
         public string MailFromAddress = "mail@baldevpatel.co.uk";
         public bool UseSsl = true;
+        
 
         public string Username = "mail@baldevpatel.co.uk";
         public string Password = "Jignesh198!";
-        public string ServerName = "send.baldevpatel.co.uk";
-        public int ServerPort = 587;
+        public string ServerName = "mailout.one.com";
+        public int ServerPort = 465;
+        
         public bool WriteAsFile = false;
         public string FileLocation = @"c:\mystore_emails";
 

@@ -28,5 +28,13 @@ namespace MyStore.Controllers
 
             return View(subcategories);
         }
+
+        public ViewResult Contact()
+        {
+            return View();
+        }
+
     }
+
+
 }

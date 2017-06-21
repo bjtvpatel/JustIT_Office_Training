@@ -21,7 +21,6 @@ C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\EntityFramework.xml
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\EntityFramework.SqlServer.xml
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\obj\Debug\MyStore.domainDB.csprojResolveAssemblyReference.cache
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\obj\Debug\MyStore.domainDB.dll
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\obj\Debug\MyStore.domainDB.pdb
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\roslyn\csc.exe.config
@@ -74,3 +73,4 @@ C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\System.Web.WebPages.xml
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\System.Web.WebPages.Deployment.xml
 C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\bin\System.Web.WebPages.Razor.xml
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-5\MyStore\MyStore.domainDB\obj\Debug\MyStore.domainDB.csprojResolveAssemblyReference.cache

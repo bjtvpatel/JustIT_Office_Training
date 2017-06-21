@@ -1,0 +1,995 @@
+﻿*{
+    box-sizing:border-box;
+}
+
+html > body [class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 18000px; /* A really big width */
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+img {
+    
+    max-width: 100%;
+    height: auto;
+}
+/*Starup Page Index*/
+.image-cs {
+    -moz-transition: width 3s height 2s;
+    -o-transition: width 3s height 2s;
+    -webkit-transition: width 3s height 2s;
+    transition: width 3s height 2s;
+    width:250px !important;
+    height:175px !important;
+    
+}
+
+a.image-cs:hover{
+    width:275px;
+    height:185px;  
+}
+
+html > body .container{
+    margin: 0 auto !important;
+}
+
+.menu-horizontal-cs{
+    display:block !important;
+    margin:auto !important;
+}
+
+.navbar {
+    margin-bottom:5px !important;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: 0;
+    margin-left: 0;   
+}
+
+input.searchBox[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input.searchBox[type=text]:focus {
+    width: 100%;
+}
+
+.banner-cs {
+    background-image:url(/Img/Banner/b6_1073x173.jpg);
+    max-width:100%;
+    height:174px;
+    background-size:100% 100%;
+     background-repeat: no-repeat;
+     margin-top:-10px !important;
+    }
+
+
+.summary-cs {
+    /*padding: 0 10px!important;
+    text-align: justify;*/
+    font-size: 0.9em !important;
+    width:500px !important;
+}
+
+.btn{
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    margin-top:10px !important;
+}
+
+.shoppingAmount-cs{
+     width:auto !important;
+     margin-right:10px !important;
+}
+.checkout-btn{
+    margin-right:5px !important;
+}
+
+#myCarousel{
+    margin-top:15px !important;
+}
+.category-header{
+    margin-top:10px !important;
+    margin-left: 0 !important;
+    margin-right:0 !important;
+    line-height: 35px !important;
+}
+
+
+.img-cs{
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+    vertical-align:central !important;
+    margin:0 20px !important;
+    padding:0 10px !important;
+}
+
+.productdetail-cs dt {
+    text-align: left !important;
+}
+
+
+.checkoutField-cs {
+    width: 800px !important;   
+}
+
+
+.col-atc-cs {
+    padding: 0 0 !important;
+}
+
+.addtocart-cs {
+    padding: 2px 5px !important;
+    font-size: 0.9em !important;
+    line-height: 1.1em !important;
+
+
+}
+.productInfo-cs {
+    font-size: 0.7em !important;
+    padding: 0 2px !important;
+    -ms-text-justify: auto;
+    text-justify: auto;
+}
+
+.productName {
+    font-size: 0.9em !important;
+    -ms-text-justify: auto;
+    text-justify: auto;
+    height: 35px;
+    padding: 2px 2px !important;
+   
+}
+
+.product-cs {
+    margin: 0 2px 40px 2px !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+}
+
+.priceTag-cs {
+    padding: 0 !important;    
+}
+
+.priceTag {
+    font-size: 1.1em !important;
+    line-height: 1.1em !important;
+    
+}
+.content-cs {
+   margin-top: 20px !important;
+
+}
+.well-top-cs {
+    padding: 0 0 !important;
+    height: 65px !important;
+    margin: 0 0 10px 0 !important;
+    
+}
+.well-bottom-cs {
+    padding: 0 0 !important;
+    height: 35px !important;
+    margin-bottom: 0 !important;
+    
+}
+.well-Proinfo-cs{
+    padding: 0 0 !important;
+    height: 55px !important;
+    margin:0 !important;
+    
+}
+.list-cs {
+    padding: 10px 10px !important;
+    width: 130%;
+    
+}
+
+/*xxxxxxxxxxxxx||Media Query iphone 5||xxxxxxxxxxxxx*/
+
+
+
+@media screen {
+    * {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    *{
+    box-sizing:border-box;
+}
+
+html > body [class*="col-"] {
+    float: left;
+    padding: 0;
+    
+}
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+html > body [class*="col-"] {
+        float: left;
+        padding: 0;
+    }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%; /* A really big width */
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 180px;
+}
+
+/*img {
+    max-width:100%;
+    height: auto;
+}*/
+
+  
+    body {
+        margin-top: 0 !important;
+        padding: 0 0px !important;
+        min-width: 320px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .navbar-inverse {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .container {
+        padding: 0 5px 0 5px !important;
+        width: 320px !important;
+        min-width: 320px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-fixed-top {
+        height: auto;
+        font-size: 1.1em;
+        min-width: 320px !important;
+        max-width: 100% !important;
+    }
+
+    .summary-cs {
+        margin: 0 0 !important;
+        width: 170px !important;
+    }
+
+    .navbar-header {
+        width: 120px !important;
+        float: left;
+        padding-left: 0;
+        margin: 5px 0 0 0 !important;
+        float: left !important;
+    }
+
+    .navbar-brand {
+        padding: 8px 8px !important;
+    }
+
+    .navbar-text {
+        float: left !important;
+    }
+
+    .shoppingIcon-cs {
+        width: 60px !important;
+    }
+
+    .shoppingAmount-cs {
+        width: 100px !important;
+    }
+
+    .glyphicon-shopping-cart {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    /*xxxxxxxxxxxxxxStyling form products pagexxxxxxxxxxxx*/
+
+    
+      .banner-cs {
+        min-width: 320px;
+        min-height: 100px !important;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .menuhorz-cs-maincol {
+        padding: 0 0 !important;
+        min-width: 310px !important;
+        max-width: 100% !important;
+         
+    }
+
+    .menuhorz-cs-row {
+        min-width: 310px !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .menuhorz-cs-col {
+        padding: 0 !important;
+        min-width: 320px !important;
+        max-width: 100% !important;
+    }
+
+    .menu-horizontal-cs {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    a.menuhorz-btn {
+        padding: 2px 5px !important;
+        font-size: 0.6em !important;
+    }
+
+    .priceTag-cs {
+        padding: 0 !important;
+    }
+
+    .priceTag {
+        font-size: 0.9em !important;
+        line-height: 0.9em !important;
+    }
+    .container-fluid {
+        padding: 0 0 !important;
+        width: 320px !important;
+        min-width: 310px !important;
+        max-width: 100% !important;
+    }
+
+    /*.list-cs {
+        padding: 0 0 !important;
+        width: 100%;
+        margin: auto !important;
+    }*/
+
+    .product-cs {
+        margin: 0 2px 2px 2px !important;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width:316px !important;
+        max-width: 100% !important;
+    }
+
+    .well-top-cs-prod {
+        min-width: 310px !important;
+        max-width: 100% !important;
+        padding: 5px 5px !important;
+        margin: 0 !important;
+    }
+
+    .row-img-cs {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        padding: 5px 5px !important;
+    }
+
+    .well-Proinfo-cs {
+        padding: 0 0 !important;
+        height: 75px !important;
+        margin: 0 !important;
+    }
+
+    .productName-cs {
+        font-size: 0.8em !important;
+        -ms-text-justify: auto;
+        text-justify: auto;
+        height: 35px;
+        padding: 2px 2px !important;
+        min-width: 310px !important;
+        max-width: 100% !important;
+        margin:0 !important;
+    }
+
+    .productImage-cs {
+        -ms-text-justify: auto;
+        text-justify: auto;
+        height: auto;
+        padding: 2px 2px !important;
+        min-width: 300px !important;
+        max-width: 100% !important;
+    }
+
+    .col-atc-cs {
+    padding: 0 0 !important;
+}
+
+    
+.addtocart-cs {
+    padding: 2px 5px !important;
+    font-size: 0.9em !important;
+    line-height: 1.1em !important;
+
+
+}
+
+    /*Startup page styling*/
+    #myCarousel {
+        min-width: 310px !important;
+        max-width: 100% !important;
+    }
+
+    .carousel-img-cs {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        height: 200px !important;
+    }
+
+    .btn {
+        padding: 5px 10px !important;
+    }
+
+
+
+    .well-bottom-cs {
+        font-size: 1.1em !important;
+        font-weight: 500 !important;
+        padding: 0 0 !important;
+        height: 35px !important;
+        line-height: 35px !important;
+        margin: 0 0 10px 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .category-cs {
+        min-width: 320px !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 15px !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /*Starup Page Index*/
+    .image-cs {
+        -moz-transition: width 3s height 2s;
+        -o-transition: width 3s height 2s;
+        -webkit-transition: width 3s height 2s;
+        transition: width 3s height 2s;
+        width: 250px !important;
+        height: 175px !important;
+    }
+
+    image-cs:hover {
+        width: 275px;
+        height: 185px;
+    }
+
+    html > body .container {
+        margin: auto !important;
+    }
+}
+
+
+/*xxxxxxxxxxxxx||Media Query iphone 6 ||xxxxxxxxxxxxx*/
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+@media screen {
+    * {
+        background: none;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 480px) {
+
+   
+    body {
+        margin-top: 0 !important;
+        padding: 0 5px !important;
+        min-width: 568px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar {
+        min-width: 568px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .navbar-inverse {
+        min-width: 568px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .container {
+        padding: 0 5px 0 5px !important;
+        /*width:568px !important;*/
+        min-width: 568px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-fixed-top {
+        height: auto;
+        font-size: 1.1em;
+        min-width: 568px !important;
+        max-width: 100% !important;
+    }
+
+    .summary-cs {
+        margin: 0 0 !important;
+        width: 170px !important;
+    }
+
+    .navbar-header {
+        width: 120px !important;
+        float: left;
+        padding-left: 0;
+        margin: 5px 0 0 0 !important;
+        float: left !important;
+    }
+
+    .navbar-brand {
+        padding: 8px 8px !important;
+    }
+
+    .navbar-text {
+        float: left !important;
+    }
+
+    .shoppingIcon-cs {
+        width: 60px !important;
+    }
+
+    .shoppingAmount-cs {
+        width: 100px !important;
+    }
+
+    .glyphicon-shopping-cart {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+
+     /*xxxxxxxxxxxxxxStyling form products pagexxxxxxxxxxxx*/
+
+    html > body [class*="col-"] {
+        float: left !important;
+        padding: 5px !important
+        
+    }
+
+    .body-content {
+        padding: 0 !important;
+    }
+
+    .content-cs {
+        margin: 0 !important;
+        padding:0 !important;
+    }
+
+    .banner-cs {
+        min-width: 568px;
+        min-height: 100px !important;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .menuhorz-cs-maincol {
+        padding: 0px 0px !important;
+        min-width: 558px !important;
+        max-width: 100% !important;
+         
+    }
+
+    .menuhorz-cs-row {
+        min-width: 558px !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .menuhorz-cs-col {
+        padding: 0 !important;
+        min-width: 568px !important;
+        max-width: 100% !important;
+    }
+
+    .menu-horizontal-cs {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    a.menuhorz-btn {
+        padding: 2px 5px !important;
+        font-size: 0.6em !important;
+    }
+
+    .priceTag-cs {
+        padding: 0 !important;
+    }
+
+    .priceTag {
+        font-size: 0.9em !important;
+        line-height: 0.9em !important;
+    }
+    .container-fluid {
+        padding: 0 0 !important;
+        width: 568px !important;
+        min-width: 558px !important;
+        max-width: 100% !important;
+        margin:0 !important;
+    }
+
+    .list-cs {
+        padding: 0 20px !important;
+        width: 100%;
+        margin: auto !important;
+    }
+
+    .product-cs {
+        margin: 0 2px 2px 2px !important;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width:550px !important;
+        max-width: 100% !important;
+    }
+
+    .well-top-cs-prod {
+        min-width: 558px !important;
+        max-width: 100% !important;
+        padding: 5px 5px !important;
+        margin: 0 !important;
+    }
+
+    .row-img-cs {
+        min-width: 558px !important;
+        max-width: 100% !important;
+        padding: 5px 5px !important;
+    }
+
+    .well-Proinfo-cs {
+        padding: 0 0 !important;
+        height: 75px !important;
+        margin: 0 !important;
+    }
+
+    .productName-cs {
+        font-size: 0.8em !important;
+        -ms-text-justify: auto;
+        text-justify: auto;
+        height: 35px;
+        padding: 2px 2px !important;
+        min-width: 558px !important;
+        max-width: 100% !important;
+        margin:0 !important;
+    }
+
+    .productImage-cs {
+        -ms-text-justify: auto;
+        text-justify: auto;
+        height: auto;
+        padding: 2px 2px !important;
+        min-width: 558px !important;
+        max-width: 100% !important;
+    }
+
+    .col-atc-cs {
+    padding: 0 0 !important;
+}
+
+    
+.addtocart-cs {
+    padding: 2px 5px !important;
+    font-size: 0.9em !important;
+    line-height: 1.1em !important;
+
+
+}
+
+/*xxxxxxxxxxx|startup page style|xxxxxxxxxxxxxxx*/
+
+
+    #myCarousel {
+        min-width: 558px !important;
+        max-width: 100% !important;
+    }
+
+    .carousel-img-cs {
+        min-width: 568px !important;
+        max-width: 100% !important;
+        height: 200px !important;
+    }
+
+    .btn {
+        padding: 5px 10px !important;
+    }
+
+
+  
+
+    .well-bottom-cs {
+        font-size: 1.1em !important;
+        font-weight: 500 !important;
+        padding: 0 0 !important;
+        height: 35px !important;
+        line-height: 35px !important;
+        margin: 0 0 10px 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .category-cs {
+        min-width: 568px !important;
+        max-width: 100% !important;
+        margin: auto !important;
+        padding: 0 0px !important;
+        height: auto !important;
+    }
+
+    .col-md-3 {
+        padding: 5px 5px !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /*Starup Page Index*/
+    .image-cs {
+        -moz-transition: width 3s height 2s;
+        -o-transition: width 3s height 2s;
+        -webkit-transition: width 3s height 2s;
+        transition: width 3s height 2s;
+        width: 250px !important;
+        height: 175px !important;
+    }
+
+    image-cs:hover {
+        width: 275px;
+        height: 185px;
+    }
+
+    html > body .container {
+        margin: auto !important;
+    }
+}
+
+
+/*xxxxxxxxxxxxx||Media Query ipad ||xxxxxxxxxxxxx*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media screen {
+    * {
+        background: none;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width: 768px) {
+
+  
+
+    body {
+        margin-top: 0 !important;
+        padding: 0 !important;
+        min-width: 768px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar {
+        min-width: 768px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .navbar-inverse {
+        min-width: 768px !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        padding: 0 5px !important;
+    }
+
+    .container {
+        padding: 0 5px 0 5px !important;
+        /*width:568px !important;*/
+        min-width: 768px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-fixed-top {
+        height: auto;
+        font-size: 1.1em;
+        min-width: 768px !important;
+        max-width: 100% !important;
+    }
+
+    .summary-cs {
+        margin: 0 0 !important;
+        width: 470px !important;
+    }
+
+    .navbar-header {
+        width: 120px !important;
+        float: left;
+        padding-left: 0;
+        margin: 5px 0 0 0 !important;
+        float: left !important;
+    }
+
+    .navbar-brand {
+        padding: 8px 8px !important;
+    }
+
+    .navbar-text {
+        float: left !important;
+    }
+
+
+    .shoppingAmount-cs {
+        float: left !important;
+        width: 200px !important;
+    }
+
+
+
+
+
+
+
+    #myCarousel {
+        min-width: 758px !important;
+        max-width: 100% !important;
+    }
+
+    .carousel-img-cs {
+        min-width: 768px !important;
+        max-width: 100% !important;
+        height: 200px !important;
+    }
+
+    .btn {
+        padding: 10px 10px !important;
+    }
+
+    .checkout-btn {
+        right: 20px !important;
+        margin-right: 20px !important;
+    }
+    
+    .well-bottom-cs {
+        font-size: 1.1em !important;
+        font-weight: 500 !important;
+        padding: 0 0 !important;
+        height: 35px !important;
+        line-height: 35px !important;
+        margin: 0 0 10px 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .category-cs {
+        min-width: 768px !important;
+        max-width: 100% !important;
+        margin: auto !important;
+        height: auto !important;
+    }
+
+    .col-md-3 {
+        padding: 5px 5px !important;
+        margin: auto !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /*Starup Page Index*/
+    .image-cs {
+        -moz-transition: width 3s height 2s;
+        -o-transition: width 3s height 2s;
+        -webkit-transition: width 3s height 2s;
+        transition: width 3s height 2s;
+        /*width:100% !important;*/
+        /*min-width:200px !important;
+
+    min-height:150px !important;*/
+    }
+
+    image-cs:hover {
+        width: 275px;
+        height: 185px;
+    }
+
+    html > body .container {
+        margin: auto !important;
+    }
+}

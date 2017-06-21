@@ -6,17 +6,18 @@
 @{
     ViewBag.Title = "Books";
 }
-<div class="row list-cs">
+<!--list of product of item -->
+<div class="row">
     @foreach (var p in Model.Products)
     {
 
-        <div class="col-md-3 col-sm-3 col-xs-12 form-group product-cs">
+        <div class="col-xs-6 col-sm-4 list_css" style="">
             @Html.Partial("ProductSummary", p)
         </div>
    
     }
 </div>
-        <div class="btn-group pull-right">
+        <div id="page-btn" class="btn-group pull-right">
             @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategory }))
         </div>
 

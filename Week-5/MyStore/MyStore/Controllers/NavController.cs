@@ -43,6 +43,9 @@ namespace MyStore.Controllers
             return PartialView(categories);
 
         }
+
+
+
         // GET: Nav
         //public string Menu()
         //{

@@ -36,7 +36,7 @@ namespace MyStore.domainDB.Entities
         [Required(ErrorMessage = "Please enter a product ImageURL")]
         public string Image { get; set; }
 
-
+        //[Required(ErrorMessage = "Please upload Image")]
         public byte[] ImageData { get; set; }
 
         public string ImageMimeType { get; set; }

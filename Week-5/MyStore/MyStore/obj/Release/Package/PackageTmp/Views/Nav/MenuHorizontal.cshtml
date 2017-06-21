@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<string>
 
-<div class="btn-group btn-group-sm btn-group-justified menu-horizontal-cs">
-    @Html.ActionLink("Home", "List", "Product", null, new { @class = "btn btn-default btn-sm" })
+<div id="horizontal_menu" class="btn-group btn-group-sm btn-group-justified" >
+    @Html.ActionLink("Home", "List", "Product", null, new { @class = "btn btn-default btn-sm h-menu" })
 
 
     @foreach (var link in Model)
@@ -16,7 +16,7 @@
        },
        new
        {
-           @class = "btn btn-default btn-sm" + (link == ViewBag.SelectedCategory ? "btn btn-primary" : "")
+           @class = "btn btn-default btn-sm h-menu" + (link == ViewBag.SelectedCategory ? "btn btn-primary h-menu" : "")
        })
 
     }

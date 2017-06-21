@@ -11,10 +11,11 @@ namespace MyStore.Models
     {
         public IEnumerable<Product> Products { get; set; }
         public PagingInfo PagingInfo { get; set; }
-        
+
         public string CurrentCategory { get; set; }
 
-    
+        public string SearchItem { get; set; }
+        public string CurrentFiler { get; internal set; }
     }
 
 

@@ -23,36 +23,65 @@ namespace MyStore.Controllers
             this._repository = productRepository;
 
         }
-      //GET: Product
+        //GET: Product
         //public ViewResult List()
         //{
         //    return View(_repository.Products);
         //}
 
-            //GET products from db to list
+        //GET products from db to list
         public ViewResult List(string category, int page = 1)
-        {
+        {           
+
             ProductListViewModel model = new ProductListViewModel
             {
                 
                 Products = _repository.Products
-                .Where(p => category == null||p.SubCategory == category)
-                .OrderBy(p=>p.ProductId)
-                .Skip((page-1)*PageSize)
+                .Where(p => category == null || p.SubCategory.ToLower() == category.ToLower())
+                .OrderBy(p => p.ProductId)
+                .Skip((page - 1) * PageSize)
                 .Take(PageSize),
 
                 PagingInfo = new PagingInfo
                 {
-                    CurrentPage = page, 
+                    CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    Totalitems = category==null? _repository.Products.Count():_repository.Products.Count(e => e.SubCategory==category)
+                    Totalitems = category == null ? _repository.Products.Count() : _repository.Products.Count(e => e.SubCategory.ToLower() == category.ToLower())
                 },
                 CurrentCategory = category
+                               
             };
-            return View(model);
-            //  return View(_repository.Products.OrderBy(p => p.ProductId).Skip((page - 1) * PageSize).Take(PageSize));
 
+
+            return View(model);
+
+            //  return View(_repository.Products.OrderBy(p => p.ProductId).Skip((page - 1) * PageSize).Take(PageSize));
         }
+
+        ////GET products from db to list
+        //public ViewResult Search(string searchString, int page = 1)
+        //{
+        //    ProductListViewModel model = new ProductListViewModel
+        //    {
+
+        //        Products = _repository.Products
+        //        .Where(p => searchString == null || p.SubCategory.ToLower() == searchString)
+        //        .OrderBy(p => p.ProductId)
+        //        .Skip((page - 1) * PageSize)
+        //        .Take(PageSize),
+
+        //        PagingInfo = new PagingInfo
+        //        {
+        //            CurrentPage = page,
+        //            ItemsPerPage = PageSize,
+        //            Totalitems = searchString == null ? _repository.Products.Count() : _repository.Products.Count(e => e.SubCategory.ToLower() == searchString)
+        //        },
+        //        CurrentCategory = searchString
+        //    };
+        //    return View(model);
+        //    //  return View(_repository.Products.OrderBy(p => p.ProductId).Skip((page - 1) * PageSize).Take(PageSize));
+
+        //}
 
         //Get product details for detail view
         public ActionResult ProductDetail(int id)

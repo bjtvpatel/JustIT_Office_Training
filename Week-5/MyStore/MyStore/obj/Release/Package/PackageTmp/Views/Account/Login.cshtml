@@ -5,6 +5,11 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<style>
+    .form-control{
+ width:280px;
+    }
+</style>
 
 <div class="panel">
     <div class="panel-heading">
@@ -12,6 +17,7 @@
     </div>
     <div class="panel-body">
         <p class="lead">Please log in to access Admin Area.</p>
+        <p>Username: <b>admin</b> and Password: <b>admin</b></p>
 
         @using (Html.BeginForm())
         {
