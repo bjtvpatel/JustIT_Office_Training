@@ -1,5 +1,5 @@
 ﻿.top_bar{background-color:#18bc9c;}
-
+ .wrapper { padding-left: 0 !important;  padding-right: 0 !important; width:100%; margin:0 0 !important;}
 a.social_icon{margin-right:5px !important;}
 
 a.social_icon.icon_css{font-size:1.1em; color:#18bc9c;}
@@ -28,9 +28,13 @@ button.navbar-toggle{margin:10px auto; z-index:10 !important;}
 
 .list_css{padding-bottom:20px; margin-bottom:10px;}
 
-.panel-heading { height:120px; padding:5px 10px;font-size:1.0em;}
+.panel-heading { height:100px; padding:5px 10px;font-size:1.0em;}
 
-.panel-heading td{font-size:1.0em;}
+.panel-heading table{width:100%; height:50px;}
+
+.panel-heading td{font-size:0.9em;}
+
+.price_css{font-size:1.0em;}
 
 .info_css{height:50px; padding-left:10px; font-size:0.7em;}
 
@@ -42,12 +46,9 @@ button.navbar-toggle{margin:10px auto; z-index:10 !important;}
 
 
 
-@media (min-width: 768px) {
-  
-}
-
-@media screen and (max-width: 767px) {
-
+@media (max-width: 691px) (min-width:481px) {
+    col-xs-6{width:33% !important;}
+     .wrapper { padding-left: 0 !important;  padding-right: 0 !important; width:100%; margin:0 0 !important;}
     a.navbar-brand{padding-left:0;}
     
     button.navbar-toggle{margin:10px auto; z-index:10 !important;}
@@ -76,10 +77,70 @@ button.navbar-toggle{margin:10px auto; z-index:10 !important;}
     
     .list_css{padding-bottom:10px; margin-bottom:5px;}
 
-    .panel-heading { height:100px; padding:2px 5px;font-size:0.9em;}
+    .panel-heading { height:60px; padding:2px 5px;font-size:0.8em;}
 
-    .panel-heading td{font-size:0.9em;}
+    .panel-heading table{width:100%; height:50px;}
     
+    .panel-heading td{font-size:0.8em;}
+    
+    .price_css{font-size:0.9em;}
+
+    .addtocart-btn{padding:5px 10px; font-size:x-small;}
+
+    #page-btn a {font-size:x-small !important;}
+
+    .info_css{height:40px; padding-left:5px; font-size:0.5em;}
+
+    .checkout_css{padding:2px 5px; font-size:small; margin:10px 5px; }
+
+    #cartTable thead > tr > th {font-size:0.5em;}
+    
+    #cartTable tbody > tr > td  {font-size:0.4em;}
+
+    #cartTable th td{padding:2px 3px !important;}
+    
+    #cartTable tfoot > tr > td {font-size:0.5em;}
+
+}
+
+@media screen and (max-width: 767px) {
+     .wrapper { padding-left: 0 !important;  padding-right: 0 !important; width:100%; margin:0 0 !important;}
+    a.navbar-brand{padding-left:0;}
+    
+    button.navbar-toggle{margin:10px auto; z-index:10 !important;}
+    
+    .mynavbar .navbar-collapse ul li{z-index:10!important;}
+    
+    #navbar-collapse{margin-top:50px; width:100%;}
+    
+    a.social_icon{margin-right:2px !important;}
+    
+    a.social_icon.icon_css{font-size:0.8em; color:#18bc9c;}
+
+    .top_bar_control{ padding-left:10px;}
+    
+    .horizontan_menu{clear:both;padding:0; margin-top:80px; font-size:0.4em;}
+    
+    #horizontal_menu a{      padding-left:0;       padding-right:0;  }
+
+    .category_title h3 { font-size:1.1em; margin:10px auto;  }
+
+    img.category-Img { width: 150px; height: 90px; }
+
+    .category_title { margin: 8px 0;  height: 30px;  border: 1px solid;  border-radius: 5px;  }
+    
+    .body-content{margin-top:20px !important; padding:0 5px !important;}
+    
+    .list_css{padding-bottom:10px; margin-bottom:5px;}
+
+    .panel-heading { height:60px; padding:2px 5px;font-size:0.8em;}
+
+    .panel-heading table{width:100%; height:50px;}
+    
+    .panel-heading td{font-size:0.8em;}
+    
+    .price_css{font-size:0.9em;}
+
     .addtocart-btn{padding:5px 10px; font-size:x-small;}
 
     #page-btn a {font-size:x-small !important;}
@@ -100,6 +161,60 @@ button.navbar-toggle{margin:10px auto; z-index:10 !important;}
 
 
 @media (max-device-width: 480px) and (orientation: landscape) {
-       
+    .wrapper { padding-left: 0 !important;  padding-right: 0 !important; width:100%; margin:0 0 !important;}
+                 
+    a.navbar-brand{padding-left:0;}
+    
+    button.navbar-toggle{margin:10px auto; z-index:10 !important;}
+    
+    .mynavbar .navbar-collapse ul li{z-index:10!important;}
+    
+    #navbar-collapse{margin-top:50px; width:100%;}
+    
+    a.social_icon{margin-right:2px !important;}
+    
+    a.social_icon.icon_css{font-size:0.8em; color:#18bc9c;}
+
+    .top_bar_control{ padding-left:10px;}
+    
+    .horizontan_menu{clear:both;padding:0; margin-top:80px; font-size:0.4em;}
+    
+    #horizontal_menu a{      padding-left:0;       padding-right:0;  }
+
+    .category_title h3 { font-size:1.1em; margin:10px auto;  }
+
+    img.category-Img { width: 150px; height: 90px; }
+
+    .category_title { margin: 8px 0;  height: 30px;  border: 1px solid;  border-radius: 5px;  }
+    
+    .body-content{margin-top:20px !important; padding:0 5px !important;}
+    
+    .list_css{padding-bottom:10px; margin-bottom:5px;}
+
+    .panel-heading { height:60px; padding:2px 5px;font-size:0.8em;}
+
+    .panel-heading table{width:100%; height:50px;}
+    
+    .panel-heading td{font-size:0.8em;}
+    
+    .price_css{font-size:0.9em;}
+
+    .addtocart-btn{padding:5px 10px; font-size:x-small;}
+
+    #page-btn a {font-size:x-small !important;}
+
+    .info_css{height:40px; padding-left:5px; font-size:0.5em;}
+
+    .checkout_css{padding:2px 5px; font-size:small; margin:10px 5px; }
+
+    #cartTable thead > tr > th {font-size:0.5em;}
+    
+    #cartTable tbody > tr > td  {font-size:0.4em;}
+
+    #cartTable th td{padding:2px 3px !important;}
+    
+    #cartTable tfoot > tr > td {font-size:0.5em;}
+
+
     }
 

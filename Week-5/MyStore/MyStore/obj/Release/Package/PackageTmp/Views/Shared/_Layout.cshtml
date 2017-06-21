@@ -28,25 +28,27 @@
 <body>
 
     <!--top bar section for icons and login-->
-    <div class="container navbar-fixed-top top_bar" style="background-color:#FDFDFD;">
-        <div class="row">
-            <div class="col-xs-4">
-                <a href="" class="social_icon"><i class="fa fa-facebook-official icon_css"></i></a>
-                <a href="" class="social_icon"><i class="fa fa-twitter icon_css"></i></a>
-                <a href="" class="social_icon"><i class="fa fa-youtube-play icon_css"></i></a>
-                <a href="" class="social_icon"><i class="fa fa-google-plus icon_css" style="font-size:1.1em; color:#18bc9c;"></i></a>
-            </div>
-
-            <div class="col-xs-8">
-                <div class="pull-right visible-xs">
-                    @Html.Action("Summary", "Cart")
+    <div class="wrapper">
+        <div class="container navbar-fixed-top top_bar" style="background-color:#FDFDFD;">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="" class="social_icon"><i class="fa fa-facebook-official icon_css"></i></a>
+                    <a href="" class="social_icon"><i class="fa fa-twitter icon_css"></i></a>
+                    <a href="" class="social_icon"><i class="fa fa-youtube-play icon_css"></i></a>
+                    <a href="" class="social_icon"><i class="fa fa-google-plus icon_css" style="font-size:1.1em; color:#18bc9c;"></i></a>
                 </div>
-                <ul class="top_bar_control">
-                    <li><a href="@Url.Action("Login","Account", "")">Login</a></li>
-                    @*<li class="hidden-xs"><a href="@Url.Action("Login","Account", "")">Register</a></li>*@
-                    @*<li><a href="@Url.Action("Login","Account", "")">Admin</a></li>*@
-                </ul>
 
+                <div class="col-xs-8">
+                    <div class="pull-right visible-xs">
+                        @Html.Action("Summary", "Cart")
+                    </div>
+                    <ul class="top_bar_control">
+                        <li><a href="@Url.Action("Login","Account", "")">Login</a></li>
+                        @*<li class="hidden-xs"><a href="@Url.Action("Login","Account", "")">Register</a></li>*@
+                        @*<li><a href="@Url.Action("Login","Account", "")">Admin</a></li>*@
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
