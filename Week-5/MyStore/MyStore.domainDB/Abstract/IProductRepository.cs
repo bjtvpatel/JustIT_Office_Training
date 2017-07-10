@@ -16,5 +16,7 @@ namespace MyStore.domainDB.Abstract
 
         //delete item from list
         Product DeleteProduct(int ProductId);
+        ////sub category added 
+        //IEnumerable<SubCategory> Subcategories { get; }
     }
 }

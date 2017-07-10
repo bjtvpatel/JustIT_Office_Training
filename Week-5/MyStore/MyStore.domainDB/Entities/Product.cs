@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace MyStore.domainDB.Entities
 {
@@ -41,5 +42,30 @@ namespace MyStore.domainDB.Entities
 
         public string ImageMimeType { get; set; }
 
+        //public int SubCategoryId { get; set; }
+
+        //public virtual SubCategory SubCategories { get; set; }
+
+    }
+
+
+    public class Category
+    {
+        public int CategoryId { get; set; }
+
+        public string Name { get; set; }
+
+
+
+    }
+
+    public class SubCategory
+    {
+        public int SubCategoryId { get; set; }
+
+        [Display(Name = "Category")]
+        public string Name { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

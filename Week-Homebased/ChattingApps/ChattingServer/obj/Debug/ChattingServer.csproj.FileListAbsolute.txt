@@ -1,0 +1,8 @@
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\obj\Debug\ChattingServer.csprojResolveAssemblyReference.cache
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\bin\Debug\ChattingServer.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\bin\Debug\ChattingServer.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\bin\Debug\ChattingServer.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\bin\Debug\ChattingInterfaces.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\bin\Debug\ChattingInterfaces.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\obj\Debug\ChattingServer.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingServer\obj\Debug\ChattingServer.pdb

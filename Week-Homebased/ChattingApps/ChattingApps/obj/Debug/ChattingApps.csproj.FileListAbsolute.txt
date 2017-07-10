@@ -1,0 +1,16 @@
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\bin\Debug\ChattingApps.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\bin\Debug\ChattingApps.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\bin\Debug\ChattingApps.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\MainWindow.g.cs
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\App.g.cs
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps_MarkupCompile.cache
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps_MarkupCompile.lref
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\MainWindow.baml
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.g.resources
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.Properties.Resources.resources
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.csproj.GenerateResource.Cache
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\bin\Debug\ChattingInterfaces.dll
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\bin\Debug\ChattingInterfaces.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\ChattingApps\ChattingApps\obj\Debug\ChattingApps.csprojResolveAssemblyReference.cache

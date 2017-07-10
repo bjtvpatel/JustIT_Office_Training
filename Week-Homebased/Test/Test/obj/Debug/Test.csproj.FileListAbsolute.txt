@@ -1,0 +1,6 @@
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\bin\Debug\Test.exe.config
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\bin\Debug\Test.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\bin\Debug\Test.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\obj\Debug\Test.exe
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\obj\Debug\Test.pdb
+C:\Users\M-1\Desktop\Test\JustIT_Office_Training\Week-Homebased\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

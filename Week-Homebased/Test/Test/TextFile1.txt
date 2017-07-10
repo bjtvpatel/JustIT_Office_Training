@@ -1,0 +1,40 @@
+﻿//Example of delegates
+    class Program
+    {
+
+        delegate int MyDel(int x);
+
+        static void Main11(string[] args)
+        {
+      
+            MyDel del = delegate(int x)
+            {
+                int t = 0;
+                for (int i = 0; i < x; i++)
+                {
+                    t += i;
+                   Console.WriteLine(t);
+
+                }
+                return t;
+            };
+
+          int total=  del(100);
+
+            Console.WriteLine(total);
+            Console.ReadLine();
+
+        }
+
+        static void  Testfunction()
+        {
+            for(int i=0; i<5; i++)
+            Console.WriteLine(i);
+        }
+
+        static string Testfunction1()
+        {
+            return "Hello World!";
+        }
+
+    }

@@ -80,7 +80,7 @@ namespace MyStore.domainDB.Concrete
                     }
                     catch (Exception ex)
                     {
-                        
+                        Console.WriteLine(ex);
                     }
 
                 }

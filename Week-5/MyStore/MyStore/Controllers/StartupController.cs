@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MyStore.domainDB.Abstract;
+using MyStore.domainDB.Entities;
 
 
 namespace MyStore.Controllers
@@ -21,12 +22,12 @@ namespace MyStore.Controllers
         // GET: Startup
         public ActionResult Index()
         {
-            IEnumerable<string> subcategories = _repository.Products
-                .Select(x => x.SubCategory)
-                .Distinct()
-                .OrderBy(x => x);
+            //IEnumerable<string> subcategories = _repository.pr
+            //    .Select(x => x.SubCategories.Name)
+            //    .Distinct()
+            //    .OrderBy(x => x);
 
-            return View(subcategories);
+            return View();
         }
 
         public ViewResult Contact()

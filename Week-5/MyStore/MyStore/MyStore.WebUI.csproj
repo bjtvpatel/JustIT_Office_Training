@@ -208,9 +208,13 @@
     <Content Include="Img\Banner\p11.jpg" />
     <Content Include="Img\Banner\p12.jpg" />
     <Content Include="Img\Banner\p13.jpg" />
+    <Content Include="Img\Category\c1-1.jpg" />
     <Content Include="Img\Category\c1.jpg" />
+    <Content Include="Img\Category\c2-1.jpg" />
     <Content Include="Img\Category\c2.jpg" />
+    <Content Include="Img\Category\c3-1.jpg" />
     <Content Include="Img\Category\c3.jpg" />
+    <Content Include="Img\Category\c4-1.jpg" />
     <Content Include="Img\Category\c4.jpg" />
     <Content Include="Img\Category\c7.jpg" />
     <Content Include="Img\Category\c8.jpg" />

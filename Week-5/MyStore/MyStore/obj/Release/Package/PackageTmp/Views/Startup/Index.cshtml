@@ -1,4 +1,4 @@
-﻿@model IEnumerable<string>
+﻿
 @{
     Layout = null;
 }
@@ -60,7 +60,7 @@
                 <ul class="top_bar_control">
                     <li><a href="@Url.Action("Login","Account")">Login</a></li>
                     @*<li class="hidden-xs"><a href="@Url.Action("Login","Account")">Register</a></li>
-                    <li><a href="@Url.Action("Login","Account")">Admin</a></li>*@
+                        <li><a href="@Url.Action("Login","Account")">Admin</a></li>*@
                 </ul>
             </div>
         </div>
@@ -148,8 +148,9 @@
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <a href="@Url.Action("List", "Product" , new { category="Maths" })">
+                            <h4></h4>
                             <h4>Maths</h4>
-                            <img src="~/Img/Category/c5.jpg" class="img-responsive img-thumbnail category-Img" />
+                            <img src="~/Img/Category/c1-1.jpg" class="img-responsive img-thumbnail category-Img" />
                         </a>
                     </div>
                 </div>
@@ -158,7 +159,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <a href="@Url.Action("List", "Product" , new { category="English" })">
-                            <h4>English</h4><img src="~/Img/Category/c6.jpg" class="img-responsive img-thumbnail category-Img" />
+                            <h4>English</h4>
+                            <img src="~/Img/Category/c2-1.jpg" class="img-responsive img-thumbnail category-Img" />
                         </a>
                     </div>
                 </div>
@@ -167,7 +169,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <a href="@Url.Action("List", "Product" , new { category="Science" })">
-                            <h4>Science</h4><img src="~/Img/Category/c7.jpg" class="img-responsive img-thumbnail category-Img" />
+                            <h4>Science</h4><img src="~/Img/Category/c3-1.jpg" class="img-responsive img-thumbnail category-Img" />
                         </a>
                     </div>
                 </div>
@@ -177,7 +179,7 @@
                     <div class="panel-body text-center">
                         <a href="@Url.Action("List", "Product" , new { category="Computing" })">
                             <h4>Computing</h4>
-                            <img src="~/Img/Category/c8.jpg" class="img-responsive img-thumbnail category-Img" />
+                            <img src="~/Img/Category/c4-1.jpg" class="img-responsive img-thumbnail category-Img" />
                         </a>
                     </div>
                 </div>
