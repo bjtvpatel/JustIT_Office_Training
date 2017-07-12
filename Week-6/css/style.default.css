@@ -79,9 +79,9 @@ section {
   
  .overlay{
  background-size:contain !important;
- background-attachment:fixed;
+ /*background-attachment:fixed;*/
  background-position:center !important;
- background-color:#4889a5;
+ /*background-color:#4889a5;*/
 
  
 }
@@ -92,9 +92,9 @@ section {
   
  .overlay{
  background-size:contain !important;
- background-attachment:fixed;
+ /*background-attachment:fixed;*/
  background-position:center !important;
- background-color:#4889a5;
+ /*background-color:#4889a5;*/
 
  
 }
@@ -106,9 +106,9 @@ section {
   
  .overlay{
  background-size:contain !important;
- background-attachment:fixed;
+ /*background-attachment:fixed;*/
  background-position:center !important;
- background-color:#4889a5;
+ /*background-color:#4889a5;*/
 
  
 }

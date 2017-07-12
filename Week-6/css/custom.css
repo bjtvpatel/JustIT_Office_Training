@@ -40,7 +40,7 @@ video {
 }
 .progress-bar{
    
-     background-color:#356e7b !important;
+     background-color:#61A5B5 !important;
     /*background-color:#4889a5 !important;*/
 }
 
@@ -65,7 +65,7 @@ video {
 }
 .bgImageBP{
  /*background-image: url(/img/monitor-313013_1280-ciprian-noborder.jpg);*/
- background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
+ background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-2.jpg);
  background-size:contain;
  background-repeat: no-repeat;
  /*background-attachment:fixed;*/
@@ -80,17 +80,18 @@ video {
   /*margin: -100px 0 0 -150px;*/
   opacity:0.90;
 
- 
- 
 }
 
 @media all and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
   
+
+
  .bgImageBP{
+ background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
  background-size:contain !important;
- background-attachment:fixed;
+ /*background-attachment:fixed;*/
  background-position:center !important;
- background-color:#4889a5;
+ /*background-color:#4889a5;*/
 
  
 }
@@ -393,24 +394,27 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
 }
 .navBP {
     font-size: 1.1em;
-    color: #ffffff !important;
+     color: #61A5B5 !important;
+    /*color: #ffffff !important;*/
     z-index: 1005;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-    color: #0aa3de !important;
+     color: #ffffff;
+    /*color: #61A5B5 !important;*/
     /*color: #F74D4D !important;*/
     /*color: rgb(249,191,59) !important;*/
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #61A5B5 !important;
     border-bottom: solid 1px transparent;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     /*    color: #000000;*/
-    color: #0aa3de !important;
+    color: #61A5B5 !important;
     /*color: #F74D4D !important;*/
     /*color: rgb(249,191,59) !important;*/
     background-color: transparent;
@@ -422,7 +426,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #0aa3de !important;
+    color: #61A5B5 !important;
     /*color: #F74D4D !important;*/
     /*color: rgb(25,181,254) !important;*/
 }
@@ -441,7 +445,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
 .navbar-default .navbar-nav > .active > a:focus {
     /*  color: #000000;*/
     /*color: rgb(249,191,59) !important;*/
-    color: #0aa3de !important;
+    color: #61A5B5 !important;
     /*color: #F74D4D !important;*/
     background-color: transparent;
     -webkit-transition: all 1s ease-out;
@@ -520,6 +524,8 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     border-radius: 5px;
     color: #fff !important;
     margin-bottom: 10px;
+    background-color:#61A5B5
+
 }
 
 .demo1 {
@@ -540,7 +546,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
 .portfolioTextBP:hover {
     text-decoration: none !important;
     /*color: rgb(249,191,59) !important;*/
-    color: #0aa3de !important;
+    color: #356e7b !important;
     /*color: #F74D4D !important;*/
     /*background-color: #444444 !important;*/
     
