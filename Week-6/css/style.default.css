@@ -146,6 +146,7 @@ section {
   background: #ffffff;
 }
 .box {
+    margin-top:20px;
   margin-bottom: 30px;
 }
 .content {
@@ -617,7 +618,9 @@ NAVBAR
 }
 /* scaffolding */
 body {
-  font-family: "Cardo", "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-family: "Cardo", "Times New Roman", Times, serif;*/
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -948,10 +951,13 @@ p {
 .lead {
   margin-bottom: 22px;
   font-size: 18px;
+  letter-spacing:0.25px;
+
 }
 @media (min-width: 768px) {
   .lead {
     font-size: 24px;
+    letter-spacing:0.5px;
   }
 }
 .text-small {

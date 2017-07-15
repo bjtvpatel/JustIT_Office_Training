@@ -28,8 +28,6 @@ video {
 .projectText
 {
     padding-left:10px;
-    letter-spacing:0px;
-    z-index:1000;
 
 }
  .copyright {
@@ -42,7 +40,7 @@ video {
 }
 .progress-bar{
    
-     background-color:#61A5B5 !important;
+     background-color:#356e7b !important;
     /*background-color:#4889a5 !important;*/
 }
 
@@ -54,58 +52,17 @@ video {
      height:50px;
     width:400px;padding-left:0px;
 }
-
-  .social_BP
-    {
-        height:100px;
-        z-index: 100;
-        bottom: 20px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-
-/*.social_BP{
+.social_BP{
     height:100px;
     z-index: 100;
-    top: 100px;
-    left: 80%;
+    bottom: 728px;
+    left: 78%;
     position: absolute;
-    /*text-align: center;
+    /*text-align: center;*/
+    width: 100%;
    
-   
 
-}*/
-
-@media screen and (max-width: 480px){
-
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-        bottom: -200px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-    
 }
-
-
-
 .bgImageBP{
  /*background-image: url(/img/monitor-313013_1280-ciprian-noborder.jpg);*/
  background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-2.jpg);
@@ -116,718 +73,32 @@ video {
  height:503px;
  width:713px;
  
-  
+   
   margin-left:auto;
   margin-right:auto;
   margin-top:10%;
   /*margin: -100px 0 0 -150px;*/
   opacity:0.90;
 
+ 
+ 
 }
 
 @media all and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
   
-    .navBP {
-    font-size: 0.8em;
-    color: #ffffff !important;
-    z-index: 1005;
-}
-      .navbar-default .navbar-brand {
-        font-size:0.8em !important;
-    }
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-        bottom: 50px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-    .bgImageBP{
-         background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
-         background-size:contain !important;
-         background-position:center !important;
-         margin-left:auto;
-         margin-right:auto;
-        margin-top:40%;
-        height:250px;
-        width:300px;
-    }
-
-    .aboutBP{ padding:30px 0 !important;
-
-    }
-    .aboutBP .heading {
-        font-size: 25px !important;
-        margin-bottom:20px !important;
-    }
-
-    .aboutBP .lead {
-        font-size: 18px !important;
-        margin-bottom:10px !important;
-    }
-
-     .aboutBP .aboutText {
-        font-size: 12px !important;
-    }
-
-     .portfolioTextBP{
-         font-size:18px !important;
-     }
-
-     .projectText{
-         font-size:12px !important;
-     }
-
-     .projectText h6{
-         font-size:14px !important;
-     }
-     
-     .services h4{ font-size:14px !important;}
-
-    .progress{
-        width: 90% !important;
-    }
-      .skillsText{ 
-                  padding: 10px 5px !important;
-     }
-
-     .icon_label{
-                font-size:0.8em !important;
-     }
-    
-     .softskills_heading{
-         font-size: 14px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .softskills_content{
-         font-size: 12px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .section-headingBP{
-          font-size: 25px !important;
-        margin-bottom:20px !important;
-     }
-
-     .date-title{
-         margin-top:30px !important;
-         margin-bottom:20px !important;
-     }
-
-     .date-title > span {
-         font-size:16px !important;
-     }
-
-     .news-title{
-         font-size:14px !important;
-     }
-      .news-title >span{
-         font-size:12px !important;
-     }
-        .news-title p{
-         font-size:11px !important;
-     }
-        .news-item{
-            padding-bottom:20px !important;
-            
-        }
-        .news-content{
-            padding:5px 10px !important;
-        }
-
-        .right{
-            margin-top:0 !important;
-        }
-        .timeline{
-            margin-bottom:30px !important;
-        }
-        .contactBP{
-            padding-top:20px !important;
-          padding-bottom:30px !important;
-        }
-
-        .contactBP .heading{
-             font-size: 25px !important;
-        margin-bottom:20px !important;
-        }
 
 
-        
+ .bgImageBP{
+ background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
+ background-size:contain !important;
+ /*background-attachment:fixed;*/
+ background-position:center !important;
+ /*background-color:#4889a5;*/
+
+ 
 }
 
-@media all and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
-  
-     .navBP {
-    font-size: 0.8em;
-    color: #ffffff !important;
-    z-index: 1005;
 }
-       .navbar-default .navbar-brand {
-        font-size:0.8em !important;
-    }
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-       bottom: 50px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-    .bgImageBP{
-         background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
-         background-size:contain !important;
-         background-position:center !important;
-         margin-left:auto;
-         margin-right:auto;
-        margin-top:40%;
-        height:250px;
-        width:300px;
-    }
-
-    .aboutBP{ padding:30px 0 !important;
-
-    }
-    .aboutBP .heading {
-        font-size: 25px !important;
-        margin-bottom:20px !important;
-    }
-
-    .aboutBP .lead {
-        font-size: 18px !important;
-        margin-bottom:10px !important;
-    }
-
-     .aboutBP .aboutText {
-        font-size: 12px !important;
-    }
-
-     .portfolioTextBP{
-         font-size:18px !important;
-     }
-
-     .projectText{
-         font-size:12px !important;
-     }
-
-     .projectText h6{
-         font-size:14px !important;
-     }
-     
-     .services h4{ font-size:14px !important;}
-
-    .progress{
-        width: 90% !important;
-    }
-      .skillsText{ 
-                  padding: 10px 5px !important;
-     }
-
-     .icon_label{
-                font-size:0.8em !important;
-     }
-    
-     .softskills_heading{
-         font-size: 14px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .softskills_content{
-         font-size: 12px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .section-headingBP{
-          font-size: 25px !important;
-        margin-bottom:20px !important;
-     }
-
-     .date-title{
-         margin-top:30px !important;
-         margin-bottom:20px !important;
-     }
-
-     .date-title > span {
-         font-size:16px !important;
-     }
-
-     .news-title{
-         font-size:14px !important;
-     }
-      .news-title >span{
-         font-size:12px !important;
-     }
-        .news-title p{
-         font-size:11px !important;
-     }
-        .news-item{
-            padding-bottom:20px !important;
-            
-        }
-        .news-content{
-            padding:5px 10px !important;
-        }
-
-        .right{
-            margin-top:0 !important;
-        }
-        .timeline{
-            margin-bottom:30px !important;
-        }
-        .contactBP{
-            padding-top:20px !important;
-           padding-bottom:30px !important;
-        }
-
-        .contactBP .heading{
-             font-size: 25px !important;
-        margin-bottom:20px !important;
-        }
-
-
-        
-}
-
-@media all and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
-  
-     .navBP {
-    font-size: 0.8em;
-    color: #ffffff !important;
-    z-index: 1005;
-}
-     .navbar-default .navbar-brand {
-        font-size:0.8em !important;
-    }
-
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-       bottom: 50px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-    .bgImageBP{
-         background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
-         background-size:contain !important;
-         background-position:center !important;
-         margin-left:auto;
-         margin-right:auto;
-        margin-top:40%;
-        height:250px;
-        width:300px;
-    }
-
-    .aboutBP{ padding:30px 0 !important;
-
-    }
-    .aboutBP .heading {
-        font-size: 25px !important;
-        margin-bottom:20px !important;
-    }
-
-    .aboutBP .lead {
-        font-size: 18px !important;
-        margin-bottom:10px !important;
-    }
-
-     .aboutBP .aboutText {
-        font-size: 12px !important;
-    }
-
-     .portfolioTextBP{
-         font-size:18px !important;
-     }
-
-     .projectText{
-         font-size:12px !important;
-     }
-
-     .projectText h6{
-         font-size:14px !important;
-     }
-     
-     .services h4{ font-size:14px !important;}
-
-    .progress{
-        width: 90% !important;
-    }
-      .skillsText{ 
-                  padding: 10px 5px !important;
-     }
-
-     .icon_label{
-                font-size:0.8em !important;
-     }
-    
-     .softskills_heading{
-         font-size: 14px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .softskills_content{
-         font-size: 12px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .section-headingBP{
-          font-size: 25px !important;
-        margin-bottom:20px !important;
-     }
-
-     .date-title{
-         margin-top:30px !important;
-         margin-bottom:20px !important;
-     }
-
-     .date-title > span {
-         font-size:16px !important;
-     }
-
-     .news-title{
-         font-size:14px !important;
-     }
-      .news-title >span{
-         font-size:12px !important;
-     }
-        .news-title p{
-         font-size:11px !important;
-     }
-        .news-item{
-            padding-bottom:20px !important;
-            
-        }
-        .news-content{
-            padding:5px 10px !important;
-        }
-
-        .right{
-            margin-top:0 !important;
-        }
-        .timeline{
-            margin-bottom:30px !important;
-        }
-        .contactBP{
-            padding-top:20px !important;
-           padding-bottom:30px !important;
-        }
-
-        .contactBP .heading{
-             font-size: 25px !important;
-        margin-bottom:20px !important;
-        }
-
-
-        
-}
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  
-     .navBP {
-    font-size: 0.9em;
-    color: #ffffff !important;
-    z-index: 1005;
-}
-       .navbar-default .navbar-brand {
-        font-size:0.9em !important;
-    }
-
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-       bottom: 50px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-    .bgImageBP{
-         background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
-         background-size:contain !important;
-         background-position:center !important;
-         margin-left:auto;
-         margin-right:auto;
-        margin-top:40%;
-        height:250px;
-        width:300px;
-    }
-
-    .aboutBP{ padding:30px 0 !important;
-
-    }
-    .aboutBP .heading {
-        font-size: 25px !important;
-        margin-bottom:20px !important;
-    }
-
-    .aboutBP .lead {
-        font-size: 18px !important;
-        margin-bottom:10px !important;
-    }
-
-     .aboutBP .aboutText {
-        font-size: 12px !important;
-    }
-
-     .portfolioTextBP{
-         font-size:18px !important;
-     }
-
-     .projectText{
-         font-size:12px !important;
-     }
-
-     .projectText h6{
-         font-size:14px !important;
-     }
-     
-     .services h4{ font-size:14px !important;}
-
-    .progress{
-        width: 90% !important;
-    }
-      .skillsText{ 
-                  padding: 10px 5px !important;
-     }
-
-     .icon_label{
-                font-size:0.8em !important;
-     }
-    
-     .softskills_heading{
-         font-size: 14px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .softskills_content{
-         font-size: 12px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .section-headingBP{
-          font-size: 25px !important;
-        margin-bottom:20px !important;
-     }
-
-     .date-title{
-         margin-top:30px !important;
-         margin-bottom:20px !important;
-     }
-
-     .date-title > span {
-         font-size:16px !important;
-     }
-
-     .news-title{
-         font-size:14px !important;
-     }
-      .news-title >span{
-         font-size:12px !important;
-     }
-        .news-title p{
-         font-size:11px !important;
-     }
-        .news-item{
-            padding-bottom:20px !important;
-            
-        }
-        .news-content{
-            padding:5px 10px !important;
-        }
-
-        .right{
-            margin-top:0 !important;
-        }
-        .timeline{
-            margin-bottom:30px !important;
-        }
-        .contactBP{
-            padding-top:20px !important;
-           padding-bottom:30px !important;
-        }
-
-        .contactBP .heading{
-             font-size: 25px !important;
-        margin-bottom:20px !important;
-        }
-
-
-        
-}
-@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
-  
-        .navBP {
-    font-size: 0.9em;
-    color: #ffffff !important;
-    z-index: 1005;
-}
-
-    .navbar-default .navbar-brand {
-        font-size:0.9em !important;
-    }
-
-  .social_BP
-    {
-        height:50px;
-        z-index: 100;
-       bottom: 50px;
-        left:0%;
-        position: absolute;
-        /*text-align: center;*/
-        width: 100%;
-        margin:auto;
-    }
-
-  .social-buttonsBP{
-      text-align:center;
-  }
-
-    .bgImageBP{
-         background-image: url(/img/monitor-313013_1280-ciprian-noborder-noPC-1.jpg);
-         background-size:contain !important;
-         background-position:center !important;
-         margin-left:auto;
-         margin-right:auto;
-        margin-top:40%;
-        height:250px;
-        width:300px;
-    }
-
-    .aboutBP{ padding:30px 0 !important;
-
-    }
-    .aboutBP .heading {
-        font-size: 25px !important;
-        margin-bottom:20px !important;
-    }
-
-    .aboutBP .lead {
-        font-size: 18px !important;
-        margin-bottom:10px !important;
-    }
-
-     .aboutBP .aboutText {
-        font-size: 12px !important;
-    }
-
-     .portfolioTextBP{
-         font-size:18px !important;
-     }
-
-     .projectText{
-         font-size:12px !important;
-     }
-
-     .projectText h6{
-         font-size:14px !important;
-     }
-     
-     .services h4{ font-size:14px !important;}
-
-    .progress{
-        width: 90% !important;
-    }
-      .skillsText{ 
-                  padding: 10px 5px !important;
-     }
-
-     .icon_label{
-                font-size:0.8em !important;
-     }
-    
-     .softskills_heading{
-         font-size: 14px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .softskills_content{
-         font-size: 12px !important;
-         letter-spacing:0.25px !important;
-     }
-
-     .section-headingBP{
-          font-size: 25px !important;
-        margin-bottom:20px !important;
-     }
-
-     .date-title{
-         margin-top:30px !important;
-         margin-bottom:20px !important;
-     }
-
-     .date-title > span {
-         font-size:16px !important;
-     }
-
-     .news-title{
-         font-size:14px !important;
-     }
-      .news-title >span{
-         font-size:12px !important;
-     }
-        .news-title p{
-         font-size:11px !important;
-     }
-        .news-item{
-            padding-bottom:20px !important;
-            
-        }
-        .news-content{
-            padding:5px 10px !important;
-        }
-
-        .right{
-            margin-top:0 !important;
-        }
-        .timeline{
-            margin-bottom:30px !important;
-        }
-        .contactBP{
-            padding-top:20px !important;
-           padding-bottom:30px !important;
-        }
-
-        .contactBP .heading{
-             font-size: 25px !important;
-        margin-bottom:20px !important;
-        }
-
-
-        
-}
-
-
 
 .animationfrom-left {
     /*color: #ffffff !important;*/
@@ -1124,7 +395,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     background: #555 !important;
 }
 .navBP {
-    font-size: 1.0em;
+    font-size: 1.1em;
     color: #ffffff !important;
     z-index: 1005;
 }
@@ -1187,8 +458,8 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     text-align: center;
     vertical-align: text-bottom;
     line-height: inherit;
-    font-size: 1.0em;
-    padding-top: 10px !important;
+    font-size: 1.4em;
+    padding-top: 5px !important;
 }
 /*-----------------||TIMELINE IN BACKGROUND SECTION||----------------*/
 .skillsText {
@@ -1200,46 +471,9 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     border-radius:5px;
 }
 
-.softskillsText {
-    
-    color: #fff !important;
-     font-size: 1.0em !important;
-    padding: 5px 5px;
-    /*border:solid 1px #fff;
-    border-radius:5px;*/
-    background-color:#61A5B5;
-    width:100%;
-   min-height:280px;
-    text-size-adjust:auto;
-
-}
-
-.softskills_heading{
-    
-       text-align:center !important;
-       font-size: 1.0em !important;
-    color: #fff !important;
-    /*border-bottom: 1px solid #61A5B5;*/
-    width:auto;
-    background-color:#555
-    
-}
-
-.softskills_content{
-    text-align:center !important;
-    font-size: 0.9em !important;
-    color: #fff !important;
-    padding:10px 5px;
-    letter-spacing:0.5px;
-  
-}
-
 .aboutText{
-    font-size: 1.1em !important;
-    letter-spacing:0.5px;   
-    
+    font-size: 1.3em !important;
 }
-
 
 .timeline > li .timeline-image {
     width: 60px !important;
@@ -1277,7 +511,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     padding: 2px;
     line-height: 16px;
     font-weight: 500;
-    color: #333333 !important;
+    color: #fff !important;
     /*color: #444444 !important;*/
     text-align: center !important;
 }
@@ -1289,7 +523,6 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
     border-radius: 5px;
     color: #fff !important;
     margin-bottom: 10px;
-    background-color:#61a5b5;
 }
 
 .demo1 {
@@ -1310,7 +543,7 @@ ul.social-buttonsBP li.social-buttonsBP1 a:hover
 .portfolioTextBP:hover {
     text-decoration: none !important;
     /*color: rgb(249,191,59) !important;*/
-    /*color: #0aa3de !important;*/
+    color: #0aa3de !important;
     /*color: #F74D4D !important;*/
     /*background-color: #444444 !important;*/
     
@@ -1358,14 +591,10 @@ section-headingBP {
     /*border: 1px solid #23c1fe!important;*/ 
      /*border: 1px solid #F74D4D !important;*/
      color:#fff;
-     font-weight:500;
-     font-size:1.2.em;
-
-
 }
 
     .btn-primary:hover {
-        
+        color:#555;
         background-color: #356E7B !important;
         /*background-color: #61a5b5 !important;*/
         /*background-color: #F74D4D !important;*/
@@ -1687,7 +916,7 @@ top css line is for section for arrow
         top: 0;
         border-right: 1px solid #595959;
         /*border-right:1px solid #F74D4D;*/
-        z-index: 0;
+        z-index: -1;
     }
 
     .timeline:after {
@@ -1695,7 +924,7 @@ top css line is for section for arrow
         content: "";
         position: absolute;
         width: 50%;
-        height: 0px;
+        height: 100px;
         left: 1px;
         bottom: -105px;
         border-right: 1px dashed #595959;
@@ -1706,7 +935,6 @@ top css line is for section for arrow
     .timeline .date-title {
         text-align: center;
         margin: 70px 0 50px;
-       
     }
 
         .timeline .date-title span {
@@ -1717,8 +945,6 @@ top css line is for section for arrow
             background: #595959;
             /*background:#F74D4D;*/
             border-radius: 5px;
-
-            
         }
 
 .news-item {
@@ -1889,11 +1115,6 @@ top css line is for section for arrow
 .news-item:hover .news-content .read-more:focus {
     color: #fff;
 }
-
- .news-item:hover .news-content >h2 {
-        color: #61A5B5 !important;
-    }
-
 
 .news-content .read-more {
     -webkit-transition: padding .3s ease-out;
