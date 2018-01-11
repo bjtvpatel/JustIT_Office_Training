@@ -1,3 +1,10 @@
+Test practice
+patel2012uk@gmail.com - NameYear!
+
+https://www.wiziq.com/tests/net-framework
+
+-------------------------------------------------------
+
 https://youtubeinmp4.com/
 
 http://video.online-convert.com/convert-to-mp4
@@ -157,5 +164,64 @@ https://bootswatch.com/
       FTP Directory	\
 
 
+-------------------------------------------------------------
+Hosting Account ID:
+alldocs2014-001
+      First Website Root Folder Name:
+it
+      First Website Type:
+ASP.NET
+      Hosting Plan Name:
+W60-US
+      
+
+      
+Please Record The Following FTP Infomation: 
+      FTP Address :
+FTP.SMARTERASP.NET
+      FTP Username :
+alldocs2014-001
+      FTP Password :
+(same as your control panel password)
+      FTP Directory
+\
+      
+-----------------------------------------------------
+Hosting Account ID:
+govindp1954-001
+      First Website Root Folder Name:
+site1
+      First Website Type:
+ASP.NET
+      Hosting Plan Name:
+W60-EU
+      
+
+      
+Please Record The Following FTP Infomation: 
+      FTP Address :
+FTP-EU.SMARTERASP.NET
+      FTP Username :
+govindp1954-001
+      FTP Password :
+(same as your control panel password)
+      FTP Directory
+\
 ................................................................
 filelist.ro
+
+......................................................
+check the performance of website
+https://developers.google.com/speed/pagespeed/insights/
+https://developers.google.com/speed/pagespeed/
+https://testmysite.thinkwithgoogle.com/
+https://geekflare.com/test-your-website-load-time/
+https://tools.pingdom.com/
+https://gtmetrix.com/
+https://www.uptrends.com/tools/website-speed-test
+http://mywifequitherjob.com/6-ways-to-speed-up-the-loading-of-your-website/
+https://www.webpagetest.org/
+
+........................................
+Proxyserver
+http://www.thewindowsclub.com/proxy-software-for-windows

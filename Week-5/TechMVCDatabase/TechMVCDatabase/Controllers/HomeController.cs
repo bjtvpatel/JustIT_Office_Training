@@ -7,6 +7,7 @@ using Microsoft.Owin.Security;
 using TechMVCDatabase.Models;
 using System.Net;
 using PagedList;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace TechMVCDatabase.Controllers
@@ -14,9 +15,9 @@ namespace TechMVCDatabase.Controllers
     public class HomeController : Controller
     {
 
-       TechMVCDatabaseEntities db = new TechMVCDatabaseEntities();
+        //TechMVCDatabaseEntities1 db = new TechMVCDatabaseEntities1();
+        TechMVCDatabaseEntities db = new TechMVCDatabaseEntities();
 
-       
         //public ActionResult Index()
         //{
         //    var techdata = from t in db.TechDetails
@@ -36,7 +37,13 @@ namespace TechMVCDatabase.Controllers
             {
                 searchString = currentFilter;
             }
+
             ViewBag.CurrentFilter = searchString;
+
+            //pagging code starts
+            //with paging 
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
             //pagging code ends
 
             //brand
@@ -56,16 +63,18 @@ namespace TechMVCDatabase.Controllers
             //get all techdetail
             var techdata = from t in db.TechDetails
                 select t;
-           
+
+         
+
             //brand search
             if (!string.IsNullOrEmpty(searchString))
             {
-                techdata = techdata.Where(s => s.ModelName.Contains(searchString)).OrderBy(s=>s.ModelName);
+                techdata = techdata.Where(s => s.ModelName.Contains(searchString) || s.Brand.Contains(searchString) || s.Category.Contains(searchString)).OrderBy(s=>s.ModelName);
                
             }
 
 
-            //model searcgh -2 get all models of choosen model from db
+            //model search -2 get all models of choosen model from db
             if (!string.IsNullOrEmpty(techBrand))
             {
                 techdata = techdata.Where(x => x.Brand == techBrand).OrderBy(x=>x.Brand);
@@ -80,10 +89,9 @@ namespace TechMVCDatabase.Controllers
 
             //without Paging
             //return View(techdata);
-            //pagging code starts
-            //with paging 
-            int pageSize = 6;
-            int pageNumber = (page ?? 1);
+
+          //  return (techdata);
+            //
             return View(techdata.OrderByDescending(x => x.Price).ToPagedList(pageNumber, pageSize));
             //pagging code ENDS
         }
@@ -120,20 +128,26 @@ namespace TechMVCDatabase.Controllers
 
         //    return View();
         //}
+
+
         [HttpPost]
         public ActionResult CreatRecord(TechDetail techDetail)
         {
+           
+            if (ModelState.IsValid)
+            {
+
+                //if data is valid
+                db.Entry(techDetail).State = System.Data.Entity.EntityState.Added;
+                //db.TechDetails.Add(techDetail);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+
+
+            }
             //if model state is not valid then retur to creat so use can fix it
 
-            if (!ModelState.IsValid)
-            {
-                return View(techDetail);
-            }
-           
-            //if data is valid
-            db.TechDetails.Add(techDetail);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            return View(techDetail);
 
            
         }

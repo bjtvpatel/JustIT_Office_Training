@@ -26,9 +26,7 @@
     
 </head>
 <body>
-    <div class="navbar-header">
-        <a href="@Url.Action("List","Product", new { @class = "btn btn-default btn-sm" })">Client Page</a>
-    </div>
+  
     <div>
         @if (TempData["message"] != null)
         {
@@ -36,6 +34,6 @@
         }
         @RenderBody()
     </div>
-
+ 
 </body>
 </html>

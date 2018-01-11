@@ -7,8 +7,8 @@ namespace TechMVCDatabase.Controllers
 {
     public class FileUploadController : Controller
     {
+        //TechMVCDatabaseEntities1 db = new TechMVCDatabaseEntities1();
         TechMVCDatabaseEntities db = new TechMVCDatabaseEntities();
-        
         public ActionResult FileUpload()
         {
             

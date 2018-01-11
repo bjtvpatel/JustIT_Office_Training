@@ -21,7 +21,7 @@
   
 
 <section>
-    
+
     <div class="container-fluid">
         <div class="row creatRow-cs ">
             <div class="col-md-2 btn btn-default createLabel">
@@ -38,8 +38,8 @@
                     ////WITHOUT PAGING CODE
                     @*<span class="dropdown-cs">Model: @Html.TextBox("searchString")</span>*@
                     ////PAGING CODE
-                    <span class="dropdown-cs">Model: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>
-                    <input type="submit" value="Filter" class="btn btn-default btn-filter"/>
+                    <span class="dropdown-cs">Search: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)</span>
+                    <input type="submit" value="Filter" class="btn btn-default btn-filter" />
 
                 }
             </div>
@@ -53,15 +53,25 @@
                     <div class="col-md-3 column-display">
                         <p>@Html.DisplayFor(t => item.Brand) - @Html.DisplayFor(t => item.ModelName)</p>
 
-                        <a href="@Url.Action("DetailRecord", new {id = item.Id})"><img src="@Url.Content(@item.Photo)" alt="item.AlternateText" class="imgGallary-cs img-responsive"/></a>
+                        <a href="@Url.Action("DetailRecord", new {id = item.Id})">
+                            <div style="height:375px; width:275px; margin:auto auto;">
+                                @if (item.Photo != null)
+                                {
+                                    <img src="@Url.Content(item.Photo)" alt="item.AlternateText" class="imgGallary-cs img-responsive" />
+                                }
+                            </div>
+                        </a>
 
                         <p>£@Html.DisplayFor(t => item.Price)</p>
                         <div class="row rowLabel-cs">
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Detail", "DetailRecord", new {id = item.Id})</span>
+                            <div class="col-md-3 columnlable-cs">
+                                <span>@Html.ActionLink("Detail", "DetailRecord", new { id = item.Id })</span>
                             </div>
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Edit", "EditRecord", new {id = item.Id})</span>
+                            <div class="col-md-3 columnlable-cs">
+                                <span>@Html.ActionLink("Edit", "EditRecord", new { id = item.Id })</span>
                             </div>
-                            <div class="col-md-3 columnlable-cs"><span>@Html.ActionLink("Delete", "DeleteRecord", new {id = item.Id})</span>
+                            <div class="col-md-3 columnlable-cs">
+                                <span>@Html.ActionLink("Delete", "DeleteRecord", new { id = item.Id })</span>
                             </div>
 
                             @*<span>@Html.ActionLink("Compare", "CreatRecord")</span>*@
@@ -71,10 +81,10 @@
                 }
             </div>
         </div>
-        <br/>
+        <br />
         @*//PAGING CONTROL STARTS*@
         Page@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
-        @Html.PagedListPager(Model, page => Url.Action("Index", new {page, currentFilter = ViewBag.CurrentFilter}))
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))
         @*//PAGING CONTROL ENDS*@
     </div>
 </section>

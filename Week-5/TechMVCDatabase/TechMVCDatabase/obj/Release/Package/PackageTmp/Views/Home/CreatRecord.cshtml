@@ -5,13 +5,103 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+    <div class="form-horizontal wrapper-cs">
+        <h3>Create Tech-Gadget Record</h3>
+        <hr />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*@Html.HiddenFor(model => model.Id)*@
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Brand, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Brand, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Brand, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ModelName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ModelName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ModelName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Category, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Photo, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Photo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AlternateText, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AlternateText, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AlternateText, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create Record" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+}
+        <p>
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+@*
 <div class="wrapper-cs">
 
     @using (Html.BeginForm())
     {
-        <div class="form-horizontal ">
+        @Html.AntiForgeryToken()
+
+
+        <div class="form-horizontal">
             <h3>Add New Record</h3>
             <h4></h4>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(modal=>modal.Id)
 
             <div class="row">
                 <div class="col-md-6">
@@ -20,6 +110,7 @@
                         @Html.LabelFor(t => t.Brand, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
                             @Html.EditorFor(t => t.Brand, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(t => t.Brand,"Required", new {@class= "text-danger" } )
                         </div>
                     </div>
 
@@ -27,6 +118,7 @@
                         @Html.LabelFor(t => t.ModelName, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
                             @Html.EditorFor(t => t.ModelName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(t => t.ModelName, "Required", new { @class = "text-danger" })
                         </div>
                     </div>
 
@@ -35,10 +127,12 @@
                         @Html.LabelFor(t => t.Category, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
 
-                            @*@using (Html.BeginForm())
+                            @*
+                            
+                            @using (Html.BeginForm())
                                 {
                                     <p class="dropdown">@Html.DropDownListFor(t=>t.Category, new SelectList(ViewBag.ToString(), "Category","Select Category"))</p>
-                                }*@
+                                }
                             @Html.EditorFor(t => t.Category, new { htmlAttributes = new { @class = "form-control" } })
                         </div>
                     </div>
@@ -60,17 +154,17 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        @Html.LabelFor(t => t.Image, htmlAttributes: new { @class = "control-label col-md-2" })
-                        @*<div class="col-md-10">
-                            @using (Html.BeginForm("FileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                            {
-                                <p><input name="uploadFile" type="file" /></p>
+                    <!--  <div class="form-group">
+                    @*     @Html.LabelFor(t => t.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                          <div class="col-md-10">
+                              @using (Html.BeginForm("FileUpload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                              {
+                                  <p><input name="uploadFile" type="file" /></p>
 
-                                @*<p><input type="submit" value="Upload Image" /></p>
-                            }
-                        </div>*@
-                    </div>
+                                  @*<p><input type="submit" value="Upload Image" /></p>
+                              }
+                          </div>
+                      </div>-->
 
                 </div>
                 <div class="col-md-5 col-md-offset-1">
@@ -80,9 +174,9 @@
                             <img alt="new record Image" src="" />
                         </div>
                         <div class="form-group">
-                            @*@Html.LabelFor(t => t.Photo, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                            @Html.LabelFor(t => t.Photo, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @*@Html.EditorFor(t => t.Photo, new { htmlAttributes = new { @class = "form-control" } })*@
+                                @Html.EditorFor(t => t.Photo, new { htmlAttributes = new { @class = "form-control" } })
                             </div>
                         </div>
 
@@ -92,30 +186,33 @@
             <div class="row">
 
 
-                
+
                 <div class="col-md-7 col-md-offset-5">
-                    <input type="submit" value="Create Record" class="btn btn-default" />
-                </div>
+                    <div class="form-group">
+                        
+                        <input type="submit" value="Create Record" class="btn btn-default" />
+                    </div></div>
 
 
             </div>
         </div>
 
 
-    }
 
-   
 
-    
+
+
+
 
     <p>
-        @*<i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>*@
+        @*<i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>
         @Html.ActionLink("Back to List", "Index")
-        
-        @*<div class="col-md-2 btn btn-link goback-cs">
-            <i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>
-            @Html.ActionLink("Back to List", "Index")
-        </div>*@
+
+        <div class="col-md-2 btn btn-link goback-cs">
+                <i class="glyphicon 2x glyphicon-chevron-left goback-cs"></i>
+                @Html.ActionLink("Back to List", "Index")
+            </div>
     </p>
-    
-</div>
+
+    }
+</div>*@

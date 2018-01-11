@@ -11,13 +11,20 @@ namespace TechMVCDatabase.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class TechDetail
     {
+
         public int Id { get; set; }
+       
+        [Required]
         public string Brand { get; set; }
+        [Required]
         public string ModelName { get; set; }
+        [Required]
         public string Category { get; set; }
+        
         public Nullable<decimal> Price { get; set; }
         public byte[] Image { get; set; }
         public string Photo { get; set; }
